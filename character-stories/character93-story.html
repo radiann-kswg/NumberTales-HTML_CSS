@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/stylesheet.css">
+	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.2.4"></script>
+	<script>window.Vue || document.write('<script src="/lib/vue.global.prod.js"><\/script>');</script>
+	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-キャラスト漫画「93(クミ)編」</title>
+	<meta name="description" content="ラジアン(柏木主税)によるオリジナルキャラ「ナンバーテールズ」のうち、「93(クミ)」のキャラクターストーリー漫画を制作中！">
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main>
+		<h1>ナンバーテールズ キャラスト漫画<br>第1編 93(クミ)編</h1>
+		<h2 class="h2-wide">ストーリー概要</h2>
+		<div style="width: 100%; margin-bottom: 20px;" id="app-characterstory-page">
+			<characterstory-about-01-comp>
+			</characterstory-about-01-comp>
+		</div>
+		<script src="/src/characterstory-about-component.js"></script>
+		<h2 class="h2-wide" style="margin-bottom: 40px;">登場キャラクター</h2>
+		<div class="character-list0" id="app-list-comp">
+			<list-comp small-style="true">
+				<template #title>93(クミ)</template>
+				<template #imagelink><a href="/characters/character93.html">
+						<img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img93.png"
+							class="character-list-img"></a></template>
+			</list-comp>
+			<list-comp small-style="true">
+				<template #title>3(ナオ)</template>
+				<template #imagelink><a href="/characters/character3.html">
+						<img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img3.png"
+							class="character-list-img"></a></template>
+			</list-comp>
+			<list-comp small-style="true">
+				<template #title>39(サク)</template>
+				<template #imagelink><a href="/characters/character39.html">
+						<img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img39.png"
+							class="character-list-img"></a></template>
+			</list-comp>
+			<list-comp small-style="true">
+				<template #title>9(チカ)</template>
+				<template #imagelink><a href="/characters/character9.html">
+						<img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img9.png"
+							class="character-list-img"></a></template>
+			</list-comp>
+			<div class="character-list1"><p><span class="p-bold">And More...</span></p></div>
+		</div>
+		<script src="/src/list-components.js"></script>
+	</main>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+		<script src="/src/credit-footer.js"></script>
+	</footer>
+</body>
+
+</html>

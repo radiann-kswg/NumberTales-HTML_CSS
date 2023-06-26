@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/stylesheet.css">
+	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.2.4"></script>
+	<script>window.Vue || document.write('<script src="/lib/vue.global.prod.js"><\/script>');</script>
+	<title>数字の癒し？キャラ化計画「ナンバーテールズ」- ナンバーテールズ紹介(3桁)</title>
+	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-list-comp">
+		<h1>ナンバーテールズ(3桁)紹介一覧</h1>
+		<div class="block-scroll">
+			<div class="character-list0">
+				<list-comp wide-style="true">
+					<template #title>111(アイズ)</template>
+					<template #imagelink><a href="/characters/character111.html">
+							<img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img111-mp.png"
+								class="character-list-img"></a></template>
+				</list-comp>
+				<list-comp wide-style="true">
+					<template #title>223(ツヅサ)</template>
+					<template #imagelink><img alt="/img/cnsp_nonimg.png" src="/img/cnsp-odr/cnsp-odr_img223-new.png"
+							class="character-list-img"></template>
+				</list-comp>
+				<list-comp>
+					<template #title>753(ナゴミ)</template>
+					<template #imagelink><img alt="/img/cnsp_nonimg.png" src="/img/cnsp-odr/cnsp-odr_img753.png"
+							class="character-list-img"></template>
+				</list-comp>
+			</div>
+		</div>
+		<a href="/characters.html">
+			<h2 class="h2-a-link">ナンバーテールズ(2桁)紹介はこちら</h2>
+		</a>
+	</main>
+	<script src="/src/list-components.js"></script>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+		<script src="/src/credit-footer.js"></script>
+	</footer>
+</body>
+<!--<div id="app" style="display: none;">-->
+<!-- Vue.jsを使いたい部分 -->
+<!--</div>-->
+<script type="module" src="/src/custom-scroll.js"></script>
+
+</html>
