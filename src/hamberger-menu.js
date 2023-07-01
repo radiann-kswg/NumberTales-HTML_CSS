@@ -16,8 +16,9 @@ Vue.createApp({})
 					<li><a href="https://misskey.io/clips/9c2heeq2ig">Misskey(.io,クリップ)</a></li>
 					<li><a href="/characters.html">キャラクター紹介(2桁)</a></li>
 					<li><a href="/characters-special.html">キャラクター紹介(3桁)</a></li>
+					<li><a href="https://misskey.numbertales-radiann.net/@APHR_NTs">ナンバーテールズ公式Misskeyサーバー&Bot(調整中)</a></li>
+					<li><a href="https://misskey.io/@APHR_NTs">ナンバーテールズ公式MisskeyBot(.io)(調整中)</a></li>
 					<li><a href="https://misskey.io/@RadianN_kswg">ラジアン公式Misskey(.io)</a></li>
-					<li><a href="https://misskey.design/@RadianN_kswg">ラジアン公式Misskey(.design)</a></li>
 					<li><a href="https://www.pixiv.net/users/44375569">ラジアン公式pixiv</a></li>
 					<li><a href="https://radiann-kswg.fanbox.cc/">ラジアン公式pixivFANBOX</a></li>
 					<li><a href="https://radiann-kswg.booth.pm/">ラジアン公式BOOTH</a></li>
