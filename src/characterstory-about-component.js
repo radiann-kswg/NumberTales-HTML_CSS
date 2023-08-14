@@ -15,8 +15,7 @@ const characterStoryAbout01Component = {
 			</p>
 			<slot name="info">
 				<a><h3 class="h3-a-link-commingsoon">先行公開(pixivFANBOX)</h3></a>
-				<a><h3 class="h3-a-link-commingsoon">pixiv連載準備中</h3></a>
-				<a><h3 class="h3-a-link-commingsoon">Misskey連載準備中</h3></a>
+				<a><h3 class="h3-a-link-commingsoon">？？？連載準備中</h3></a>
 			</slot>
 		</div><img alt="/img/cnsp_nonimg.png" src="/img/cnsp_chrst/cnsp_chrst93.png" class="character-img" style="margin-bottom: 20px;">
 		<slot></slot></div>`
