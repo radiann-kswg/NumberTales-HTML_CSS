@@ -12,7 +12,6 @@ const linksSXG2022 = {
 	},
 	template: `
 		<a class="a-link" href="https://twitter.com/ShowXGuys/">SXG公式Twitter</a><br>
-		<a class="a-link" href="https://twitter.com/showxguys/status/1543104339094683654">出展紹介(Twitter)</a>
 	`
 };
 

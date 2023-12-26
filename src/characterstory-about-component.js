@@ -14,6 +14,7 @@ const characterStoryAbout01Component = {
 				しかしある日、どこからかナンバーテールズの活動事情を聞きつけた少女「乃木 希(のぎ のぞみ)」との主従契約を結んでから、93(クミ)の従事活動を大きく変えていくことになる。
 			</p>
 			<slot name="info">
+				<a href="https://misskey.numbertales-radiann.net/notes/9leakruksb"><h3 class="h3-a-link">「ある主従契約記録にて」<br>（前日端ショートストーリー）</h3></a>
 				<a><h3 class="h3-a-link-commingsoon">先行公開(pixivFANBOX)</h3></a>
 				<a><h3 class="h3-a-link-commingsoon">？？？連載準備中</h3></a>
 			</slot>
