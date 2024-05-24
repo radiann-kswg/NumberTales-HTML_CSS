@@ -13,15 +13,17 @@ Vue.createApp({})
 			<div class="menu" v-show="ActiveBtn">
 				<ul>
 					<li><a href="/index.html">サイトトップ</a></li>
-					<li><a href="https://misskey.io/clips/9c2heeq2ig">Misskey(.io,クリップ)</a></li>
+					<li><a href="https://misskey.numbertales-radiann.net/@official/pages/creation_guideline">創作ガイドライン(日本語)</a></li>
+					<li><a href="https://misskey.numbertales-radiann.net/@official/pages/creation_guideline_EN">Creation Guidelines(English)</a></li>
 					<li><a href="/characters.html">キャラクター紹介(2桁)</a></li>
 					<li><a href="/characters-special.html">キャラクター紹介(3桁)</a></li>
+					<li><a href="https://misskey.io/clips/9c2heeq2ig">Misskey(.io,クリップ)</a></li>
 					<li><a href="https://misskey.numbertales-radiann.net/@official">百花繚乱研究所公式Misskey(調整中)</a></li>
 					<li><a href="https://misskey.numbertales-radiann.net/@APHR_NTs">ナンバーテールズ公式MisskeyBot(調整中)</a></li>
 					<li><a href="https://misskey.io/@APHR_NTs">ナンバーテールズ公式MisskeyBot(.io)(調整中)</a></li>
 					<li><a href="https://misskey.numbertales-radiann.net/@RadianN_kswg">ラジアン公式Misskey</a></li>
 					<li><a href="https://misskey.io/@RadianN_kswg">ラジアン公式Misskey(.io)</a></li>
-					<li><a href="https://www.pixiv.net/users/44375569">ラジアン公式pixiv（作品ガイドラインあり）</a></li>
+					<li><a href="https://www.pixiv.net/users/44375569">ラジアン公式pixiv</a></li>
 					<li><a href="https://radiann-kswg.fanbox.cc/">ラジアン公式pixivFANBOX</a></li>
 					<li><a href="https://radiann-kswg.booth.pm/">ラジアン公式BOOTH</a></li>
 				</ul>
