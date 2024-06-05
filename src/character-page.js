@@ -30,7 +30,7 @@ const characterPageComponent = {
 				<span class="p-bold">好きなもの</span>：<slot name="favors">？？？</slot>　
 				<span class="p-bold">苦手なもの</span>：<slot name="unlikes">？？？</slot>
 			</p><slot name="additions"></slot>
-		</div><slot name="characterimage"><img alt="/img/cnsp_nonimg.png" src="/img/cnsp/cnsp_img22.png" class="character-img">
+		</div><slot name="characterimage"><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img22.png" class="character-img">
 	</slot></div>`,
   data() {
     return {
