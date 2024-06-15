@@ -56,7 +56,7 @@ const listComponent = {
 		<h3 v-bind:class="{'h3-wide': titleStyleIsWide}"><slot name="title">(Non Title)</slot></h3><br>
 			<slot></slot>
 		</div>
-		<slot name="imagelink"><img alt="/img/icn_nonimg.png" src="/img/icn_nonimg.png"
+		<slot name="imagelink"><img alt="" src="/img/icn_nonimg.png"
 		class="character-list-img"></slot>
 	</div>`,
 	data() {

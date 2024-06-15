@@ -28,7 +28,7 @@
 		</div>
 		<script src="/src/characterstory-about-component.js"></script>
 		<h2 class="h2-wide" style="margin-bottom: 40px;">登場キャラクター</h2>
-		<div class="character-list0" id="app-list-comp">
+		<list-comp  id="app-list-comp"><div class="character-list0">
 			<list-comp small-style="true">
 				<template #title>93(クミ)</template>
 				<template #imagelink><a href="/characters/character93.html">
@@ -65,34 +65,33 @@
 						<img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img49.png"
 							class="character-list-img"></a></template>
 			</list-comp>
+			<div class="character-list1-small">
+				<p><span class="p-bold">And More...</span></p>
+			</div>
 		</div>
-		<div class="character-list1">
-			<p><span class="p-bold">And More...</span></p>
+		<h2 class="h2" style="margin-bottom: 40px;">クレジット</h2>
+		<div class="character-list0">
 			<list-comp>
-				<template #title>シナリオ・小説版</template>
-				<template #imagelink><br></template>
-				<p>
-					<span class="p-bold">シナリオ</span>：<br>
-					ラジアン(柏木主税) @RadianN_kswg<br><br>
-					<span class="p-bold">挿絵制作</span>：<br>
-					ラジアン(柏木主税) @RadianN_kswg
-				</p>
-			</list-comp>
-			<list-comp>
-				<template #title>サウンドノベル版</template>
-				<template #imagelink><br></template>
-				<p>
-					<span class="p-bold">キャラクターデザイン</span>：<br>
+				<template #title>小説版</template>
+				<template #imagelink><div style="width: 100%; margin-top: 20px;"><p>
+					<span class="p-bold">執筆</span>：<br>
 					ラジアン(柏木主税) @RadianN_kswg<br>
 					<a
 						href="https://misskey.numbertales-radiann.net/@RadianN_kswg/">https://misskey.numbertales-radiann.net/@RadianN_kswg/</a><br>
-					<a href="https://misskey.io/@RadianN_kswg/">https://misskey.io/@RadianN_kswg/</a><br><br>
+					<a href="https://misskey.io/@RadianN_kswg/">https://misskey.io/@RadianN_kswg/</a>
+				</p></div></template>
+			</list-comp>
+			<list-comp>
+				<template #title>サウンドノベル版</template>
+				<template #imagelink><div style="width: 100%; margin-top: 20px;"><p>
+					<span class="p-bold">シナリオ・キャラデザ</span>：<br>
+					ラジアン(柏木主税) @RadianN_kswg<br><br>
 					<span class="p-bold">立ち絵制作</span>：<br>
 					喜雨 kiu/xiyu @kiuxiyue<br>
 					<a href="https://kiuxiyu.myportfolio.com/">https://kiuxiyu.myportfolio.com/</a>
-				</p>
+				</p></div></template>
 			</list-comp>
-		</div>
+		</div></div>
 		<script src="/src/list-components.js"></script>
 	</main>
 	<footer>
