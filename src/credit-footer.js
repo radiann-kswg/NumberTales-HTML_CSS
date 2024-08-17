@@ -4,7 +4,7 @@ Vue.createApp({})
 		<p><a class="a-p" href="
 		https://misskey.numbertales-radiann.net/@official/pages/creation_guideline">創作ガイドライン(日本語)</a>/<a class="a-p" href="
 		https://misskey.numbertales-radiann.net/@official/pages/creation_guideline_EN">Creation Guidelines(English)</a></p><p>
-			スペシャルサンクス：<a class="a-p" href="https://okauni.connpass.com/">岡山Unity勉強会</a>, <a class="a-p" href="https://sanuki-gamen.connpass.com/">讃岐GameN</a>, <a class="a-p" href="https://misskey.io/">Misskey.io</a>のフォロワーのみなさん
+			スペシャルサンクス：<a class="a-p" href="https://okauni.connpass.com/">岡山Unity勉強会</a>, <a class="a-p" href="https://sanuki-gamen.connpass.com/">讃岐GameN</a>, <a class="a-p" href="https://misskey.io/@RadianN_kswg">Misskey.io</a>のフォロワーのみなさん, および制作にご協力いただいた関係者のみなさん
 		</p>`,
 		// https://qiita.com/ron-Qiita/items/17af311a506d08b7bf14
 		data: function () {
