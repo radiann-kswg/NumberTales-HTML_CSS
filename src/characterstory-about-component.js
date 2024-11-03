@@ -18,7 +18,8 @@ const characterStoryAbout01Component = {
 				<a href="https://misskey.numbertales-radiann.net/notes/9u6hpaj8di">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
 				<a href="https://misskey.numbertales-radiann.net/notes/9u6j6xmldw">小説版第０話「プロローグ」</a><br>
 				<a href="https://misskey.numbertales-radiann.net/notes/9ub3q94g7i">小説版第１話①「夢からの目覚め」</a><br>
-				<a href="https://misskey.numbertales-radiann.net/notes/9ujd28f38n">小説版第１話②「２人の夢追い人」</a></p>
+				<a href="https://misskey.numbertales-radiann.net/notes/9ujd28f38n">小説版第１話②「２人の夢追い人」</a><br>
+				<a href="https://misskey.numbertales-radiann.net/notes/9zjggaaubt">小説版第２話①「93(クミ)の野望(ユメ)」</a></p>
 				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
