@@ -17,12 +17,12 @@ Vue.createApp({})
 					<li><a href="https://misskey.numbertales-radiann.net/@official/pages/creation_guideline_EN">Creations Guideline(English)</a></li>
 					<li><a href="/characters.html">キャラクター紹介(2桁)</a></li>
 					<li><a href="/characters-special.html">キャラクター紹介(3桁)</a></li>
-					<li><a href="https://misskey.io/clips/9c2heeq2ig">Misskey(.io,クリップ)</a></li>
+					<li><a href="https://misskey.io/clips/9c2heeq2ig">Misskey.ioクリップ</a></li>
 					<li><a href="https://misskey.io/@official@misskey.numbertales-radiann.net">百花繚乱研究所公式Misskey</a></li>
 					<li><a href="https://misskey.io/@APHR_NTs@misskey.numbertales-radiann.net">ナンバーテールズ公式MisskeyBot</a></li>
 					<li><a href="https://misskey.io/@APHR_NTs">ナンバーテールズ公式MisskeyBot(.io)</a></li>
-					<li><a href="https://misskey.io/@RadianN_kswg@misskey.numbertales-radiann.net">原作者公式Misskey</a></li>
-					<li><a href="https://misskey.io/@RadianN_kswg">原作者公式Misskey(.io)</a></li>
+					<li><a href="https://misskey.io/@RadianN_kswg@misskey.numbertales-radiann.net">原作者公式Misskey(低浮上)</a></li>
+					<li><a href="https://misskey.io/@RadianN_kswg">原作者Misskey.io</a></li>
 					<li><a href="https://www.pixiv.net/users/44375569">原作者公式pixiv</a></li>
 					<li><a href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX(停滞中)</a></li>
 					<li><a href="https://radiann-kswg.booth.pm/">原作者公式BOOTH</a></li>
