@@ -23,7 +23,7 @@ Vue.createApp({})
 					<li><a href="https://misskey.io/@RadianN_kswg@misskey.numbertales-radiann.net">原作者公式Misskeyアカウント(低浮上)</a></li>
 					<li><a href="https://misskey.io/@RadianN_kswg@misskey.flowers">原作者個人用Misskeyアカウント</a></li>
 					<li><a href="https://www.pixiv.net/users/44375569">原作者公式pixiv</a></li>
-					<li><a href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX(停滞中)</a></li>
+					<li><a href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX</a></li>
 					<li><a href="https://radiann-kswg.booth.pm/">原作者公式BOOTH</a></li>
 				</ul>
 			</div>
