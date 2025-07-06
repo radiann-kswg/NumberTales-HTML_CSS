@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「81(ヤイチ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,27 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=81>
+		<character-page-comp>
+			<template #title>81(ヤイチ)</template>
+			社会貢献に務める主人のサポートに経験が特化しているナンバーテールズ。<br>
+			彼女が居ると、主人の行動や活動を支える効果がもたらされ、価値観や収入が向上すると評判。<br>
+			奉仕的な性格で社会情勢に敏感。<br>
+			趣味として、投資の攻略法についてひそかに研究しているとか。<br>
+			<a class="a-p" href="character8.html">「8(ワカツ)」</a>にちょくちょく経理関係でアドバイスをしている一面もあるようだが…
+			<template #callingme>私(わたし)</template>
+			<template #callingyou>上方(かみかた)</template>
+			<template #gender>女性</template>
+			<template #height>149cm</template>
+			<template #weight>41kg</template>
+			<template #conseptage>18</template>
+			<template #numberoftales>8(8+1)</template>
+			<template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
 			<template #potential>自己肯定感を高め役目を全(まっと)うさせる</template>
+			<template #characteristic>価値に敏感で奉仕的、社会的な一面も強い</template>
+			<template #hobby>投資</template>
+			<template #skill>会計処理</template>
+			<template #favors>価値観の向上</template>
+			<template #unlikes>詐欺(をすること)</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img81.png"
 					class="character-img"></template>
 		</character-page-comp>

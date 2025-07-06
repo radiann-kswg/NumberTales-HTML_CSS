@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「000(チトセ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,13 +20,18 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num="000">
+		<character-page-comp>
+			<template #title>000(チトセ)</template>
 			長い間「零 零/百」姉弟をある意味迷わせている「ナンバーテールズ0番機」。<br>
 			誕生の発端はナンバーテールズの開発に取り掛かる前、ナンバーテールズとは別の”ある理由によって”設計された。<br>
 			しかしナンバーテールズ開発最盛期には彼(女)の設計が凍結し、完成したのは後輩たち現役99体の後となった。<br>
 			なぜこんなにも完成が遅れたのだろう？<br>
 			それにしても、見た目どころか挙動や仕草などでさえ“誰かにとても良く似ている”様な…？
-			<template #numberoftails>猫型1本？</template>
+			<template #callingme>私(わたし)</template>
+			<template #callingyou>クライアント君</template>
+			<template #gender>中性</template>
+			<template #height>165cm</template>
+			<template #numberoftales>1</template>
 			<template #belongingclass>その他</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img000.png"
 					class="character-img"></template>

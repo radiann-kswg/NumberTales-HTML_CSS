@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「78(ナナハ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,9 +20,25 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=78>
-			<template #callingyou>あなた様、ご主人様</template>
+		<character-page-comp wide-style="true">
+			<template #title>78(ナナハ)</template>
+			反省からの学びを強めることに秀でているとされているナンバーテールズ。<br>
+			技術適正が極めて高く、エンジニアとして働いている主人からの支持が手厚い。<br>
+			しかしながらどこか自分に自信がなくアイテムに縋ることでしか自分を評価できないところがあり、彼女をよく知る別の個体によっては心配されたり胡散臭がられたりしている。<br>
+			とはいえ誠心誠意で自らも反省しながら精進する姿は誰よりも評価されている。
+			<template #callingme>私(わたくし)</template>
+			<template #callingyou>あなた様, ご主人様</template>
+			<template #gender>女性</template>
+			<template #height>157cm</template>
+			<template #conseptage>25</template>
+			<template #numberoftales>8(7+8)</template>
+			<template #belongingclass>デュアルシックスズ</template>
 			<template #potential>経験・報酬を反省から生む</template>
+			<template #characteristic>清く美しい精神の持ち主だが、ややネガティヴ気味</template>
+			<template #hobby>タロットカード</template>
+			<template #skill>アドリブ祝辞</template>
+			<template #favors>トランプ、タロットカード</template>
+			<template #unlikes>傲慢な態度</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img78.png"
 					class="character-img"></template>
 		</character-page-comp>

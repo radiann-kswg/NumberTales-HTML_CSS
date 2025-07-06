@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「42(ヨツグ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,9 +20,25 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=42>
+		<character-page-comp>
+			<template #title>42(ヨツグ)</template>
+			主人が心に抱えている弱気を中和するという"加護"を（無自覚で）有している。<br>
+			そのためか、恐れや心配の文字を彼女から連想できないほどの自信家で、理想がやや高く我儘な言動もとりがち。<br>
+			しかしそれで中高度に上げられた彼女または主人の思惑が不思議と欲求不満にならない以上に実現されている事例を多く持つ。<br>
+			さらには一部の主人から固執・溺愛されるほどに大好評らしく…？
 			<template #callingme>ヨツグ(名前呼び)</template>
+			<template #callingyou>あるちゃん</template>
+			<template #gender>女性</template>
+			<template #height>157cm</template>
+			<template #conseptage>17</template>
+			<template #numberoftales>4(4+2)</template>
+			<template #belongingclass>デュアルシックスズ</template>
 			<template #potential>弱気を振り払う</template>
+			<template #characteristic>恐れや心配事が無い自信家、理想が高く我儘(わがまま)</template>
+			<template #hobby>グッズ収集</template>
+			<template #skill>面倒な男を振り払うこと</template>
+			<template #favors>フィギュア</template>
+			<template #unlikes>失敗、宗教勧誘</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img42.png"
 					class="character-img"></template>
 		</character-page-comp>

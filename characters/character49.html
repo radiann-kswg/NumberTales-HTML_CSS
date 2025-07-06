@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「49(ヨチカ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,9 +20,26 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=49>
+		<character-page-comp>
+			<template #title>49(ヨチカ)</template>
+			滞っているプロジェクトの火消案件を数多くこなすナンバーテールズ。<br>
+			期日が極めて迫っているときのマネジメント力は極めて秀でているが、せっかちで進捗を出せない状況が何より嫌い。<br>
+			そんな本性を隠すためその時は笑顔を繕っているらしいが、もはやバレバレの様だ。<br>
+			気質が似ているように思われる<a class="a-p" href="character14.html">「14(トヨ)」</a>とは大の犬猿の仲らしいが…
+			<template #callingme>ボク</template>
+			<template #callingyou>主人サマ</template>
+			<template #gender>中性</template>
+			<template #height>148cm</template>
+			<template #weight>39kg?</template>
+			<template #conseptage>16?</template>
+			<template #numberoftales>9(4+9)</template>
+			<template #belongingclass>デュアルフォーズ</template>
 			<template #potential>間に合わせる</template>
+			<template #characteristic>せっかちで、できることを増やしたい</template>
 			<template #hobby>ハッカソン(即興開発イベント)参加</template>
+			<template #skill>身体動作でデータ処理を迅速にできる</template>
+			<template #favors>時短術</template>
+			<template #unlikes>進捗がダメな状況</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img49.png"
 					class="character-img"></template>
 		</character-page-comp>

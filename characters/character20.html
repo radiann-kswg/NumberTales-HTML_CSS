@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「20(ハツカ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,28 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=20>
+		<character-page-comp>
+			<template #title>20(ハツカ)</template>
+			<a class="a-p" href="character2.html">「2(ツグ)」</a>の従妹に相当する個体で、
+			本来2番機となる予定だった退任個体<a class="a-p" href="character2-alt.html">「バイナ」</a>の妹こと改良機である。<br>
+			主人の心の声を聴き主人を信じるという"加護"を持ち、主人との信頼関係が強ければ強いほど高い恩恵を発揮している。<br>
+			極めて優しく純粋な性格で、多くの人から好印象を持たれている。<br>
+			<a class="a-p" href="character24.html">「24(フトシ)」</a><a class="a-p"
+				href="character42.html">「42(ヨツグ)」</a>姉妹と仲が良く、3人でガールズトークしている一面も。
+			<template #callingme>わたし</template>
+			<template #callingyou>～兄さま/姉さま</template>
+			<template #gender>女性</template>
+			<template #height>152cm</template>
+			<template #weight>41kg</template>
+			<template #conseptage>17</template>
+			<template #numberoftales>2</template>
+			<template #belongingclass>十倍番(テンズデジッツ)</template>
 			<template #potential>主人の心の声を聴く</template>
+			<template #characteristic>純粋無垢で献身的、怒ることがない</template>
+			<template #hobby>誰かといること</template>
+			<template #skill>手料理</template>
+			<template #favors>大切な人の幸せ</template>
+			<template #unlikes>大切な人の不幸</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img20.png"
 					class="character-img"></template>
 		</character-page-comp>

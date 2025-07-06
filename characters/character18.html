@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「18(トウヤ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,27 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=18>
+		<character-page-comp>
+			<template #title>18(トウヤ)</template>
+			責任感のあるリーダー気質なナンバーテールズで、行動を起こすべき主人の後押しも行っている。<br>
+			そのため、他のナンバーテールズから「エースポジション」と呼ばれている。<br>
+			<a class="a-p" href="character81.html">「81(ヤイチ)」</a>の姉に相当する個体だが、<a class="a-p"
+				href="character19.html">「19(トク)」</a>に従姉でもあることから「19(トク)」と行動をとることもしばしば。<br>
+			<a class="a-p" href="character9.html">「9(チカ)」</a>の暴走？に警戒している。
+			<template #callingme>あたい</template>
+			<template #callingyou>親分(おやびん)</template>
+			<template #gender>女性</template>
+			<template #height>153cm</template>
+			<template #weight>42kg</template>
+			<template #conseptage>20</template>
+			<template #numberoftales>8(1+8)</template>
+			<template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
 			<template #potential>リーダーシップを奮い立たせる</template>
+			<template #characteristic>責任感の強いエースポジションで信頼できる</template>
+			<template #hobby>偉人伝を読むこと</template>
+			<template #skill>喧嘩の仲裁</template>
+			<template #favors>平和</template>
+			<template #unlikes>混沌としたこと</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img18.png"
 					class="character-img"></template>
 		</character-page-comp>

@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「96(クルリ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,9 +20,24 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=96>
+		<character-page-comp>
+			<template #title>96(クルリ)</template>
+			好んで仮面を着用する”キャラブレの激しい”ナンバーテールズ。<br>
+			流行に敏感で、それに合わせて容姿や個性が移ろっている。<br>
+			そのため、この和服のような衣装も実は部屋着としてでしか着用していない。<br>
+			これには他のナンバーテールズからも「キャラクターが掴めない」と不思議がられている。<br>
+			そんな謎ばかり深くなる彼女の素は、ナンバーテールズの間でさえ兄の<a class="a-p" href="character69.html">「69(ロック)」</a>しか知らないとか。
 			<template #callingme>（その時々で変わる？）</template>
+			<template #callingyou>ご主人</template>
+			<template #gender>女性</template>
+			<template #height>153cm</template>
+			<template #numberoftales>9(9+6)</template>
+			<template #belongingclass>デュアルシックスズ</template>
 			<template #potential>過去の柵(しがらみ)から解放する</template>
+			<template #hobby>ファッション購入</template>
+			<template #skill>キャラを演じること</template>
+			<template #favors>トレンド物のアイテム</template>
+			<template #unlikes>水着</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img96.png"
 					class="character-img"></template>
 		</character-page-comp>

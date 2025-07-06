@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「76(シチロク)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,24 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=76>
+		<character-page-comp wide-style="true">
+			<template #title>76(シチロク)</template>
+			何かと理論的・知的に物事を考えがちで、読書を何よりも好む事から図書委員の様に周りから風刺されている。<br>
+			眼鏡付きのヘッドセットを外した時の容姿に反して本人は性格や内面に自信がないため、敢えてそのような風格を出しているという噂も。<br>
+			とはいえ知識を自分の美意識に適応する感性はとりわけ高いので、特定少数の主人層ではそこそこ高い好感度を安定して得ているらしい。
+			<template #callingme>わたし</template>
+			<template #callingyou>主人先生</template>
+			<template #gender>女性</template>
+			<template #height>144cm</template>
+			<template #conseptage>14?</template>
+			<template #numberoftales>7(7+6)</template>
+			<template #belongingclass>デュアルフォーズ</template>
 			<template #potential>知識や教養から自らに磨きを掛ける</template>
+			<template #characteristic>知識欲旺盛、自分に自信がなく不要に理知的</template>
+			<template #hobby>読書</template>
+			<template #skill>複数文献の斜め読み</template>
+			<template #favors>専門書、同人誌</template>
+			<template #unlikes>非合理的・非常識なこと</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img76.png"
 					class="character-img"></template>
 		</character-page-comp>

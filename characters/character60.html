@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「60(ムソウ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,26 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=60>
+		<character-page-comp>
+			<template #title>60(ムソウ)</template>
+			優雅な立ち振る舞い、美麗な容姿、素敵な素性を持つ、ナンバーテールズの中で最高クラスの美女ポジション。<br>
+			母なる輝きを持ち合わせているあまり、彼女に女優やアイドルとしてのオファーが殺到するほど。<br>
+			ただこう見えて重度のムッツリヲタクであるため、お忍びのナードな趣味がバレてしまってからは<a class="a-p"
+				href="character61.html">「61(ロクイチ/ロイ)」</a>を筆頭に弄られている。<br>
+			そんな中、彼女は「可愛くふるまうよりも 可愛い少女を見守る存在でありたい」と頑なに主張しているのだが……
+			<template #callingme>私(わたし)</template>
+			<template #callingyou>ミスター/ミセス</template>
+			<template #gender>女性</template>
+			<template #height>152cm</template>
+			<template #conseptage>16?</template>
+			<template #numberoftales>6</template>
+			<template #belongingclass>十倍番(テンズデジッツ)</template>
 			<template #potential>心に光を灯す</template>
+			<template #characteristic>おしとやかで優美。稀にナードさが出る</template>
+			<template #hobby>推し事(ファン活動)</template>
+			<template #skill>歌唱力がある</template>
+			<template #favors>推し</template>
+			<template #unlikes>ナードな一面がバレること</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img60.png"
 					class="character-img"></template>
 		</character-page-comp>

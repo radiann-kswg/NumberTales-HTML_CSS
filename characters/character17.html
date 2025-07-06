@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「17(トナ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,27 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=17>
+		<character-page-comp>
+			<template #title>17(トナ)</template>
+			知識や実力がいつか自分への報酬として還ってくると信じているナンバーテールズ。<br>
+			その信条から、資格取得や勉強のお供として契約する主人も多い。<br>
+			ただ、周囲から「男性型や中性型ではないか」「女性らしくないのではないか」という感想が寄せられているが、彼女が言うには女性型らしい。<br>
+			あまり揶揄わないでいてあげよう。<br>
+			<a class="a-p" href="character89.html">「89(ヤスモ)」</a>と謎のシンパシーがあるようだ。
+			<template #callingme>アタシ</template>
+			<template #callingyou>センセ</template>
+			<template #gender>女性?</template>
+			<template #height>151cm</template>
+			<template #weight>40kg?</template>
+			<template #conseptage>22</template>
+			<template #numberoftales>7(1+7)</template>
+			<template #belongingclass>デュアルエイツ</template>
 			<template #potential>能力に応じて結果を出させる</template>
+			<template #characteristic>知識欲旺盛だが少し現金</template>
+			<template #hobby>資格取得</template>
+			<template #skill>カジノ</template>
+			<template #favors>知識</template>
+			<template #unlikes>貧困、女性っぽくないと言われること</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img17.png"
 					class="character-img"></template>
 		</character-page-comp>

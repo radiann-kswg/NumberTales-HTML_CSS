@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「97(ココナ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,25 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=97>
+		<character-page-comp>
+			<template #title>97(ココナ)</template>
+			良かれと思う心を報わせると定評な個体で、日頃から人徳と善行を積んでいる主人ほどその恩恵を最大限に受けている。<br>
+			一方で、彼女自身は少し内向的で陰気ではあるものの良かれと思う積極性は高めではある。<br>
+			しかし信仰に対し強い執着があり、礼拝を習慣としているなど特殊な生活をしている。<br>
+			<a class="a-p" href="character61.html">「61(ロクイチ)」</a>および<a class="a-p"
+				href="character72.html">「72(ナフタ)」</a>とは、礼拝を強く勧めるのを受け流されつつも悪くない適切な関係にある。
+			<template #callingme>わたくしめ</template>
+			<template #callingyou>神官さま</template>
+			<template #gender>女性</template>
+			<template #height>141cm</template>
+			<template #numberoftales>9(9+7)</template>
+			<template #belongingclass>デュアルセブンズ</template>
 			<template #potential>善意や善行を報わせて魂を雪(そそ)ぐ</template>
+			<template #characteristic>自発的だが少し内向的で陰気、杓子定規</template>
+			<template #hobby>祈願・礼拝</template>
+			<template #skill>読み聞かせ</template>
+			<template #favors>信仰</template>
+			<template #unlikes>叱責や怒号</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img97.png"
 					class="character-img"></template>
 		</character-page-comp>

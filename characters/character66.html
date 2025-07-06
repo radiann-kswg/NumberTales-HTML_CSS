@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「66(ムロク)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,25 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=66>
+		<character-page-comp>
+			<template #title>66(ムロク)</template>
+			「愛があることを信じていれば、何もなくとも輝ける」、<br>
+			そう信じてやまない博愛主義な「マスターテールズ９」のうちの1人。<br>
+			自分には強いポテンシャルがあるとも信じているが、その恩恵を主人にも分けてくれると主人層からかなりの好評を得ている。<br>
+			ちなみに、<a class="a-p" href="character6.html">「6(ムイ)」</a>に対しては「姉様(あねさま)」と称するほど姉妹的な愛着があり、2人で過ごす時間も短くないという。
+			<template #callingme>私(わたくし)</template>
+			<template #callingyou>迷い子さん,神父様/聖母様</template>
+			<template #gender>女性</template>
+			<template #height>154cm</template>
+			<template #conseptage>16</template>
+			<template #numberoftales>6(6+6)</template>
+			<template #belongingclass>マスターテールズ９</template>
 			<template #potential>祈ることで恵みを与える</template>
+			<template #characteristic>博愛でロマンチスト</template>
+			<template #hobby>輝きがあらんことを祈る</template>
+			<template #skill>ダーツ</template>
+			<template #favors>照明器具</template>
+			<template #unlikes>悪天候</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img66.png"
 					class="character-img"></template>
 		</character-page-comp>

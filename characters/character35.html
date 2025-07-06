@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「35(サトコ/ミコ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,9 +20,26 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=35 wide-style="true">
+		<character-page-comp wide-style="true">
+			<template #title>35(サトコ/ミコ)</template>
+			感覚的な才能に恵まれており、主人たちの物事の進展に大きく貢献している。<br>
+			加えて整理整頓や清掃を得意とする几帳面さも相まって、個人だけでなく企業との主従契約でも今後実績が期待されている。<br>
+			ちなみに副業で巫女活動も展開しており、その清掃能力から庭園を保全したり、動作が繊細なお祓いの儀式にも定評がある。<br>
+			このことに対し本人は曰く、「番号の語呂で軽率に勧められただけで、本業にするつもりは全くない」とのことだが、本業と同程度に実績があるのは言うまでもない。
+			<template #callingme>私(わたし)</template>
+			<template #callingyou>兄者(あにしゃ)/姉者(あねしゃ)</template>
+			<template #gender>中性</template>
+			<template #height>139cm</template>
+			<template #weight>36kg</template>
+			<template #conseptage>14</template>
+			<template #numberoftales>5(3+5)</template>
+			<template #belongingclass>デュアルエイツ</template>
 			<template #potential>物事を発展させる</template>
+			<template #characteristic>感性が高い才能肌。几帳面な一面も</template>
+			<template #hobby>企画</template>
 			<template #skill>お祓(はら)い</template>
+			<template #favors>掃除・整理整頓</template>
+			<template #unlikes>危険予知を疎かにしている環境</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img35.png"
 					class="character-img"></template>
 		</character-page-comp>

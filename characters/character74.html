@@ -7,8 +7,7 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「74(ナナヨ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -21,8 +20,25 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp char-num=74>
+		<character-page-comp>
+			<template #title>74(ナナヨ)</template>
+			ナンバーテールズの中では他に類を見ない、"天のお告げ"を受け取ることができるという極めて高く冴えわたった感性を持ち、預言者のような風格を見せている。<br>
+			なおその様子からにより他の98人からは変わり者に思われている様子。<br>
+			しかしながら“天のお告げ”による預言は外れることがあまりないので、神頼み要因として彼女を信頼する？ナンバーテールズも居るようだ。
+			<template #callingme>私(わたし)</template>
+			<template #callingyou>マスター君</template>
+			<template #gender>女性</template>
+			<template #height>148cm</template>
+			<template #weight>39kg(マント1kgを除く)</template>
+			<template #conseptage>17</template>
+			<template #numberoftales>7(7+4)</template>
+			<template #belongingclass>デュアルイレブンズ</template>
 			<template #potential>「天のお告げ」を聴くことができる</template>
+			<template #characteristic>神秘的な変わり者</template>
+			<template #hobby>神社参拝</template>
+			<template #skill>おみくじで誰が大吉を引くか当てる</template>
+			<template #favors>シルク</template>
+			<template #unlikes>雷</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img74.png"
 					class="character-img"></template>
 		</character-page-comp>
