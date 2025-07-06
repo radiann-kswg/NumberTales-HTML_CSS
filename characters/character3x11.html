@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」- 3x11番機「トレッド」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,26 +21,12 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
+		<character-page-comp char-num="3x11" is-sp=true>
 			<template #title>トレッド</template>
-			3桁の番号を有する量産型販売型に向けた「3倍型」設計を確立するため、<a class="a-p" href="character11.html">「11(トウイチ)」</a><a class="a-p"
-				href="character22.html">「22(フジ)」</a>をベースに“もう一人の33番機”として試作された個体。<br>
+			3桁の番号を有する量産型販売型に向けた「3倍型」設計を確立するため、「11(トウイチ)」「22(フジ)」をベースに“もう一人の33番機”として試作された個体。<br>
 			個性や趣味に寛容なギャル属性を持ち、研究室内のムードメーカとしても一役を買って出ている。<br>
-			同番の<a class="a-p"
-				href="character33.html">「33(ミサ)」</a>や姉個体はもちろん、自分の設計が活かされた「マスタートリプル」の９人とも友好的な態度を示す様子が窺われているが、それにより距離感バグを引き起こした個体に四苦八苦している様子が微笑ましいとも噂されている。
-			<template #callingme>あーし</template>
-			<template #callingyou>ヲタク君</template>
-			<template #gender>女性</template>
-			<template #height>152cm</template>
-			<template #conseptage>18</template>
-			<template #numberoftales>3(11x3)</template>
-			<template #belongingclass>仮設型ハイナンバーズ</template>
+			同番の「33(ミサ)」や姉個体はもちろん、自分の設計が活かされた「マスタートリプル」の９人とも友好的な態度を示す様子が窺われているが、それにより距離感バグを引き起こした個体に四苦八苦している様子が微笑ましいとも噂されている。
 			<template #potential>ありのままを表現させる</template>
-			<template #characteristic>ヲタクに優しいギャル</template>
-			<template #hobby>学生と談笑すること</template>
-			<template #skill>アスキーアート</template>
-			<template #favors>ゲーセンの景品</template>
-			<template #unlikes>普通を問われるもの、恋愛話</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img3x11.png"
 					class="character-img"></template>
 		</character-page-comp>

@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「40(ヨソ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>40(ヨソ)</template>
-			「願いや望みを４つだけ叶えてくれる」という謎の風の噂が後を絶たず、一部界隈から“魔人”や“仙人”などと言われている。<br>
-			当の本人もその評判に恥じない達観した風格をしている……が、それはあくまでも演出にすぎず、珍妙な実績が吹聴されて引くに引けなくなっただけ。<br>
-			実際はドが付くほど苦労人であることを、お得意の建前で包み隠しているらしい。
-			<template #callingme>ヨ(余)、ぼく</template>
-			<template #callingyou>主君、主人さん</template>
-			<template #gender>中性</template>
-			<template #height>140cm</template>
-			<template #weight>30kg</template>
-			<template #conseptage>16</template>
-			<template #numberoftales>4</template>
-			<template #belongingclass>十倍番(テンズデジッツ)</template>
+		<character-page-comp char-num=40>
 			<template #potential>実現化する</template>
-			<template #characteristic>普段は大袋を拡げながら魔人ぶっているが本当はかなりの苦労人、陰の努力家</template>
-			<template #hobby>砂金集め</template>
-			<template #skill>食器の修繕、建前</template>
-			<template #favors>紅茶(の香り)、感謝されること</template>
-			<template #unlikes>本音や感情ばかりの気難しい話</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img40.png"
 					class="character-img"></template>
 		</character-page-comp>

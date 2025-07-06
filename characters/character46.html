@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「46(シロー)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>46(シロー)</template>
-			ナンバーテールズの中では珍しく、「感情的な衝動」を癒し以上にもたらす「4+6型」個体の一つ。<br>
-			やや気性の荒く落ち着きがない様子は他の個体を見比べても浮いて見えてしまう程だが、その様子に感化され「楽しむこと」を思い出させてくれたという感想を極めて限られた層から賜っている。<br>
-			しかし実績と人気度に長らく恵まれず、実況の副業をして赤字を埋めている。
-			<template #callingme>オイラ</template>
-			<template #callingyou>（～）先輩</template>
-			<template #gender>中性</template>
-			<template #height>147cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>15</template>
-			<template #numberoftales>6(4+6)</template>
-			<template #belongingclass>デュアルキャリーズ</template>
+		<character-page-comp char-num=46>
 			<template #potential>楽しませる</template>
-			<template #characteristic>少し気性の荒く落ち着きがない，万事エンジョイ勢</template>
-			<template #hobby>懇親会への参加</template>
-			<template #skill>会話の話題作り</template>
-			<template #favors>楽しいこと全般</template>
-			<template #unlikes>楽しめないこと全般，大人しくすること</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img46.png"
 					class="character-img"></template>
 		</character-page-comp>

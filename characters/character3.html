@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「3(ナオ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>3(ナオ)</template>
-			基本を守り、普遍を破り、固定概念から離れるという、物事への「守破離」を極めたナンバーテールズで上位を誇る優等生。<br>
-			その秀才さは1桁番(ユニデジッツ)の中でも、99人を支える最大要因となっている。<br>
-			しかし かといって厳格な性格でなく、冒険心や遊び心の高い青年のような気質で、対戦ゲームや交換日記の相手をするなど自然と溶け込みやすい一面も。
-			<template #callingme>僕(ぼく)</template>
-			<template #callingyou>相棒</template>
-			<template #gender>中性</template>
-			<template #height>160cm</template>
-			<template #weight>43kg</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>3</template>
-			<template #belongingclass>1桁番(ユニデジッツ)</template>
+		<character-page-comp char-num=3>
 			<template #potential>基本から応用を築き上げて成功につなげる</template>
-			<template #characteristic>真面目な優等生、遊び心の高い青春気質</template>
-			<template #hobby>デジタルゲーム</template>
-			<template #skill>ビギナーズラックで勝ち進む</template>
-			<template #favors>ロマンあるもの</template>
-			<template #unlikes>性格の悪い大人</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img3.png"
 					class="character-img"></template>
 		</character-page-comp>

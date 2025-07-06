@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「23(ツグミ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,27 +21,9 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>23(ツグミ)</template>
-			積極的で直感が鋭く発想力が旺盛なナンバーテールズ。<br>
-			放浪癖があり、その場であった様々な経験からインスピレーションを得ているが、その分ふといなくなっては余計なことを連れて帰ってくることがある。<br>
-			おまけに、<a class="a-p" href="character2.html">「2(ツグ)」</a>と<a class="a-p"
-				href="character3.html">「3(ナオ)」</a>へそこで起きたトラブルの後始末を任せている傾向にあるので、一部ナンバーテールズからは迷惑に思われている。<br>
-			ただ、それは<a class="a-p" href="character55.html">「55(イソゴ)」</a>の影響とも？
+		<character-page-comp char-num=23>
 			<template #callingme>ツグミ(名前呼び)</template>
-			<template #callingyou>リーダー</template>
-			<template #gender>女性</template>
-			<template #height>149cm</template>
-			<template #weight>40kg</template>
-			<template #conseptage>16?</template>
-			<template #numberoftales>3(2+3)</template>
-			<template #belongingclass>デュアルファイブズ</template>
 			<template #potential>発想力を引き立てる</template>
-			<template #characteristic>積極的で発想力が高く直感が鋭い</template>
-			<template #hobby>旅行、放浪すること</template>
-			<template #skill>サーフィン</template>
-			<template #favors>スリル、面白い話</template>
-			<template #unlikes>堅苦しい仕事</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img23.png"
 					class="character-img"></template>
 		</character-page-comp>

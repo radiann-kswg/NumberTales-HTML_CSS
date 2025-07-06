@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「47(シナ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,26 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>47(シナ)</template>
-			ナンバーテールズの中では他に類を見ない個体で、自らが持っている"加護"を体感できる。<br>
-			極めて高い感受性を持っており、決断にブレが全くなく自信家である。<br>
-			なおその加護は他の98人にも気づくことができるはずとも思っているが、他の98人の大半は無自覚なので信じられずにいる。<br>
-			ただ、応援してくれる存在としても彼女に好感を持つナンバーテールズも居るようだ。
-			<template #callingme>私(わたし)</template>
-			<template #callingyou>マスターさん,兄さん/姉さん</template>
-			<template #gender>女性</template>
-			<template #height>148cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>7(4+7)</template>
-			<template #belongingclass>デュアルイレブンズ</template>
+		<character-page-comp char-num=47>
 			<template #potential>"加護"を認知できる</template>
-			<template #characteristic>迷いの無い自信家、少し熱血癖がある</template>
-			<template #hobby>才能のある人に会いに行く</template>
-			<template #skill>ババ抜き</template>
-			<template #favors>七夕</template>
-			<template #unlikes>雷</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img47.png"
 					class="character-img"></template>
 		</character-page-comp>

@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「55(イソゴ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>55(イソゴ)</template>
-			主人や自分の過去に囚われず、より良いものへ 変化すること/変化されること が醍醐味。<br>
-			適応力と自己実現力の相反する能力を併せ現状を打破することを得意としている。<br>
-			ただ、彼女の周りで誰も想像しないことが多発することより「台風の目」と呼ばれていることも。<br>
-			なお彼女自身はというと、感受性を通り越したのかどんなことが起こっても常に平然としている様で、あまり自覚していないらしい。<br>
-			鈍感なのだろうか…
-			<template #callingme>あたし</template>
-			<template #callingyou>君(きみ)</template>
-			<template #gender>女性</template>
-			<template #height>165cm</template>
-			<template #conseptage>21</template>
-			<template #numberoftales>5(5+5)</template>
-			<template #belongingclass>マスターテールズ９</template>
+		<character-page-comp char-num=55>
 			<template #potential>想像を超えた出来事を引きおこす</template>
-			<template #characteristic>適応力が高くかつ自分の軸がブレない、鈍感？</template>
-			<template #hobby>普通の生活？</template>
-			<template #skill>現状を打破すること</template>
-			<template #favors>神社のお守り</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img55.png"
 					class="character-img"></template>
 		</character-page-comp>

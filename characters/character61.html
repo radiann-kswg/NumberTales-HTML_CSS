@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「61(ロクイチ/ロイ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp wide-style="true">
-			<template #title>61(ロクイチ/ロイ)</template>
-			アイドル意識の強いナンバーテールズで、天真爛漫で可憐な性格をしている。<br>
-			加えて、相手を惚れさせる“加護”を持っているため、ファンとなる主人もかなり多い。<br>
-			しかしあまりにもメルヘンで不思議な世界観を持っているので、謎がられることもあったりするようだ。<br>
-			<a class="a-p" href="character60.html">「60(ムソウ)」</a>とアイドルユニットを結成しようと望んでやまない。<br>
-			<a class="a-p" href="character10.html">「10(ミツル)」</a>に興味があるようだが…
-			<template #callingme>ロイちゃん</template>
-			<template #callingyou>マネちゃん</template>
-			<template #gender>女性</template>
-			<template #height>143cm</template>
-			<template #numberoftales>6(6+1)</template>
-			<template #belongingclass>デュアルセブンズ</template>
+		<character-page-comp char-num=61 wide-style=true>
 			<template #potential>惚れさせる</template>
-			<template #characteristic>天真爛漫、メルヘンチックで独特な世界観を持つ</template>
-			<template #hobby>アイドル活動？</template>
-			<template #skill>メイド活動？</template>
-			<template #favors>ファンタジー漫画</template>
-			<template #unlikes>Ｇ(害虫)</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img61.png"
 					class="character-img"></template>
 		</character-page-comp>

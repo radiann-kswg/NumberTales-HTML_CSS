@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「8(ワカツ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>8(ワカツ)</template>
-			お金や技術、さらには人の活力さえ主人のために投資…ではなく、主人へファンディング応援のために活躍する、99人のエンジニアポジション。<br>
-			ガジェットに対し強い熱意を持ち格好いいもの好き。<br>
-			しかし一方で限りあるお金と物から高い価値のものを生み出す能力を有しており、「値段の錬金術師」とも称されているんだとか。
-			<template #callingme>あて</template>
-			<template #callingyou>兄貴/姉貴</template>
-			<template #gender>女性</template>
-			<template #height>158cm</template>
-			<template #weight>43kg?</template>
-			<template #conseptage>19</template>
-			<template #numberoftales>8</template>
-			<template #belongingclass>1桁番(ユニデジッツ)</template>
+		<character-page-comp char-num=8>
 			<template #potential>物の価値を見極め主人に魅せることができる</template>
-			<template #characteristic>創作意欲に貪欲なエンジニア系</template>
-			<template #hobby>機械いじり</template>
-			<template #skill>より良いものへグレードアップすること</template>
-			<template #favors>ガジェットなどかっこいいもの</template>
-			<template #unlikes>嫌なことを強要されること</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img8.png"
 					class="character-img"></template>
 		</character-page-comp>

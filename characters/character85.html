@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「85(ハッコ/パコ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,24 +21,9 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp wide-style="true">
-			<template #title>85(ハッコ/パコ)</template>
-			このナンバーテールズと契約した主人はだいたい最悪の事態にならないとどこかで評判。<br>
-			ただ少し誰かに甘やかされて育ったかのような気質をしており、金銭感覚やコミュ力に疎いなどの一面が拭えない（しかしそれも愛嬌だと一定層の主人は言っている）。<br>
-			趣味として、ナンバーテールズを開発した1人である百(ハゲム)とジャンク漁りに行くことも。
-			<template #callingme>うち</template>
-			<template #callingyou>主人くん</template>
-			<template #gender>女性</template>
-			<template #height>147cm</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>8(8+5)</template>
-			<template #belongingclass>デュアルフォーズ</template>
+		<character-page-comp char-num=85 wide-style="true">
+			<template #callingyou>~くん、主人くん</template>
 			<template #potential>必要なものを引き寄せる</template>
-			<template #characteristic>少し甘やかされ気質</template>
-			<template #hobby>ジャンクを漁る</template>
-			<template #skill>勘定</template>
-			<template #favors>宝石</template>
-			<template #unlikes>賭け事</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img85.png"
 					class="character-img"></template>
 		</character-page-comp>

@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「56(イソロク)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,27 +21,9 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>56(イソロク)</template>
-			小学生程度の外見を想定した「5+6型」の姉個体で、見た目や形振りは至って普通のお子様。<br>
-			飽き症で時々サボり癖や放浪癖が見受けられることがあるが、他個体からは新しい出会いに恵まれるよう温かく見守られている。<br>
-			勉強が苦手で、少しでも頭を使う訓話や座学ではすぐに気が散ってしまう体質だが、<a class="a-p" href="character27.html">「27(ツギナ)」</a>や<a class="a-p"
-				href="character29.html">「29(ニトク)」</a>に教わっている時は…？
-
-			<template #callingme>あたし</template>
-			<template #callingyou>～兄さん/姉さん</template>
-			<template #gender>女性</template>
-			<template #height>142cm</template>
-			<template #weight>39kg?</template>
-			<template #conseptage>12</template>
-			<template #numberoftales>6(5+6)</template>
-			<template #belongingclass>デュアルイレブンズ</template>
+		<character-page-comp char-num=56>
+			<template #callingme>あたし、イソロク(名前呼び)</template>
 			<template #potential>新しい出会いを恵む</template>
-			<template #characteristic>普通のお子様で飽き症</template>
-			<template #hobby>子供と遊ぶこと</template>
-			<template #skill>迷路・迷子にならない</template>
-			<template #favors>知育玩具</template>
-			<template #unlikes>爬虫類・勉強</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img56.png"
 					class="character-img"></template>
 		</character-page-comp>

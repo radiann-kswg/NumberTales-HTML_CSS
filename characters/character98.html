@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「98(キュウヤ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>98(キュウヤ)</template>
-			何事にも投げ遣り気味ですぐに物事を切り上げようとするため、少し大雑把に思われているナンバーテールズ。<br>
-			しかしながら「諦め時を見極める」ことに優れた従事活動を展開しており、結果が即座に出て助かると一部の主人から定評を集めている。<br>
-			姉の<a class="a-p" href="character89.html">「89(ヤスモ)」</a>とは少し距離を置かれがちだが、同様の気質を有する<a class="a-p"
-				href="character68.html">「68(ロクヤ)」</a>と時折行動を共にしている。
-			<template #callingme>私(わたし)</template>
-			<template #callingyou>～先生</template>
-			<template #gender>女性</template>
-			<template #height>154cm</template>
-			<template #conseptage>20?</template>
-			<template #numberoftales>9(9+8)</template>
-			<template #belongingclass>デュアルエイツ</template>
+		<character-page-comp char-num=98>
 			<template #potential>諦め時を見極めさせる</template>
-			<template #characteristic>飽き症で何事にも投げ遣り気味、ほんの少しだけシスターコンプレックス</template>
-			<template #hobby>買い出し</template>
-			<template #skill>時間制限や手数制限のある作業</template>
-			<template #favors>キリ番から少し減らされ下2桁が「98」になった数字</template>
-			<template #unlikes>残業</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img98.png"
 					class="character-img"></template>
 		</character-page-comp>

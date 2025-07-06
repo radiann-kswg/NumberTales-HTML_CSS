@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「37(サナ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,26 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>37(サナ)</template>
-			努力家な主人を報わせると好評なナンバーテールズ。<br>
-			勤勉で知的向上心が旺盛な真面目ポジションで、主人層だけでなく他のナンバーテールズからも信頼されている。<br>
-			だが、褒められると99人の中で群を抜くレベルで甘えてしまう一面がある。<br>
-			従妹の<a class="a-p" href="character47.html">「47(シナ)」</a>に対して、他のナンバーテールズとは異なる感性や言動に興味があるようで…？
-			<template #callingme>あたし</template>
-			<template #callingyou>リーダー,お兄(にぃ)/お姉(ねぇ)</template>
-			<template #gender>女性</template>
-			<template #height>157cm</template>
-			<template #weight>42kg?</template>
-			<template #conseptage>19</template>
-			<template #numberoftales>7(3+7)</template>
-			<template #belongingclass>デュアルキャリーズ</template>
+		<character-page-comp char-num=37>
 			<template #potential>学びと努力を報わせる</template>
-			<template #characteristic>勤勉で知的向上心旺盛、ほめられると即座に甘えがち</template>
-			<template #hobby>書斎(本屋,図書館)に行く</template>
-			<template #skill>猫に懐かれる</template>
-			<template #favors>頭を撫でられること</template>
-			<template #unlikes>針</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img37.png"
 					class="character-img"></template>
 		</character-page-comp>

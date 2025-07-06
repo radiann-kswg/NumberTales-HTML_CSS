@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「13(トミ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,27 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>13(トミ)</template>
-			これまでの知識と経験・能力からできることに妥協はせず、物事を始めることに躊躇わない。<br>
-			そういうスタンスを大切に主人を応援するナンバーテールズの体育会マネージャー系。<br>
-			ただ稀に地雷要因になるため、不発してお叱りを受けていることもある。<br>
-			駆け引きが極めて苦手で、カードゲームでいつも最下位になっている。<br>
-			なお<a class="a-p" href="character14.html">「14(トヨ)」</a>と従妹関係にあり、性格がよく似ているとか。
-			<template #callingme>私(わたし)</template>
-			<template #callingyou>ご主人</template>
-			<template #gender>女性</template>
-			<template #conseptage>16</template>
-			<template #height>148cm</template>
-			<template #weight>40kg</template>
-			<template #numberoftales>3(1+3)</template>
-			<template #belongingclass>デュアルフォーズ</template>
+		<character-page-comp char-num=13>
 			<template #potential>何事にも妥協せず躊躇わないよう促す</template>
-			<template #characteristic>チャレンジ精神旺盛だが、駆け引きに弱い</template>
-			<template #hobby>スポーツセンター巡り</template>
-			<template #skill>球を投げる球技</template>
-			<template #favors>大会への参加</template>
-			<template #unlikes>心理戦</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img13.png"
 					class="character-img"></template>
 		</character-page-comp>

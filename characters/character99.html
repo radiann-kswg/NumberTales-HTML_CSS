@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「99(ツクモ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,26 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>99(ツクモ)</template>
-			――余は誰だ？ここは何処だ？<br>
-			世界が終わったのか？望みは無いのか？<br>
-			……いや、確かに”あの時”すべてが終わった。<br>
-			しかし、終わりをまた迎えるであろう”此処”にまだ、救いが或るのなら、望みがあるのなら――<br>
-			「マスターテールズ9」所属、ナンバーテールズ最大の異能。<br>
-			彼(女)が観たもの、そして 彼(女)が憶えているものとは……
-			<template #callingme>余</template>
-			<template #callingyou>主君</template>
-			<template #gender>中性</template>
-			<template #height>159cm</template>
-			<template #numberoftales>9(9+9)</template>
-			<template #belongingclass>マスターテールズ９</template>
+		<character-page-comp char-num=99>
 			<template #potential>？？？の記憶をもつ</template>
-			<template #characteristic>どこか異世界の王族だったような雰囲気をもつ</template>
-			<template #hobby>記憶を探ること</template>
-			<template #skill>運試し</template>
-			<template #favors>SF(サイエンスファンタジー)</template>
-			<template #unlikes>悲劇</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img99.png"
 					class="character-img"></template>
 		</character-page-comp>

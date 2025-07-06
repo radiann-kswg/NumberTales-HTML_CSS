@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「93(クミ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,28 +21,9 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>93(クミ)</template>
-			<a class="a-p" href="character39.html">「39(サク)」</a>の妹に相当する個体。<br>
-			成し遂げたことは一つの「過程」としてとらえ、より高度な成果を期待してやまない。<br>
-			そのため、主人よりも向上意欲が強くなってすれ違ってしまうというミスマッチが発生している傾向にある。<br>
-			しかし一方で、信頼関係が築かれた主人とは互いに大きな目標に向けて精進しているという話も。<br>
-			夢は、<a class="a-p" href="character3.html">「3(ナオ)」</a>と<a class="a-p"
-				href="character9.html">「9(チカ)」</a>よりも強大な実績を手にすること。
-			<template #callingme>あたし</template>
-			<template #callingyou>君, 相棒</template>
-			<template #gender>女性</template>
-			<template #height>144cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>15</template>
-			<template #numberoftales>9(9+3)</template>
-			<template #belongingclass>デュアルスリーズ</template>
+		<character-page-comp char-num=93>
+			<template #callingyou>君、相棒</template>
 			<template #potential>野望を叶える</template>
-			<template #characteristic>夢ある少女で理想が高い</template>
-			<template #hobby>偉人記念館巡り</template>
-			<template #skill>応援(実はヲタ芸もできる)</template>
-			<template #favors>鉢巻、表彰状</template>
-			<template #unlikes>挫折、遊園地のアトラクション</template>
 			<template #additions><a class="a-link"
 					href="/character-stories/character93-story.html">キャラストーリー</a></template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img93.png"

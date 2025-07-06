@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「666(リリス)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,12 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>666(リリス)</template>
-			量産販売型ではあるが、3桁ゾロ目の数字を持つ「マスタートリプル」という特殊クラスの個体で、2桁以内の通常個体と引け目を取らない性能をもつ。<br>
-			とりわけその開発専用機ことオリジナル版である彼女は、<a class="a-p" href="character6.html">「6(ムイ)」</a>や<a class="a-p"
-				href="character66.html">「66(ムロク)」</a>とも引け目を取らない感性や優美さの持ち主で、自身の才能に対し自信にあふれている。<br>ただ、その妖艶としたポテンシャルから時々
+		<character-page-comp char-num=666 is-sp=true>
+			量産販売型ではあるが、3桁ゾロ目の数字を持つ「マスタートリプル」という特殊クラスの個体で、2桁以内の通常個体と引け目を取らない性能をもつ。
+			とりわけその開発専用機ことオリジナル版である彼女は、「6(ムイ)」や「66(ムロク)」とも引け目を取らない感性や優美さの持ち主で、自身の才能に対し自信にあふれている。ただ、その妖艶としたポテンシャルから時々
 			“悪魔”の如く大罪的な衝動に駆られてしまうことがあり……
-			<template #callingme>我，私(わたくし)</template>
-			<template #callingyou>契約者様</template>
-			<template #gender>女性</template>
-			<template #height>150cm</template>
-			<template #conseptage>16</template>
-			<template #numberoftales>6x3</template>
-			<template #belongingclass>マスタートリプル</template>
+			<template #callingyou>汝(なんじ)、契約者様</template>
 			<template #potential>自分の本能を認知し開花させる</template>
-			<template #characteristic>妖艶としていて自信過剰</template>
-			<template #hobby>ワインを嗜む</template>
-			<template #skill>悪夢を祓う</template>
-			<template #favors>アイスクリーム</template>
-			<template #unlikes>十字架の有る教会</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img666-orig.png"
 					class="character-img"></template>
 		</character-page-comp>

@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「21(ハツヒ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,25 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>21(ハツヒ)</template>
-			2種類の数字を持つ複合型で最初の個体である<a class="a-p" href="character12.html">「12(トウジ)」</a>の設計が調整された個体。<br>
-			無邪気さとポテンシャルの高さが好評のナンバーテールズで、特に人助けに積極的なこともあり周囲から信頼されている。<br>
-			ただその一方で 他人への粘着など邪な思考に対し強い抵抗があったり、純粋さに反応する「28(ニハチ)」の“加護”を暴走させたりと自身の気質が裏目に出てしまうことも。<br>
-			<template #callingme>僕</template>
-			<template #callingyou>お兄(にぃ)/お姉(ねぇ)</template>
-			<template #gender>中性</template>
-			<template #height>148cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>14</template>
-			<template #numberoftales>2(2+1)</template>
-			<template #belongingclass>デュアルスリーズ</template>
+		<character-page-comp char-num=21>
 			<template #potential>心を清らかにする</template>
-			<template #characteristic>無邪気で童心をくすぐる気質。どこか強いポテンシャルを持つ</template>
-			<template #hobby>人助け</template>
-			<template #skill>初見でRPG1作を21時間以内にクリアできる</template>
-			<template #favors>感謝されること</template>
-			<template #unlikes>邪な思考</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img21.png"
 					class="character-img"></template>
 		</character-page-comp>

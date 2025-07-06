@@ -7,7 +7,8 @@
 	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script><script src="https://unpkg.com/axios/dist/axios.min.js"><\/script>');</script>
 	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「64(ムトシ)」</title>
 	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
 </head>
@@ -20,21 +21,8 @@
 		<script src="/src/hamberger-menu.js"></script>
 	</header>
 	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>64(ムトシ)</template>
-			ナンバーテールズの中では珍しく、「感情的な衝動」を過剰にもたらしている問題児な個体。<br>
-			ドＭで落ち着きが滅多に見られない様子は他個体と比べる前から突出しているが、その様子に感化され「快感」を思い出させてくれたという異質で異彩なレヴューをなんとか賜って活動を継続している。<br>
-			ただ実績が赤字であるだけでなく、見過ごせない課題も山積みのため開発者「零(レイ)」の仏の顔を剥いでいる。
-			<template #callingme>あたち</template>
-			<template #callingyou>（～）教官</template>
-			<template #gender>女性</template>
-			<template #height>146cm</template>
-			<template #numberoftales>6(6+4)</template>
-			<template #belongingclass>デュアルキャリーズ</template>
+		<character-page-comp char-num=64>
 			<template #potential>快感を憶えさせる</template>
-			<template #characteristic>常に何かへ発情している，ドＭ</template>
-			<template #skill>リアクション芸</template>
-			<template #favors>強気でＳっ気のある大人</template>
 			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img64.png"
 					class="character-img"></template>
 		</character-page-comp>
