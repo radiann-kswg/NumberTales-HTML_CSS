@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「63(ムツミ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「63(ムツミ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>63(ムツミ)</template>
-			面倒見の良い気質で、何事にも愛情を重んじている。<br>
-			保護者のような天性の風格の持ち主でもあるため彼女に甘える人も
-			数知れず、姉の<a class="a-p" href="character36.html">「36(ミトム)」</a>に至っては相手が自分の妹であるのもお構いなくとことん甘やかされている。<br>
-			また、日常生活に幸福感をもたらすという「加護」を持つ個体で、家庭安泰の御守り役としても主人から好評を得ている。
-			<template #callingme>僕</template>
-			<template #callingyou>主さん</template>
-			<template #gender>女性</template>
-			<template #height>142cm</template>
-			<template #conseptage>15</template>
-			<template #numberoftales>6(6+3)</template>
-			<template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
-			<template #potential>幸福感を与える</template>
-			<template #characteristic>世話焼きで面倒見が良い</template>
-			<template #hobby>日記を書くこと</template>
-			<template #skill>子供をあやす</template>
-			<template #favors><a class="a-p" href="character36.html">姉</a></template>
-			<template #unlikes>グロテスク注意コンテンツ</template>
-			<template #additions><a class="a-link-commingsoon">紹介ノート準備中</a></template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img63.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>63(ムツミ)</template>
+        面倒見の良い気質で、何事にも愛情を重んじている。<br />
+        保護者のような天性の風格の持ち主でもあるため彼女に甘える人も
+        数知れず、姉の<a class="a-p" href="character36.html">「36(ミトム)」</a
+        >に至っては相手が自分の妹であるのもお構いなくとことん甘やかされている。<br />
+        また、日常生活に幸福感をもたらすという「加護」を持つ個体で、家庭安泰の御守り役としても主人から好評を得ている。
+        <template #callingme>僕</template>
+        <template #callingyou>主さん</template>
+        <template #gender>女性</template>
+        <template #height>142cm</template>
+        <template #conceptage>15</template>
+        <template #numberoftails>6(6+3)</template>
+        <template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
+        <template #potential>幸福感を与える</template>
+        <template #characteristic>世話焼きで面倒見が良い</template>
+        <template #hobby>日記を書くこと</template>
+        <template #skill>子供をあやす</template>
+        <template #favors
+          ><a class="a-p" href="character36.html">姉</a></template
+        >
+        <template #unlikes>グロテスク注意コンテンツ</template>
+        <template #additions
+          ><a class="a-link-commingsoon">紹介ノート準備中</a></template
+        >
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img63.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

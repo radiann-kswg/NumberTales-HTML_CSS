@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>
+      数字の癒し？キャラ化計画「ナンバーテールズ」-「バイナ/2(ツギ)」
+    </title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「バイナ/2(ツギ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp wide-style="true">
-			<template #title>バイナ/2(ツギ)</template>
-			本来2番機となる予定だった、<a class="a-p"
-				href="character1.html">「1(ハジメ)」</a>と”もう一人の”試作型だが、ハードウェアの設計が開発トラブルにより間に合わず、完成されなかった。<br>
-			<a class="a-p" href="character20.html">「20(ハツカ)」</a>の実の姉に相当する。<br>
-			控えめだけど可憐で仲間想い。<br>
-			現在はタブレット端末内で(R)OSのみの状態となっているが、「1(ハジメ)」と違う形で開発支援に徹している。<br>
-			最近だと量産販売型の開発で機会があり、コアフォルダ形態を手にした。
-			<template #callingme>わたし</template>
-			<template #callingyou>兄さま/姉さま</template>
-			<template #gender>女性</template>
-			<template #height>150cm(想定)</template>
-			<template #weight>40kg(想定)</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>2</template>
-			<template #belongingclass>未完成の個体</template>
-			<template #potential>他のナンバーテールズに託す</template>
-			<template #characteristic>控えめだが可憐で仲間想い、少し世間知らず</template>
-			<template #hobby>皆を思いやること</template>
-			<template #skill>体調不良を見抜く</template>
-			<template #favors>スキンシップ(コアフォルダ形態の時)</template>
-			<template #unlikes>妹より幼く見えること</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img2-alt.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp wide-style="true">
+        <template #title>バイナ/2(ツギ)</template>
+        本来2番機となる予定だった、<a class="a-p" href="character1.html"
+          >「1(ハジメ)」</a
+        >と”もう一人の”試作型だが、ハードウェアの設計が開発トラブルにより間に合わず、完成されなかった。<br />
+        <a class="a-p" href="character20.html">「20(ハツカ)」</a
+        >の実の姉に相当する。<br />
+        控えめだけど可憐で仲間想い。<br />
+        現在はタブレット端末内で(R)OSのみの状態となっているが、「1(ハジメ)」と違う形で開発支援に徹している。<br />
+        最近だと量産販売型の開発で機会があり、コアフォルダ形態を手にした。
+        <template #callingme>わたし</template>
+        <template #callingyou>兄さま/姉さま</template>
+        <template #gender>女性</template>
+        <template #height>150cm(想定)</template>
+        <template #weight>40kg(想定)</template>
+        <template #conceptage>17</template>
+        <template #numberoftails>2</template>
+        <template #belongingclass>未完成の個体</template>
+        <template #potential>他のナンバーテールズに託す</template>
+        <template #characteristic
+          >控えめだが可憐で仲間想い、少し世間知らず</template
+        >
+        <template #hobby>皆を思いやること</template>
+        <template #skill>体調不良を見抜く</template>
+        <template #favors>スキンシップ(コアフォルダ形態の時)</template>
+        <template #unlikes>妹より幼く見えること</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img2-alt.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

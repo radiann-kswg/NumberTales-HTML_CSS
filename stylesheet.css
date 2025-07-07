@@ -190,7 +190,7 @@ h1 {
 }
 @media screen and (max-width: 896px) {
   h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -212,7 +212,7 @@ h2 {
   color: darkcyan;
   margin-left: 30px;
   margin-bottom: 30px;
-  font-size: 25px;
+  font-size: 21px;
 }
 @media screen and (max-width: 896px) {
   h2 {
@@ -221,7 +221,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
   h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 h2.h2-small {
@@ -230,13 +230,21 @@ h2.h2-small {
 }
 @media screen and (max-width: 896px) {
   h2.h2-small {
-    font-size: 18px;
-    width: 250px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   h2.h2-small {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 896px) {
+  h2.h2-small {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2.h2-small {
     width: 50%;
   }
 }
@@ -268,13 +276,11 @@ h2.h2-a-link:hover, h2.h2-a-link-commingsoon:hover {
 @media screen and (max-width: 896px) {
   h2.h2-a-link, h2.h2-a-link-commingsoon {
     width: 75%;
-    font-size: 18px;
   }
 }
 @media screen and (max-width: 480px) {
   h2.h2-a-link, h2.h2-a-link-commingsoon {
     width: 85%;
-    font-size: 14px;
   }
 }
 h2.h2-a-link {
@@ -325,18 +331,26 @@ h2.h2-a-link-commingsoon:hover {
   opacity: 0.65;
 }
 h2.h2-wide {
-  font-size: 25px;
+  font-size: 21px;
   width: 320px;
 }
 @media screen and (max-width: 896px) {
   h2.h2-wide {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2.h2-wide {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 896px) {
+  h2.h2-wide {
     width: 270px;
   }
 }
 @media screen and (max-width: 480px) {
   h2.h2-wide {
-    font-size: 14px;
     width: 220px;
   }
 }
@@ -357,37 +371,34 @@ h3 {
 @media screen and (max-width: 896px) {
   h3 {
     font-size: 16px;
-    width: 160px;
   }
 }
 @media screen and (max-width: 480px) {
   h3 {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 896px) {
+  h3 {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3 {
     width: 140px;
   }
 }
 h3.h3-small {
   box-shadow: none;
 }
-@media screen and (max-width: 480px) {
-  h3.h3-small {
-    font-size: 14px;
-  }
-}
 h3.h3-a-link, h3.h3-a-link-commingsoon {
   width: 275px;
   margin: 15px auto 15px 15px;
   display: inline-block;
 }
-@media screen and (max-width: 896px) {
-  h3.h3-a-link, h3.h3-a-link-commingsoon {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 480px) {
   h3.h3-a-link, h3.h3-a-link-commingsoon {
     width: 85%;
-    font-size: 14px;
   }
 }
 h3.h3-a-link {
@@ -442,24 +453,27 @@ h3.h3-wide {
 }
 @media screen and (max-width: 896px) {
   h3.h3-wide {
-    font-size: 16px;
     width: 210px;
   }
 }
 @media screen and (max-width: 480px) {
   h3.h3-wide {
-    font-size: 14px;
     width: 185px;
   }
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   margin: 0 0 12px 0;
+}
+@media screen and (max-width: 896px) {
+  p {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -486,7 +500,7 @@ a:hover {
   opacity: 0.65;
 }
 a.a-link {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   font-style: bold;
   font-family: serif;
@@ -498,9 +512,14 @@ a.a-link {
   box-sizing: border-box;
   opacity: 1;
 }
+@media screen and (max-width: 896px) {
+  a.a-link {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 480px) {
   a.a-link {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 a.a-link:hover {
@@ -514,7 +533,7 @@ a.a-link:hover {
   }
 }
 a.a-link-commingsoon {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   font-style: bold;
   font-family: serif;
@@ -526,9 +545,14 @@ a.a-link-commingsoon {
   box-sizing: border-box;
   opacity: 0.65;
 }
+@media screen and (max-width: 896px) {
+  a.a-link-commingsoon {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 480px) {
   a.a-link-commingsoon {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 a.a-link-commingsoon:hover {
@@ -554,6 +578,57 @@ footer {
   padding: 18px 0;
   margin-top: 30px;
   width: 100%;
+  font-size: 18px;
+}
+@media screen and (max-width: 896px) {
+  footer {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    font-size: 14px;
+  }
+}
+footer a {
+  font-size: 18px;
+}
+@media screen and (max-width: 896px) {
+  footer a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer a {
+    font-size: 14px;
+  }
+}
+footer a.a-p {
+  font-size: 15px;
+}
+@media screen and (max-width: 896px) {
+  footer a.a-p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer a.a-p {
+    font-size: 11px;
+  }
+}
+footer a.a-link {
+  font-size: 21px;
+  width: 135px;
+}
+@media screen and (max-width: 896px) {
+  footer a.a-link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer a.a-link {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -561,11 +636,29 @@ footer {
   }
 }
 footer p {
-  font-size: 16px;
+  font-size: 15px;
+}
+@media screen and (max-width: 896px) {
+  footer p {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer p {
-    font-size: 12px;
+    font-size: 11px;
+  }
+}
+footer p a {
+  font-size: 15px;
+}
+@media screen and (max-width: 896px) {
+  footer p a {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer p a {
+    font-size: 11px;
   }
 }
 
@@ -660,6 +753,17 @@ footer p {
   list-style: none;
   line-height: 1;
   padding: 1em;
+  font-size: 15px;
+}
+@media screen and (max-width: 896px) {
+  .menu li {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu li {
+    font-size: 11px;
+  }
 }
 @media screen and (max-width: 480px) {
   .menu li {

@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「58(イソヤ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「58(イソヤ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp wide-style="true">
-			<template #title>58(イソヤ)</template>
-			臨時収入などの物質的な幸運をもたらすという“加護”を有しているが、多岐多様な効果が
-			確認されており詳細にどのような効果であるかは説明できない。<br>
-			他個体をからかったりおちょくったりするためＳっ気のあるように思われているが、オマセで甘えん坊な一面が拭えないところも含め、非常に可愛がられている。<br>
-			カードゲームが好きで<a class="a-p" href="character13.html">「13(トミ)」</a>たちとよく遊んでいるが、強運の持ち主で確立計算も巧みなためすぐ捻じ伏せて厭きられてしまう。
-			<template #callingme>こっち</template>
-			<template #callingyou>主人ちゃん</template>
-			<template #gender>女性</template>
-			<template #height>149cm</template>
-			<template #conseptage>17?</template>
-			<template #numberoftales>8(5+8)</template>
-			<template #belongingclass>デュアルフォーズ</template>
-			<template #potential>臨時的な幸福をもたらす</template>
-			<template #characteristic>Ｓっ気のあるからかい好き，オマセで甘えん坊</template>
-			<template #hobby>カードゲーム全般</template>
-			<template #skill>確率計算</template>
-			<template #favors>大吉の御御籤(おみくじ)</template>
-			<template #unlikes>クソゲー(理不尽なゲーム)</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img58.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp wide-style="true">
+        <template #title>58(イソヤ)</template>
+        臨時収入などの物質的な幸運をもたらすという“加護”を有しているが、多岐多様な効果が
+        確認されており詳細にどのような効果であるかは説明できない。<br />
+        他個体をからかったりおちょくったりするためＳっ気のあるように思われているが、オマセで甘えん坊な一面が拭えないところも含め、非常に可愛がられている。<br />
+        カードゲームが好きで<a class="a-p" href="character13.html"
+          >「13(トミ)」</a
+        >たちとよく遊んでいるが、強運の持ち主で確立計算も巧みなためすぐ捻じ伏せて厭きられてしまう。
+        <template #callingme>こっち</template>
+        <template #callingyou>主人ちゃん</template>
+        <template #gender>女性</template>
+        <template #height>149cm</template>
+        <template #conceptage>17?</template>
+        <template #numberoftails>8(5+8)</template>
+        <template #belongingclass>デュアルフォーズ</template>
+        <template #potential>臨時的な幸福をもたらす</template>
+        <template #characteristic
+          >Ｓっ気のあるからかい好き，オマセで甘えん坊</template
+        >
+        <template #hobby>カードゲーム全般</template>
+        <template #skill>確率計算</template>
+        <template #favors>大吉の御御籤(おみくじ)</template>
+        <template #unlikes>クソゲー(理不尽なゲーム)</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img58.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

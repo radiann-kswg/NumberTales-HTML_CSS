@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「11(トウイチ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「11(トウイチ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>11(トウイチ)</template>
-			２桁ゾロ目の数字の加護を持つ９人：「マスターテールズ９」の代表といえるべきナンバーテールズ。<br>
-			高次に発展した直感と自己認識による他に類を見ない実現力が、数多くの主人の注目を集めている。<br>
-			反面、その高まりすぎた直感で行動することも多く、時に暴走してしまうと他のナンバーテールズに指摘？されている。<br>
-			特に<a class="a-p" href="character1.html">「1(ハジメ)」</a>を前にすると、彼(女)の様子が明らかにおかしい様で…？
-			<template #callingme>我</template>
-			<template #callingyou>卿(けい)</template>
-			<template #gender>中性</template>
-			<template #height>161cm</template>
-			<template #weight>43kg</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>11</template>
-			<template #belongingclass>マスターテールズ９</template>
-			<template #potential>直観と自己実現力を高める</template>
-			<template #characteristic>神々しいオーラをまとっているが、直観主義で時に暴走する</template>
-			<template #hobby>パワースポット巡り</template>
-			<template #skill>直感が99.9%的中する</template>
-			<template #favors>風水術</template>
-			<template #unlikes>スランプ</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img11.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>11(トウイチ)</template>
+        ２桁ゾロ目の数字の加護を持つ９人：「マスターテールズ９」の代表といえるべきナンバーテールズ。<br />
+        高次に発展した直感と自己認識による他に類を見ない実現力が、数多くの主人の注目を集めている。<br />
+        反面、その高まりすぎた直感で行動することも多く、時に暴走してしまうと他のナンバーテールズに指摘？されている。<br />
+        特に<a class="a-p" href="character1.html">「1(ハジメ)」</a
+        >を前にすると、彼(女)の様子が明らかにおかしい様で…？
+        <template #callingme>我</template>
+        <template #callingyou>卿(けい)</template>
+        <template #gender>中性</template>
+        <template #height>161cm</template>
+        <template #weight>43kg</template>
+        <template #conceptage>17</template>
+        <template #numberoftails>11</template>
+        <template #belongingclass>マスターテールズ９</template>
+        <template #potential>直観と自己実現力を高める</template>
+        <template #characteristic
+          >神々しいオーラをまとっているが、直観主義で時に暴走する</template
+        >
+        <template #hobby>パワースポット巡り</template>
+        <template #skill>直感が99.9%的中する</template>
+        <template #favors>風水術</template>
+        <template #unlikes>スランプ</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img11.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

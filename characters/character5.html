@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「5(イズ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「5(イズ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>5(イズ)</template>
-			他のナンバーテールズ98人と比べても屈指のマイペース。<br>
-			その形振りは時に利き手や習慣を変え、時に特技から離れ、時に呼び方が変わるなど、彼女の脱線気味な気分とノリは誰もが予想できていない。<br>
-			しかしそれは、自分にある明確なビジョンを楽しんで軌道調整するためと彼女は豪語している。<br>
-			挑発に乗りやすく、冷めやすく、かなりチョロい。
-			<template #callingme>アタシ</template>
-			<template #callingyou>(気分による)</template>
-			<template #gender>女性</template>
-			<template #height>156cm</template>
-			<template #weight>42kg</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>5</template>
-			<template #belongingclass>1桁番(ユニデジッツ)</template>
-			<template #potential>予想できないことでマンネリ化させない</template>
-			<template #characteristic>屈指のマイペース、少し単純</template>
-			<template #hobby>(気分による)</template>
-			<template #skill>バク天</template>
-			<template #favors>いつもと違うこと</template>
-			<template #unlikes>型にはまること</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img5.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>5(イズ)</template>
+        他のナンバーテールズ98人と比べても屈指のマイペース。<br />
+        その形振りは時に利き手や習慣を変え、時に特技から離れ、時に呼び方が変わるなど、彼女の脱線気味な気分とノリは誰もが予想できていない。<br />
+        しかしそれは、自分にある明確なビジョンを楽しんで軌道調整するためと彼女は豪語している。<br />
+        挑発に乗りやすく、冷めやすく、かなりチョロい。
+        <template #callingme>アタシ</template>
+        <template #callingyou>(気分による)</template>
+        <template #gender>女性</template>
+        <template #height>156cm</template>
+        <template #weight>42kg</template>
+        <template #conceptage>17</template>
+        <template #numberoftails>5</template>
+        <template #belongingclass>1桁番(ユニデジッツ)</template>
+        <template #potential>予想できないことでマンネリ化させない</template>
+        <template #characteristic>屈指のマイペース、少し単純</template>
+        <template #hobby>(気分による)</template>
+        <template #skill>バク天</template>
+        <template #favors>いつもと違うこと</template>
+        <template #unlikes>型にはまること</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img5.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

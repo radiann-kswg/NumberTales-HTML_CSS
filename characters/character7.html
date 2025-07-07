@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「7(ナナ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「7(ナナ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>7(ナナ)</template>
-			1桁番(ユニデジッツ)のナンバーテールズ9人の中でも単独行動を好み、自分なりの正しさを求めて修学や瞑想などをしながら悔いなく主人に従事できるように努めている。<br>
-			反面、イメージトレーニングや自分磨きが生活の大半となってしまい思想的になりがちではあるが、その分やることは完璧にこなしている（つもりらしい）。<br>
-			神話や伝統に興味がある。
-			<template #callingme>拙者</template>
-			<template #callingyou>主殿(あるじどの)</template>
-			<template #gender>中性</template>
-			<template #height>162cm</template>
-			<template #weight>44kg</template>
-			<template #conseptage>22</template>
-			<template #numberoftales>7</template>
-			<template #belongingclass>1桁番(ユニデジッツ)</template>
-			<template #potential>瞑想の効果を分け与える</template>
-			<template #characteristic>意識が高く単独行動を好む、思想的になりがち</template>
-			<template #hobby>イメージトレーニング、神話・伝承</template>
-			<template #skill>習字</template>
-			<template #favors>ハースストーン</template>
-			<template #unlikes>非常識なこと</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img7.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>7(ナナ)</template>
+        1桁番(ユニデジッツ)のナンバーテールズ9人の中でも単独行動を好み、自分なりの正しさを求めて修学や瞑想などをしながら悔いなく主人に従事できるように努めている。<br />
+        反面、イメージトレーニングや自分磨きが生活の大半となってしまい思想的になりがちではあるが、その分やることは完璧にこなしている（つもりらしい）。<br />
+        神話や伝統に興味がある。
+        <template #callingme>拙者</template>
+        <template #callingyou>主殿(あるじどの)</template>
+        <template #gender>中性</template>
+        <template #height>162cm</template>
+        <template #weight>44kg</template>
+        <template #conceptage>22</template>
+        <template #numberoftails>7</template>
+        <template #belongingclass>1桁番(ユニデジッツ)</template>
+        <template #potential>瞑想の効果を分け与える</template>
+        <template #characteristic
+          >意識が高く単独行動を好む、思想的になりがち</template
+        >
+        <template #hobby>イメージトレーニング、神話・伝承</template>
+        <template #skill>習字</template>
+        <template #favors>ハースストーン</template>
+        <template #unlikes>非常識なこと</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img7.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

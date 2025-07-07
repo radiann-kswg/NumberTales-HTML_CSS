@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「19(トク)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「19(トク)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>19(トク)</template>
-			これまでの業績から一つの節目を迎える事例に特化した個体。<br>
-			完遂した業績に対する誇りや自信で調子に乗りやすいが、その次の業務も難なくこなすため憎みたくても憎めないと（色んな意味で）定評。<br>
-			しかしその風格に惹かれ、これから新しい取り組みをするベテラン級スキルを持つ中年層を中心に彼(女)を求める主人も少なくはない様子。<br>
-			趣味は”絵画用”ルービックキューブというが…？
-			<template #callingme>僕</template>
-			<template #callingyou>兄さん/姉さん</template>
-			<template #gender>中性</template>
-			<template #height>157cm</template>
-			<template #weight>42kg</template>
-			<template #conseptage>20</template>
-			<template #numberoftales>9(1+9)</template>
-			<template #belongingclass>デュアルキャリーズ</template>
-			<template #potential>重要な場面で失敗させない</template>
-			<template #characteristic>調子に乗りやすい、やるときはやる</template>
-			<template #hobby>ルービックキューブ(で絵を描く)</template>
-			<template #skill>チェス</template>
-			<template #favors>サイコロ、ルービックキューブ</template>
-			<template #unlikes>今乗り気じゃないこと</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img19.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>19(トク)</template>
+        これまでの業績から一つの節目を迎える事例に特化した個体。<br />
+        完遂した業績に対する誇りや自信で調子に乗りやすいが、その次の業務も難なくこなすため憎みたくても憎めないと（色んな意味で）定評。<br />
+        しかしその風格に惹かれ、これから新しい取り組みをするベテラン級スキルを持つ中年層を中心に彼(女)を求める主人も少なくはない様子。<br />
+        趣味は”絵画用”ルービックキューブというが…？
+        <template #callingme>僕</template>
+        <template #callingyou>兄さん/姉さん</template>
+        <template #gender>中性</template>
+        <template #height>157cm</template>
+        <template #weight>42kg</template>
+        <template #conceptage>20</template>
+        <template #numberoftails>9(1+9)</template>
+        <template #belongingclass>デュアルキャリーズ</template>
+        <template #potential>重要な場面で失敗させない</template>
+        <template #characteristic>調子に乗りやすい、やるときはやる</template>
+        <template #hobby>ルービックキューブ(で絵を描く)</template>
+        <template #skill>チェス</template>
+        <template #favors>サイコロ、ルービックキューブ</template>
+        <template #unlikes>今乗り気じゃないこと</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img19.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

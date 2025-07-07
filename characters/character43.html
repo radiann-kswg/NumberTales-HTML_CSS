@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「43(シトミ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「43(シトミ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>43(シトミ)</template>
-			消極的思考を抑えるメンター効果があるとされており、一時期注目を浴びていた個体。<br>
-			しかし自己中心的で挑発的な性格もあり、ネット上で泣かされキャラが確立してしまっている。<br>
-			趣味で対戦ゲームをよくするため、現在は主従契約のご縁よりゲームやボイスチャットでのご縁が多い。<br>
-			<a class="a-p" href="character34.html">「34(サトシ)」</a>などといった他個体を煽り、とんでもないフラグを建ててしまうことも。
-			<template #callingme>うち</template>
-			<template #callingyou>あるじん</template>
-			<template #gender>女性</template>
-			<template #height>134cm</template>
-			<template #conseptage>14</template>
-			<template #numberoftales>4(4+3)</template>
-			<template #belongingclass>デュアルセブンズ</template>
-			<template #potential>望みを広げる</template>
-			<template #characteristic>なんでも自分の都合よく物事が動くと捉えているメスガキ</template>
-			<template #hobby>対戦ゲーム</template>
-			<template #skill>挑発</template>
-			<template #favors>ボイスチャット、<a class="a-p" href="character34.html">姉(兄)</a>を弄り倒すこと</template>
-			<template #unlikes>配慮</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img43.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>43(シトミ)</template>
+        消極的思考を抑えるメンター効果があるとされており、一時期注目を浴びていた個体。<br />
+        しかし自己中心的で挑発的な性格もあり、ネット上で泣かされキャラが確立してしまっている。<br />
+        趣味で対戦ゲームをよくするため、現在は主従契約のご縁よりゲームやボイスチャットでのご縁が多い。<br />
+        <a class="a-p" href="character34.html">「34(サトシ)」</a
+        >などといった他個体を煽り、とんでもないフラグを建ててしまうことも。
+        <template #callingme>うち</template>
+        <template #callingyou>あるじん</template>
+        <template #gender>女性</template>
+        <template #height>134cm</template>
+        <template #conceptage>14</template>
+        <template #numberoftails>4(4+3)</template>
+        <template #belongingclass>デュアルセブンズ</template>
+        <template #potential>望みを広げる</template>
+        <template #characteristic
+          >なんでも自分の都合よく物事が動くと捉えているメスガキ</template
+        >
+        <template #hobby>対戦ゲーム</template>
+        <template #skill>挑発</template>
+        <template #favors
+          >ボイスチャット、<a class="a-p" href="character34.html">姉(兄)</a
+          >を弄り倒すこと</template
+        >
+        <template #unlikes>配慮</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img43.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

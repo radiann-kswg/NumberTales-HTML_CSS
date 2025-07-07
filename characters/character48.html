@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「48(シハチ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「48(シハチ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>48(シハチ)</template>
-			マーケティングやビジネススキルなどに精通しており、副業や事業展開を目標とする主人層から好評を受けている。<br>
-			至って紳士的で勤勉な気質だと表向きでは評されているが、本性的には喧嘩っ早く勝気の強い性格にどこか憧れを感じているらしい。<br>
-			理想を現実にするためにあの手この手を尽くそうとする頑固な一面も。
-			<template #callingme>私(わたし),俺(おれ)</template>
-			<template #callingyou>主様(あるじさま)</template>
-			<template #gender>男性</template>
-			<template #height>161cm</template>
-			<template #conseptage>20</template>
-			<template #numberoftales>8(4+8)</template>
-			<template #belongingclass>デュアルスリーズ</template>
-			<template #potential>現実をよりよくする</template>
-			<template #characteristic>根性強く諦めの悪い、理想と現実の両方を尊重している</template>
-			<template #hobby>クラウドソーシングで副収入を得ること</template>
-			<template #skill>データ分析</template>
-			<template #favors>学園番長の存在</template>
-			<template #unlikes>怠惰な人</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img48.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>48(シハチ)</template>
+        マーケティングやビジネススキルなどに精通しており、副業や事業展開を目標とする主人層から好評を受けている。<br />
+        至って紳士的で勤勉な気質だと表向きでは評されているが、本性的には喧嘩っ早く勝気の強い性格にどこか憧れを感じているらしい。<br />
+        理想を現実にするためにあの手この手を尽くそうとする頑固な一面も。
+        <template #callingme>私(わたし),俺(おれ)</template>
+        <template #callingyou>主様(あるじさま)</template>
+        <template #gender>男性</template>
+        <template #height>161cm</template>
+        <template #conceptage>20</template>
+        <template #numberoftails>8(4+8)</template>
+        <template #belongingclass>デュアルスリーズ</template>
+        <template #potential>現実をよりよくする</template>
+        <template #characteristic
+          >根性強く諦めの悪い、理想と現実の両方を尊重している</template
+        >
+        <template #hobby>クラウドソーシングで副収入を得ること</template>
+        <template #skill>データ分析</template>
+        <template #favors>学園番長の存在</template>
+        <template #unlikes>怠惰な人</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img48.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

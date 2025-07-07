@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「22(フジ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「22(フジ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>22(フジ)</template>
-			ナンバーテールズ99人で群を抜いて強い加護を持ち、主人の奇跡的な達成を後押しするトップカースト。<br>
-			その実績は「マスターテールズ9」の中でも秀でており、主人に起業、新企画の成功、世界的快挙などをもたらすとかなりの評判。<br>
-			一方、その業績に反しおっとりでふわふわした性格や立ち振る舞いをするので、ギャップ萌えするとも定評。<br>
-			ただ、尻尾については…
-			<template #callingme>フジ(名前呼び)</template>
-			<template #callingyou>ルーキー君</template>
-			<template #gender>女性</template>
-			<template #height>153cm</template>
-			<template #conseptage>16</template>
-			<template #numberoftales>2(11+11)</template>
-			<template #belongingclass>マスターテールズ９</template>
-			<template #potential>偉業へと導く</template>
-			<template #characteristic>おっとりふわふわ</template>
-			<template #hobby>天体鑑賞</template>
-			<template #skill>ビリヤード</template>
-			<template #favors>丸くて転がるもの</template>
-			<template #unlikes>手玉に取られること</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img22.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>22(フジ)</template>
+        ナンバーテールズ99人で群を抜いて強い加護を持ち、主人の奇跡的な達成を後押しするトップカースト。<br />
+        その実績は「マスターテールズ9」の中でも秀でており、主人に起業、新企画の成功、世界的快挙などをもたらすとかなりの評判。<br />
+        一方、その業績に反しおっとりでふわふわした性格や立ち振る舞いをするので、ギャップ萌えするとも定評。<br />
+        ただ、尻尾については…
+        <template #callingme>フジ(名前呼び)</template>
+        <template #callingyou>ルーキー君</template>
+        <template #gender>女性</template>
+        <template #height>153cm</template>
+        <template #conceptage>16</template>
+        <template #numberoftails>2(11+11)</template>
+        <template #belongingclass>マスターテールズ９</template>
+        <template #potential>偉業へと導く</template>
+        <template #characteristic>おっとりふわふわ</template>
+        <template #hobby>天体鑑賞</template>
+        <template #skill>ビリヤード</template>
+        <template #favors>丸くて転がるもの</template>
+        <template #unlikes>手玉に取られること</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img22.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「75(シチゴ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「75(シチゴ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>75(シチゴ)</template>
-			経験から状況を好転させることに特化したナンバーテールズ。<br>
-			教訓と物事からの学びを大切にし、それがいつしか自分に良い結果として返ってくると信じている。<br>
-			<a class="a-p" href="character25.html">「25(フィズ)」</a>に目標意識があるのとか無いとか。<br>
-			ちなみに<a class="a-p"
-				href="character57.html">「57(イズナ)」</a>と同型双子関係があるが、「57(イズナ)」と彼(女)でどちらが弟(妹)であるかという年長年弱の区別は無いらしい。
-			<template #callingme>私(わたし)</template>
-			<template #callingyou>君(きみ), (～)先輩</template>
-			<template #gender>中性</template>
-			<template #height>152cm</template>
-			<template #weight>42kg</template>
-			<template #conseptage>17</template>
-			<template #numberoftales>7(7+5)</template>
-			<template #belongingclass>デュアルスリーズ</template>
-			<template #potential>学んだことから状況を変える</template>
-			<template #characteristic>真面目で意識高い系</template>
-			<template #hobby>統計学</template>
-			<template #skill>経験則が的確</template>
-			<template #favors>文房具</template>
-			<template #unlikes>炎(焚火や火災などのこと)</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img75.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>75(シチゴ)</template>
+        経験から状況を好転させることに特化したナンバーテールズ。<br />
+        教訓と物事からの学びを大切にし、それがいつしか自分に良い結果として返ってくると信じている。<br />
+        <a class="a-p" href="character25.html">「25(フィズ)」</a
+        >に目標意識があるのとか無いとか。<br />
+        ちなみに<a class="a-p" href="character57.html">「57(イズナ)」</a
+        >と同型双子関係があるが、「57(イズナ)」と彼(女)でどちらが弟(妹)であるかという年長年弱の区別は無いらしい。
+        <template #callingme>私(わたし)</template>
+        <template #callingyou>君(きみ), (～)先輩</template>
+        <template #gender>中性</template>
+        <template #height>152cm</template>
+        <template #weight>42kg</template>
+        <template #conceptage>17</template>
+        <template #numberoftails>7(7+5)</template>
+        <template #belongingclass>デュアルスリーズ</template>
+        <template #potential>学んだことから状況を変える</template>
+        <template #characteristic>真面目で意識高い系</template>
+        <template #hobby>統計学</template>
+        <template #skill>経験則が的確</template>
+        <template #favors>文房具</template>
+        <template #unlikes>炎(焚火や火災などのこと)</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img75.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

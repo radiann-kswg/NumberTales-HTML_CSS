@@ -147,7 +147,7 @@ h1
 	font-size: 35px
 	width: 100%
 	@media screen and (max-width:$responsive-midiumsize)
-		font-size: 20px
+		font-size: 25px
 	@media screen and (max-width:$responsive-smallsize)
 		margin-top: 40px
 	&.h1-noimg
@@ -181,24 +181,39 @@ h1
 
 $opacity: 0.65
 
+@mixin medium-font
+	font-size: 21px
+	@media screen and (max-width:$responsive-midiumsize)
+		font-size: 18px
+	@media screen and (max-width:$responsive-smallsize)
+		font-size: 16px
+
+@mixin small-font
+	font-size: 18px
+	@media screen and (max-width:$responsive-midiumsize)
+		font-size: 16px
+	@media screen and (max-width:$responsive-smallsize)
+		font-size: 14px
+
+@mixin smallest-font
+	font-size: 15px
+	@media screen and (max-width:$responsive-midiumsize)
+		font-size: 13px
+	@media screen and (max-width:$responsive-smallsize)
+		font-size: 11px
+
 h2
 	@include h-boxdesign(4px, slategrey , 180px)
 	color: darkcyan
 	margin-left: 30px
 	margin-bottom: 30px
-	font-size: 25px
-	@media screen and (max-width:$responsive-midiumsize)
-		font-size: 18px
-	@media screen and (max-width:$responsive-smallsize)
-		font-size: 14px
+	@include medium-font
 	&.h2-small
-		font-size: 18px
+		@include small-font
 		width: 250px
 		@media screen and (max-width:$responsive-midiumsize)
-			font-size: 18px
 			width: 250px
 		@media screen and (max-width:$responsive-smallsize)
-			font-size: 14px
 			width: 50%
 	&.h2-a-link, &.h2-a-link-commingsoon
 		width: 450px
@@ -207,10 +222,8 @@ h2
 		display: block
 		@media screen and (max-width:$responsive-midiumsize)
 			width: 75%
-			font-size: 18px
 		@media screen and (max-width:$responsive-smallsize)
 			width: 85%
-			font-size: 14px
 	&.h2-a-link
 		@include a-block(darkcyan, cyan, 1.0)
 	&.h2-a-link-commingsoon
@@ -218,13 +231,11 @@ h2
 		&:hover
 			opacity: $opacity
 	&.h2-wide
-		font-size: 25px
+		@include medium-font
 		width: 320px
 		@media screen and (max-width:$responsive-midiumsize)
-			font-size: 18px
 			width: 270px
 		@media screen and (max-width:$responsive-smallsize)
-			font-size: 14px
 			width: 220px
 
 h3
@@ -234,26 +245,21 @@ h3
 	box-shadow: 5px 5px 5px slategrey
 	margin-left: 5px
 	margin-bottom: 20px
-	font-size: 18px
+	@include small-font
 	@media screen and (max-width:$responsive-midiumsize)
-		font-size: 16px
 		width: 160px
 	@media screen and (max-width:$responsive-smallsize)
-		font-size: 14px
 		width: 140px
 	&.h3-small
 		box-shadow: none
 		@media screen and (max-width:$responsive-smallsize)
-			font-size: 14px
 	&.h3-a-link, &.h3-a-link-commingsoon
 		width: 275px
 		margin: 15px auto 15px 15px
 		display: inline-block
 		@media screen and (max-width:$responsive-midiumsize)
-			font-size: 16px
 		@media screen and (max-width:$responsive-smallsize)
 			width: 85%
-			font-size: 14px
 	&.h3-a-link
 		@include a-block(darkcyan, cyan, 1.0)
 	&.h3-a-link-commingsoon
@@ -263,16 +269,10 @@ h3
 	&.h3-wide
 		width: 235px
 		@media screen and (max-width:$responsive-midiumsize)
-			font-size: 16px
 			width: 210px
 		@media screen and (max-width:$responsive-smallsize)
-			font-size: 14px
 			width: 185px
 
-@mixin smallest-font
-	font-size: 16px
-	@media screen and (max-width:$responsive-smallsize)
-		font-size: 12px
 p
 	@include smallest-font
 	margin: 0 0 12px 0
@@ -311,10 +311,20 @@ footer
 	padding: 18px 0
 	margin-top: 30px
 	width: 100%
+	@include small-font
+	a
+		@include small-font
+		&.a-p
+			@include smallest-font
+		&.a-link
+			@include medium-font
+			width: 135px
 	@media screen and (max-width:$responsive-smallsize)
 		margin-top: 16px
 	p
 		@include smallest-font
+		a
+			@include smallest-font
 
 .block-scroll
 	width: 90%
@@ -395,6 +405,7 @@ footer
 		list-style: none
 		line-height: 1
 		padding: 1em
+		@include smallest-font
 		@media screen and (max-width:$responsive-smallsize)
 			list-style: none
 			line-height: 1

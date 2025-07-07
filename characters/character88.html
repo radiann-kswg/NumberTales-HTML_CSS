@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「88(ヤソハチ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「88(ヤソハチ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>88(ヤソハチ)</template>
-			努力家を好み努力家の幸福を願っており、努力に相応しい報酬の確保を信条としている。<br>
-			その成果は驚異的で、物質的にも非物質的にも膨大な量の恩恵を与えていると巷で有名となった。<br>
-			その影響で、あまりにも高級な効果が期待されると判明されてから、彼との契約料金も99人の中で最上位を誇っている。<br>
-			その集金力はもはや異次元で不気味とさえ思われがち。<br>
-			趣味はピアノ演奏。
-			<template #callingme>私(わたし), 僕</template>
-			<template #callingyou>旦那様/奥様, (名前呼び)</template>
-			<template #gender>男性</template>
-			<template #height>167cm</template>
-			<template #weight>45kg</template>
-			<template #conseptage>24</template>
-			<template #numberoftales>8(8+8)</template>
-			<template #belongingclass>マスターテールズ９</template>
-			<template #potential>報酬をめぐむ</template>
-			<template #characteristic>執事のような存在、貢ぎ癖が少しある</template>
-			<template #hobby>ピアノ演奏、音ゲー</template>
-			<template #skill>お金を集めること</template>
-			<template #favors>努力、楽器</template>
-			<template #unlikes>努力やお金を無駄にすること</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img88.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>88(ヤソハチ)</template>
+        努力家を好み努力家の幸福を願っており、努力に相応しい報酬の確保を信条としている。<br />
+        その成果は驚異的で、物質的にも非物質的にも膨大な量の恩恵を与えていると巷で有名となった。<br />
+        その影響で、あまりにも高級な効果が期待されると判明されてから、彼との契約料金も99人の中で最上位を誇っている。<br />
+        その集金力はもはや異次元で不気味とさえ思われがち。<br />
+        趣味はピアノ演奏。
+        <template #callingme>私(わたし), 僕</template>
+        <template #callingyou>旦那様/奥様, (名前呼び)</template>
+        <template #gender>男性</template>
+        <template #height>167cm</template>
+        <template #weight>45kg</template>
+        <template #conceptage>24</template>
+        <template #numberoftails>8(8+8)</template>
+        <template #belongingclass>マスターテールズ９</template>
+        <template #potential>報酬をめぐむ</template>
+        <template #characteristic>執事のような存在、貢ぎ癖が少しある</template>
+        <template #hobby>ピアノ演奏、音ゲー</template>
+        <template #skill>お金を集めること</template>
+        <template #favors>努力、楽器</template>
+        <template #unlikes>努力やお金を無駄にすること</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img88.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

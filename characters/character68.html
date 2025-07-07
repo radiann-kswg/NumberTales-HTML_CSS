@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「68(ロクヤ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「68(ロクヤ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>68(ロクヤ)</template>
-			古着の処分や機種変更など、物を長期的に保管することより「断捨離すること」を得意としている。<br>
-			しかし新品と比べ古い物の見方は異質なところもあり、すぐ手放そうとする
-			傾向にある。<br>
-			一方でその価値観が功をなし、ナンバーテールズの中ではトップクラスの整理力と掃除力がある。<br>
-			ちなみに手放した物の大半はフリーマーケットで売られるため、周囲から助かっているとの声も。
-			<template #callingme>僕,自分</template>
-			<template #callingyou>主人</template>
-			<template #gender>中性</template>
-			<template #height>147cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>14</template>
-			<template #numberoftales>8(6+8)</template>
-			<template #belongingclass>デュアルファイブズ</template>
-			<template #potential>断捨離させる</template>
-			<template #characteristic>執着心が無く何事にも塩反応、潔癖症</template>
-			<template #hobby>整理整頓</template>
-			<template #skill>掃除、フリーマーケット</template>
-			<template #favors>髪を整える道具</template>
-			<template #unlikes>散らかった部屋</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img68.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>68(ロクヤ)</template>
+        古着の処分や機種変更など、物を長期的に保管することより「断捨離すること」を得意としている。<br />
+        しかし新品と比べ古い物の見方は異質なところもあり、すぐ手放そうとする
+        傾向にある。<br />
+        一方でその価値観が功をなし、ナンバーテールズの中ではトップクラスの整理力と掃除力がある。<br />
+        ちなみに手放した物の大半はフリーマーケットで売られるため、周囲から助かっているとの声も。
+        <template #callingme>僕,自分</template>
+        <template #callingyou>主人</template>
+        <template #gender>中性</template>
+        <template #height>147cm</template>
+        <template #weight>39kg</template>
+        <template #conceptage>14</template>
+        <template #numberoftails>8(6+8)</template>
+        <template #belongingclass>デュアルファイブズ</template>
+        <template #potential>断捨離させる</template>
+        <template #characteristic>執着心が無く何事にも塩反応、潔癖症</template>
+        <template #hobby>整理整頓</template>
+        <template #skill>掃除、フリーマーケット</template>
+        <template #favors>髪を整える道具</template>
+        <template #unlikes>散らかった部屋</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img68.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

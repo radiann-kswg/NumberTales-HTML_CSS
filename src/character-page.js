@@ -16,11 +16,11 @@ const characterPageComponent = {
 			<span class="p-bold">主人の呼び方</span>：<slot name="callingyou">？？？</slot>
 			</p><p>
 				<span class="p-bold">性別</span>：<slot name="gender">？？</slot>　
-				<span class="p-bold">設定年齢</span>：<slot name="conseptage">???</slot>　
+				<span class="p-bold">設定年齢</span>：<slot name="conceptage">???</slot>　
 				<span class="p-bold">身長</span>：<slot name="height">???cm</slot>　
 				<span class="p-bold">体重</span>：<slot name="weight">??kg</slot><br>
 				※ヒューマノイド形態時の体格。コアフォルダ形態は全員身長55cm前後で体重は積載量による<br>
-				<span class="p-bold">尾の本数(束数)</span>：<slot name="numberoftales">???</slot>　　
+				<span class="p-bold">尾の本数(束数)</span>：<slot name="numberoftails">???</slot>　　
 				<span class="p-bold">クラス</span>：<slot name="belongingclass">？？？</slot>
 			</p><p>
 				<span class="p-bold">加護：<slot name="potential">？？？？</slot></span><br>
@@ -31,7 +31,14 @@ const characterPageComponent = {
 				<span class="p-bold">苦手なもの</span>：<slot name="unlikes">？？？</slot>
 			</p><slot name="additions"></slot>
 		</div><slot name="characterimage"><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img22.png" class="character-img">
-	</slot></div>`,
+	</slot></div>
+		<a href="/characters.html">
+			<h2 class="h2-a-link">ナンバーテールズ(2桁)紹介はこちら</h2>
+		</a><a href="/characters-special.html">
+			<h2 class="h2-a-link">ナンバーテールズ(3桁)紹介はこちら</h2>
+		</a><a href="/index.html">
+			<h2 class="h2-a-link">TOPに戻る</h2>
+		</a>`,
   data() {
     return {
       titleStyleIsWide: this.wideStyle,

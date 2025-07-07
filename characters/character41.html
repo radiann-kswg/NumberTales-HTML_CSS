@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「41(ヨソイチ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「41(ヨソイチ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>41(ヨソイチ)</template>
-			新しい試みに怖気づくことなく、常に挑戦的に行動しているチャレンジャー。<br>いつも楽観的で自信に溢れている気質は、周囲にも好評価を賜っている。<br>ただそのせいか、コアフォルダ形態でも無理やり動けると頑固に信じている様子。<br>運動機能が優れず身体動作が不器用ではあるが、ほぼ全てのカード位置を記憶する“カード透視”を得意とするため賭けポーカーでは無類の強さを誇っている。
-			<template #callingme>俺(おれ)</template>
-			<template #callingyou>主人</template>
-			<template #gender>中性</template>
-			<template #height>146cm</template>
-			<template #weight>40kg</template>
-			<template #conseptage>16</template>
-			<template #numberoftales>4(1+4)</template>
-			<template #belongingclass>デュアルファイブズ</template>
-			<template #potential>失敗する恐れ[可能性]を和らげ、自信をもたらす</template>
-			<template #characteristic>挑戦的で楽観的だが、不器用で少し頑固。ほんの若干マゾ</template>
-			<template #hobby>ポーカー</template>
-			<template #skill>カード透視(カード記憶)</template>
-			<template #favors>賭けゲーム</template>
-			<template #unlikes>胸糞の悪い話</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img41.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>41(ヨソイチ)</template>
+        新しい試みに怖気づくことなく、常に挑戦的に行動しているチャレンジャー。<br />いつも楽観的で自信に溢れている気質は、周囲にも好評価を賜っている。<br />ただそのせいか、コアフォルダ形態でも無理やり動けると頑固に信じている様子。<br />運動機能が優れず身体動作が不器用ではあるが、ほぼ全てのカード位置を記憶する“カード透視”を得意とするため賭けポーカーでは無類の強さを誇っている。
+        <template #callingme>俺(おれ)</template>
+        <template #callingyou>主人</template>
+        <template #gender>中性</template>
+        <template #height>146cm</template>
+        <template #weight>40kg</template>
+        <template #conceptage>16</template>
+        <template #numberoftails>4(1+4)</template>
+        <template #belongingclass>デュアルファイブズ</template>
+        <template #potential
+          >失敗する恐れ[可能性]を和らげ、自信をもたらす</template
+        >
+        <template #characteristic
+          >挑戦的で楽観的だが、不器用で少し頑固。ほんの若干マゾ</template
+        >
+        <template #hobby>ポーカー</template>
+        <template #skill>カード透視(カード記憶)</template>
+        <template #favors>賭けゲーム</template>
+        <template #unlikes>胸糞の悪い話</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img41.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

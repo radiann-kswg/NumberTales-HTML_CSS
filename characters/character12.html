@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「12(トウジ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「12(トウジ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>12(トウジ)</template>
-			基本設計を融合させた2種類の数字を持つ複合型のうち、最初に開発された個体。<br>
-			自分に正直になり自信を持たせてくれると好評のナンバーテールズで、彼女の素直で正直な気質は周囲から好印象を持たれている。<br>
-			試作型の<a class="a-p" href="character1.html">「1(ハジメ)」</a>を慕っており、未完成の<a class="a-p"
-				href="character2-alt.html">「バイナ」</a>においても完成を心から期待して旧名（「2(ツギ)」）で呼んでいる。<br>
-			ただ、<a class="a-p" href="character2.html">「2(ツグ)」</a>に対しては……
-			<template #callingme>私(わたし)</template>
-			<template #callingyou>お兄(にぃ)/お姉(ねぇ)</template>
-			<template #gender>女性</template>
-			<template #height>148cm</template>
-			<template #weight>39kg</template>
-			<template #conseptage>14</template>
-			<template #numberoftales>2(1+2)</template>
-			<template #belongingclass>デュアルスリーズ</template>
-			<template #potential>正直に自分を認めさせる</template>
-			<template #characteristic>素直で正直</template>
-			<template #hobby>プレゼン鑑賞</template>
-			<template #skill>推理</template>
-			<template #favors>言霊</template>
-			<template #unlikes>噓を吐くこと</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img12.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>12(トウジ)</template>
+        基本設計を融合させた2種類の数字を持つ複合型のうち、最初に開発された個体。<br />
+        自分に正直になり自信を持たせてくれると好評のナンバーテールズで、彼女の素直で正直な気質は周囲から好印象を持たれている。<br />
+        試作型の<a class="a-p" href="character1.html">「1(ハジメ)」</a
+        >を慕っており、未完成の<a class="a-p" href="character2-alt.html"
+          >「バイナ」</a
+        >においても完成を心から期待して旧名（「2(ツギ)」）で呼んでいる。<br />
+        ただ、<a class="a-p" href="character2.html">「2(ツグ)」</a>に対しては……
+        <template #callingme>私(わたし)</template>
+        <template #callingyou>お兄(にぃ)/お姉(ねぇ)</template>
+        <template #gender>女性</template>
+        <template #height>148cm</template>
+        <template #weight>39kg</template>
+        <template #conceptage>14</template>
+        <template #numberoftails>2(1+2)</template>
+        <template #belongingclass>デュアルスリーズ</template>
+        <template #potential>正直に自分を認めさせる</template>
+        <template #characteristic>素直で正直</template>
+        <template #hobby>プレゼン鑑賞</template>
+        <template #skill>推理</template>
+        <template #favors>言霊</template>
+        <template #unlikes>噓を吐くこと</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img12.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

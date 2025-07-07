@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「1(ハジメ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「1(ハジメ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>1(ハジメ)</template>
-			相手のことを尊重する双子の妹<a class="a-p" href="character2.html">「2(ツグ)」</a>とは反対に、自分のありのままに生活している。<br>
-			ナンバーテールズで唯一稼働中の試作型で、正規型である他の98人と異なる特徴が多い。<br>
-			しかし彼(女)はそれも自分らしさと前向きに受け入れている。<br>
-			とはいえ試作型だった影響か、やってみたいことが無数にあり行動意欲が過度に突出している。
-			<template #callingme>ぼく</template>
-			<template #callingyou>～兄(にぃ)/姉(ねぇ)</template>
-			<template #gender>中性</template>
-			<template #conseptage>14</template>
-			<template #height>146cm</template>
-			<template #weight>39kg</template>
-			<template #numberoftales>1</template>
-			<template #belongingclass>1桁番(ユニデジッツ)</template>
-			<template #potential>ありのままの自分を発揮させる</template>
-			<template #characteristic>行動意欲旺盛で、怖いもの知らず</template>
-			<template #hobby>なんでも</template>
-			<template #skill>たくさんあるらしい</template>
-			<template #favors>新しいこと、新体験</template>
-			<template #unlikes>人格否定</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img1.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>1(ハジメ)</template>
+        相手のことを尊重する双子の妹<a class="a-p" href="character2.html"
+          >「2(ツグ)」</a
+        >とは反対に、自分のありのままに生活している。<br />
+        ナンバーテールズで唯一稼働中の試作型で、正規型である他の98人と異なる特徴が多い。<br />
+        しかし彼(女)はそれも自分らしさと前向きに受け入れている。<br />
+        とはいえ試作型だった影響か、やってみたいことが無数にあり行動意欲が過度に突出している。
+        <template #callingme>ぼく</template>
+        <template #callingyou>～兄(にぃ)/姉(ねぇ)</template>
+        <template #gender>中性</template>
+        <template #conceptage>14</template>
+        <template #height>146cm</template>
+        <template #weight>39kg</template>
+        <template #numberoftails>1</template>
+        <template #belongingclass>1桁番(ユニデジッツ)</template>
+        <template #potential>ありのままの自分を発揮させる</template>
+        <template #characteristic>行動意欲旺盛で、怖いもの知らず</template>
+        <template #hobby>なんでも</template>
+        <template #skill>たくさんあるらしい</template>
+        <template #favors>新しいこと、新体験</template>
+        <template #unlikes>人格否定</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img1.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「45(シゴ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「45(シゴ)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>45(シゴ)</template>
-			稲妻を落とす雷神のように相手に衝動を与え、風を送る風神のように相手を奮い立たせる"加護"を持つ。<br>
-			これにより、変化を起こすことを必要としている多くの主人を後押ししている。<br>
-			もちろんそれはおおむね攻撃的な目的ではないので、彼(女)が従事した主人が愛と勇気をもった「正義の味方」に成長すると定評。<br>
-			ただ、本人は平穏とした生き方を好んでおり…
-			<template #callingme>わっち</template>
-			<template #callingyou>主人</template>
-			<template #gender>中性</template>
-			<template #height>154cm</template>
-			<template #weight>42kg</template>
-			<template #conseptage>16</template>
-			<template #numberoftales>5(4+5)</template>
-			<template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
-			<template #potential>奮い立たせる</template>
-			<template #characteristic>善意の味方、良心がよく威勢のいい</template>
-			<template #hobby>縁側でくつろぐ</template>
-			<template #skill>和太鼓</template>
-			<template #favors>伝統工芸品</template>
-			<template #unlikes>風評被害</template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img45.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>45(シゴ)</template>
+        稲妻を落とす雷神のように相手に衝動を与え、風を送る風神のように相手を奮い立たせる"加護"を持つ。<br />
+        これにより、変化を起こすことを必要としている多くの主人を後押ししている。<br />
+        もちろんそれはおおむね攻撃的な目的ではないので、彼(女)が従事した主人が愛と勇気をもった「正義の味方」に成長すると定評。<br />
+        ただ、本人は平穏とした生き方を好んでおり…
+        <template #callingme>わっち</template>
+        <template #callingyou>主人</template>
+        <template #gender>中性</template>
+        <template #height>154cm</template>
+        <template #weight>42kg</template>
+        <template #conceptage>16</template>
+        <template #numberoftails>5(4+5)</template>
+        <template #belongingclass>9倍2桁番(ナインズデュアルズ)</template>
+        <template #potential>奮い立たせる</template>
+        <template #characteristic>善意の味方、良心がよく威勢のいい</template>
+        <template #hobby>縁側でくつろぐ</template>
+        <template #skill>和太鼓</template>
+        <template #favors>伝統工芸品</template>
+        <template #unlikes>風評被害</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img45.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>

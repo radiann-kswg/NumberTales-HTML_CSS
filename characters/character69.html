@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「69(ロック)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/stylesheet.css">
-	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
-	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「69(ロック)」</title>
-	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
-</head>
-
-<body>
-	<header>
-		<div id="app-menu">
-			<hamberger-menu></hamberger-menu>
-		</div>
-		<script src="/src/hamberger-menu.js"></script>
-	</header>
-	<main id="app-character-page">
-		<character-page-comp>
-			<template #title>69(ロック)</template>
-			主人の望むキャラを演じて従事するという、独特な契約プランを持つナンバーテールズ。<br>
-			芸達者で様々な性格を演じることができる一方、素でのコミュニケーションが乏しいことから他のナンバーテールズに「アイデンティティを見失っているのではないか」と心配されている。<br>
-			とはいえ妹<a class="a-p" href="character96.html">「96(クルリ)」</a>のキャラ崩壊っぷりの方が彼にとって難儀らしい。<br>
-			気分屋で新しいことに戯れるのが好き。
-			<template #callingme>俺（素の場合）</template>
-			<template #callingyou>（主人の趣向に応じる）</template>
-			<template #gender>男性</template>
-			<template #height>156cm</template>
-			<template #conseptage>20?</template>
-			<template #numberoftales>9(6+9)</template>
-			<template #belongingclass>デュアルシックスズ</template>
-			<template #potential>自分の固定概念から解放する</template>
-			<template #characteristic>気分屋、芸達者でアイデンティティを見失い気味</template>
-			<template #hobby>新しいことに戯れること</template>
-			<template #skill>モノマネ</template>
-			<template #favors>ハリウッド映画</template>
-			<template #unlikes><a class="a-p" href="character96.html">妹</a></template>
-			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img69.png"
-					class="character-img"></template>
-		</character-page-comp>
-	</main>
-	<script src="/src/character-page.js"></script>
-	<footer>
-		<div id="app-credit">
-			<footer-credit></footer-credit>
-		</div>
-		<script src="/src/credit-footer.js"></script>
-	</footer>
-</body>
-
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>69(ロック)</template>
+        主人の望むキャラを演じて従事するという、独特な契約プランを持つナンバーテールズ。<br />
+        芸達者で様々な性格を演じることができる一方、素でのコミュニケーションが乏しいことから他のナンバーテールズに「アイデンティティを見失っているのではないか」と心配されている。<br />
+        とはいえ妹<a class="a-p" href="character96.html">「96(クルリ)」</a
+        >のキャラ崩壊っぷりの方が彼にとって難儀らしい。<br />
+        気分屋で新しいことに戯れるのが好き。
+        <template #callingme>俺（素の場合）</template>
+        <template #callingyou>（主人の趣向に応じる）</template>
+        <template #gender>男性</template>
+        <template #height>156cm</template>
+        <template #conceptage>20?</template>
+        <template #numberoftails>9(6+9)</template>
+        <template #belongingclass>デュアルシックスズ</template>
+        <template #potential>自分の固定概念から解放する</template>
+        <template #characteristic
+          >気分屋、芸達者でアイデンティティを見失い気味</template
+        >
+        <template #hobby>新しいことに戯れること</template>
+        <template #skill>モノマネ</template>
+        <template #favors>ハリウッド映画</template>
+        <template #unlikes
+          ><a class="a-p" href="character96.html">妹</a></template
+        >
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img69.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
 </html>
