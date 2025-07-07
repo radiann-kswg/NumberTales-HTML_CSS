@@ -36,8 +36,6 @@ const characterPageComponent = {
 			<h2 class="h2-a-link">ナンバーテールズ(2桁)紹介はこちら</h2>
 		</a><a href="/characters-special.html">
 			<h2 class="h2-a-link">ナンバーテールズ(3桁)紹介はこちら</h2>
-		</a><a href="/index.html">
-			<h2 class="h2-a-link">TOPに戻る</h2>
 		</a>`,
   data() {
     return {
