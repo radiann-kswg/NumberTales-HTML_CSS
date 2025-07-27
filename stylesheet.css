@@ -516,6 +516,9 @@ p {
     width: 100%;
   }
 }
+p.p-bold {
+  font-weight: bold;
+}
 p.p-small {
   font-size: 13px;
   font-wight: lighter;
