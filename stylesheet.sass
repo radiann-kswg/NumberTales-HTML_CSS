@@ -33,6 +33,17 @@ ul
 	@media screen and (max-width:$responsive-midiumsize)
 		width: 85%
 
+@mixin div-pageblock0
+	margin: 0 auto
+	box-sizing: border-box
+@mixin div-pageblock1
+	width: 60%
+	vertical-align: top
+	margin: 0 50px
+	box-sizing: border-box
+	@media screen and (max-width:$responsive-midiumsize)
+		width: 85%
+
 @mixin div-flexlist0
 	@include div-dualblock0
 	display: flex
@@ -62,10 +73,21 @@ ul
 	@include div-dualblock0
 	img
 		display: block
-		margin-right: auto
-		margin-left: auto
+		&.character-img
+			margin-bottom: 20px
+
 .character1
 	@include div-dualblock1
+	display: inline-block
+
+.page0
+	@include div-pageblock0
+	img
+		display: block
+		margin-right: auto
+		margin-left: auto
+.page1
+	@include div-pageblock1
 	display: inline-block
 
 .background0
@@ -91,6 +113,14 @@ ul
 	left: -15px
 	vertical-align: bottom
 	z-index: 2
+
+.characterstories-list0
+	width: 85%
+	margin: 0 auto 0 20px
+
+.characterstories-list1
+	width: 100%
+	margin-bottom: 20px
 
 .calender
 	@include div-dualblock0
@@ -202,6 +232,15 @@ $opacity: 0.65
 	@media screen and (max-width:$responsive-smallsize)
 		font-size: 11px
 
+@mixin smallestlighter-font
+	font-size: 13px
+	font-wight: lighter
+	opacity: 0.75
+	@media screen and (max-width:$responsive-midiumsize)
+		font-size: 11.5px
+	@media screen and (max-width:$responsive-smallsize)
+		font-size: 10px
+
 h2
 	@include h-boxdesign(4px, slategrey , 180px)
 	color: darkcyan
@@ -279,10 +318,14 @@ p
 	@media screen and (max-width:$responsive-smallsize)
 		margin: 0
 		width: 100%
+	&.p-small
+		@include smallestlighter-font
 
 span
 	&.p-bold
 		font-weight: bold
+	&.p-small
+		@include smallestlighter-font
 
 a
 	&.a-p

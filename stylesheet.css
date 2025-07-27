@@ -31,8 +31,9 @@ ul li {
 }
 .character0 img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+}
+.character0 img.character-img {
+  margin-bottom: 20px;
 }
 
 .character1 {
@@ -44,6 +45,29 @@ ul li {
 }
 @media screen and (max-width: 896px) {
   .character1 {
+    width: 85%;
+  }
+}
+
+.page0 {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.page0 img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page1 {
+  width: 60%;
+  vertical-align: top;
+  margin: 0 50px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+@media screen and (max-width: 896px) {
+  .page1 {
     width: 85%;
   }
 }
@@ -119,6 +143,16 @@ ul li {
   left: -15px;
   vertical-align: bottom;
   z-index: 2;
+}
+
+.characterstories-list0 {
+  width: 85%;
+  margin: 0 auto 0 20px;
+}
+
+.characterstories-list1 {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .calender {
@@ -482,9 +516,39 @@ p {
     width: 100%;
   }
 }
+p.p-small {
+  font-size: 13px;
+  font-wight: lighter;
+  opacity: 0.75;
+}
+@media screen and (max-width: 896px) {
+  p.p-small {
+    font-size: 11.5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  p.p-small {
+    font-size: 10px;
+  }
+}
 
 span.p-bold {
   font-weight: bold;
+}
+span.p-small {
+  font-size: 13px;
+  font-wight: lighter;
+  opacity: 0.75;
+}
+@media screen and (max-width: 896px) {
+  span.p-small {
+    font-size: 11.5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  span.p-small {
+    font-size: 10px;
+  }
 }
 
 a.a-p {
