@@ -118,7 +118,8 @@ const characterStoryAbout01Component = {
 				<a href="https://misskey.io/notes/9ujd28f36gt500mw">小説版第１話②「２人の夢追い人」</a><br>
 				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br>
 				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
-				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a></p>
+				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br>
+				<a href="https://misskey.io/clips/a68ukgzu0l3l09bx">公式キャラストまとめ(Misskey.ioクリップ)</a></p>
 				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
