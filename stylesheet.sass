@@ -43,6 +43,13 @@ ul
 	box-sizing: border-box
 	@media screen and (max-width:$responsive-midiumsize)
 		width: 85%
+@mixin div-pageblock2
+	width: 30%
+	vertical-align: top
+	margin: 0 20px
+	box-sizing: border-box
+	@media screen and (max-width:$responsive-midiumsize)
+		width: 85%
 
 @mixin div-flexlist0
 	@include div-dualblock0
@@ -89,6 +96,12 @@ ul
 .page1
 	@include div-pageblock1
 	display: inline-block
+	iframe
+		display: block
+		width: 100%
+.page2
+	@include div-pageblock2
+	display: inline-block
 
 .background0
 	@include div-dualblock0
@@ -122,12 +135,12 @@ ul
 	width: 100%
 	margin-bottom: 20px
 
-.calender
+.contents-only
 	@include div-dualblock0
 	margin-bottom: 20px
 
 img
-	&.character-img, &.calender-img
+	&.character-img, &.contents-img
 		display: inline-block
 		text-align: center
 		margin: 0 20px
@@ -148,7 +161,7 @@ img
 		box-sizing: border-box
 		@media screen and (max-width:$responsive-midiumsize)
 			width: 100%
-	&.calender-img
+	&.contents-img
 		@media screen and (max-width:$responsive-midiumsize)
 			display: block
 			margin-bottom: 20px
@@ -162,6 +175,17 @@ iframe
 		box-sizing: border-box
 		@media screen and (max-width:$responsive-midiumsize)
 			width: 80%
+	&.contents-iframe
+		display: inline-block
+		text-align: center
+		margin: 0 20px
+		box-shadow: 7px 7px 5px slategrey
+		vertical-align: top
+		box-sizing: border-box
+		@media screen and (max-width:$responsive-midiumsize)
+			display: block
+			width: 85%
+			margin: 0 auto 20px auto
 
 @mixin font-sansserif
 	font-family: Arial, Helvetica, sans-serif

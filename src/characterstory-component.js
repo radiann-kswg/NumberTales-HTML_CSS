@@ -120,8 +120,8 @@ const characterStoryAbout01Component = {
 				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
 				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br>
 				<a href="https://misskey.io/clips/a68ukgzu0l3l09bx">公式キャラストまとめ(Misskey.ioクリップ)</a></p>
-				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
+				<h3 class="h3-wide">サウンドノベル版</h3><p>
+				<a href="character93-story/soundnovel.html">サウンドノベル版第１話まで</a></p>
 			</slot>
 		</div>
 		<slot name="imagelink"></slot>
@@ -144,17 +144,56 @@ const characterStoryPage = {
 				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br>
 				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
 				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a></p>
-				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
+				<h3 class="h3-wide">サウンドノベル版</h3><p>
+				<a href="/character-stories/character93-story/soundnovel.html">サウンドノベル版第１話まで</a></p>
 				<a class="a-link" href="../character93-story.html">「93(クミ)編」トップに戻る</a>
 			</slot>
 		</div>
 		<slot name="imagelink"></slot>
 		<slot></slot></div>`
 };
+const characterStorySoundNovelPage = {
+	components: {
+		'characterstory-page-comp': characterStoryPage
+	},
+	props: {
+		indexUrl: {
+			type: String,
+			required: true
+		}
+	},
+	template: `<div class="page0" style="margin-bottom: 20px;">
+		<div class="page1" style="margin: 0 25px;">
+		<iframe v-bind:src="contentUrl" frameborder="0" scrolling="no" width="960" height="640" class="contents-iframe"></iframe></div>
+		<div class="page2">
+			<slot name="info">
+				<h3 class="h3">小説版(当サイト)</h3><p>
+				<a href="/character-stories/character93-story/episode0.html">小説版第０話「プロローグ」</a><br>
+				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br>
+				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a></p>
+				<h3 class="h3-wide">小説版(Misskey)</h3><p>
+				<a href="https://misskey.io/notes/9u6hpaj8gsti01os">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
+				<a href="https://misskey.io/notes/9u6j6xmlqint00f2">小説版第０話「プロローグ」</a><br>
+				<a href="https://misskey.io/notes/9ub3q94g114601zw">小説版第１話①「夢からの目覚め」</a><br>
+				<a href="https://misskey.io/notes/9ujd28f36gt500mw">小説版第１話②「２人の夢追い人」</a><br>
+				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br>
+				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
+				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a></p>
+				<a class="a-link" href="/character-stories/character93-story.html">「93(クミ)編」トップに戻る</a>
+			</slot>
+		</div>
+		<slot name="imagelink"></slot>
+		<slot></slot></div>`,
+	data() {
+		return {
+			contentUrl: this.indexUrl
+		};
+	}
+};
 
 Vue.createApp({
 	components: {
+		'characterstory-soundnovelpage-comp': characterStorySoundNovelPage,
 		'characterstory-page-comp': characterStoryPage,
 		'characterstory-about-01-comp': characterStoryAbout01Component,
 		'characterstory-about-02-comp': characterStoryAbout02Component,
