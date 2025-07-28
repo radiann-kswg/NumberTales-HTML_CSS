@@ -50,6 +50,13 @@ ul
 	box-sizing: border-box
 	@media screen and (max-width:$responsive-midiumsize)
 		width: 85%
+@mixin div-pageblock2-wide
+	width: 50%
+	vertical-align: top
+	margin: 0 10px
+	box-sizing: border-box
+	@media screen and (max-width:$responsive-midiumsize)
+		width: 85%
 
 @mixin div-flexlist0
 	@include div-dualblock0
@@ -101,6 +108,9 @@ ul
 		width: 100%
 .page2
 	@include div-pageblock2
+	display: inline-block
+.page2-wide
+	@include div-pageblock2-wide
 	display: inline-block
 
 .background0

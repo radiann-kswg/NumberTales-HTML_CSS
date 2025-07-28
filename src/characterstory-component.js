@@ -105,12 +105,7 @@ const characterStoryAbout01Component = {
 				しかしその高望みがかえって主人たちとすれ違い、主人とのミスマッチによるトラブルが多発した挙句、報われぬ結果を招いたと謹慎処置を受け93(クミ)は落胆する。<br>
 				しかしある日、どこからかナンバーテールズの活動事情を聞きつけた少女「乃木 希(のぎ のぞみ)」との主従契約を結んでから、93(クミ)の従事活動を大きく変えていくことになる。
 			</p>
-			<slot name="info">
-				<h3 class="h3-wide">小説版(当サイト)</h3><p>
-				<a href="/character-stories/character93-story/prologue.html">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
-				<a href="/character-stories/character93-story/episode0.html">小説版第０話</a><br>
-				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br>
-				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a></p>
+			<slot name="info"><div class="page2-wide">
 				<h3 class="h3-wide">小説版(Misskey)</h3><p>
 				<a href="https://misskey.io/notes/9u6hpaj8gsti01os">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
 				<a href="https://misskey.io/notes/9u6j6xmlqint00f2">小説版第０話「プロローグ」</a><br>
@@ -121,9 +116,16 @@ const characterStoryAbout01Component = {
 				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br>
 				<a href="https://misskey.io/notes/aaq9s4f9k5vz0auw">小説版第３話①「スリーズvsフォーズ Part.1」</a><br>
 				<a href="https://misskey.io/clips/a68ukgzu0l3l09bx">公式キャラストまとめ(Misskey.ioクリップ)</a></p>
+				</div>
+				<div class="page2">
+				<h3 class="h3-wide">小説版(当サイト)</h3><p>
+				<a href="/character-stories/character93-story/prologue.html">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
+				<a href="/character-stories/character93-story/episode0.html">小説版第０話</a><br>
+				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br>
+				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a></p>
 				<h3 class="h3-wide">サウンドノベル版</h3><p>
 				<a href="character93-story/soundnovel.html">サウンドノベル版第１話まで</a></p>
-			</slot>
+			</div></slot>
 		</div>
 		<slot name="imagelink"></slot>
 		<img alt="画像が見つかりませんでした" src="/img/cnsp_chrst/cnsp_chrst93.png" class="character-img">
@@ -138,16 +140,9 @@ const characterStoryPage = {
 			<slot name="contents"><p><span class="p-bold">Comming Soon...</span></p></slot>
 			<slot name="info">
 				<h3 class="h3-wide">小説版(Misskey)連載中</h3><p>
-				<a href="https://misskey.io/notes/9u6hpaj8gsti01os">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
-				<a href="https://misskey.io/notes/9u6j6xmlqint00f2">小説版第０話「プロローグ」</a><br>
-				<a href="https://misskey.io/notes/9ub3q94g114601zw">小説版第１話①「夢からの目覚め」</a><br>
-				<a href="https://misskey.io/notes/9ujd28f36gt500mw">小説版第１話②「２人の夢追い人」</a><br>
-				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br>
-				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
-				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br>
-				<a href="https://misskey.io/notes/aaq9s4f9k5vz0auw">小説版第３話①「スリーズvsフォーズ Part.1」</a></p>
+				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">サウンドノベル版</h3><p>
-				<a href="/character-stories/character93-story/soundnovel.html">サウンドノベル版第１話まで</a></p>
+				<a class="a-commingsoon">Comming Soon...</a></p>
 				<a class="a-link" href="../character93-story.html">「93(クミ)編」トップに戻る</a>
 			</slot>
 		</div>
@@ -170,18 +165,9 @@ const characterStorySoundNovelPage = {
 		<div class="page2">
 			<slot name="info">
 				<h3 class="h3">小説版(当サイト)</h3><p>
-				<a href="/character-stories/character93-story/episode0.html">小説版第０話「プロローグ」</a><br>
-				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br>
-				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a></p>
+				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">小説版(Misskey)</h3><p>
-				<a href="https://misskey.io/notes/9u6hpaj8gsti01os">「ある主従契約記録にて」（前日端ショートストーリー）</a><br>
-				<a href="https://misskey.io/notes/9u6j6xmlqint00f2">小説版第０話「プロローグ」</a><br>
-				<a href="https://misskey.io/notes/9ub3q94g114601zw">小説版第１話①「夢からの目覚め」</a><br>
-				<a href="https://misskey.io/notes/9ujd28f36gt500mw">小説版第１話②「２人の夢追い人」</a><br>
-				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br>
-				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br>
-				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br>
-				<a href="https://misskey.io/notes/aaq9s4f9k5vz0auw">小説版第３話①「スリーズvsフォーズ Part.1」</a></p>
+				<a class="a-commingsoon">Comming Soon...</a></p>
 				<a class="a-link" href="/character-stories/character93-story.html">「93(クミ)編」トップに戻る</a>
 			</slot>
 		</div>

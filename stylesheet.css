@@ -89,6 +89,19 @@ ul li {
   }
 }
 
+.page2-wide {
+  width: 50%;
+  vertical-align: top;
+  margin: 0 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+@media screen and (max-width: 896px) {
+  .page2-wide {
+    width: 85%;
+  }
+}
+
 .background0 {
   margin: 0 auto;
   box-sizing: border-box;
