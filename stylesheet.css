@@ -162,6 +162,11 @@ ul li {
   z-index: 2;
 }
 
+.character-list2-credit {
+  margin-top: 20px;
+  width: 100%;
+}
+
 .characterstories-list0 {
   width: 85%;
   margin: 0 auto 0 20px;
