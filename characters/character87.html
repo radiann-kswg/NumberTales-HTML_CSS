@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「87(ヤシナ/ハナ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp wide-style="true">
+        <template #title>87(ヤシナ/ハナ)</template>
+        社会的信用の向上効果が期待できるとされているナンバーテールズ。<br />明るく積極的で技術力も高いことから、男性技術職の主人を筆頭に強い支持を賜っている。<br />しかしながらどこか自分の望む完璧なものを得るために過度な出資も惜しまない一面があり、他個体から防犯的・自衛的な身の危険を心配されている。<br />とはいえ良識や規範はちゃんと理解しているので、怪しい人や怪しいモノへは貢いでいない……はず。
+        <template #callingme>私(わたし)</template>
+        <template #callingyou>あなたさま, ご主人さま</template>
+        <template #gender>女性</template>
+        <template #height>156cm</template>
+        <template #conceptage>19(自称)</template>
+        <template #numberoftails>8(8+7)</template>
+        <template #belongingclass>デュアルシックスズ</template>
+        <template #potential>金運を上げ、物欲を叶える</template>
+        <template #characteristic
+          >明るくポジティブだが、欲張りで拝金主義・完璧主義な一面がある</template
+        >
+        <template #hobby>時計修理・時計製作</template>
+        <template #skill>はんだ付け（実は溶接もできる）</template>
+        <template #favors>自己投資(という考え方)</template>
+        <template #unlikes>誤差、やる気を出さない人</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img87.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
+</html>
