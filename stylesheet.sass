@@ -115,11 +115,16 @@ ul
 
 .background0
 	@include div-dualblock0
-	margin: 20px 20px
+	margin: 15px 35px
+	h2
+		vertical-align: top
+		display: block
+		margin: 10px
+		box-sizing: border-box
 .background1
 	@include div-dualblock1
 	display: inline-block
-	margin: 40px 0
+	margin: 15px 25px auto auto
 
 .character-list0
 	@include div-flexlist0
@@ -155,6 +160,17 @@ ul
 	margin-bottom: 20px
 
 img
+	&.background-img
+		display: inline-block
+		text-align: center
+		margin: 10px 0
+		width: 80%
+		box-shadow: 6px 6px 4px slategrey
+		vertical-align: top
+		box-sizing: border-box
+		@media screen and (max-width:$responsive-midiumsize)
+			display: block
+			margin: 0 auto
 	&.character-img, &.contents-img
 		display: inline-block
 		text-align: center
