@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「67(ムナ)」旧式</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp wide-style="true">
+        <template #title>67(ムナ)-旧式</template>
+        体調管理や健康管理に優れており、フィットネスを何よりも好む事から体育系男子の印象を持たれている。<br />
+		ただ当時でも強かだった印象に反し、本人は「もう少し鍛錬が裏切らない身体を手にしたい」と豪語していた。<br />
+		よってつい最近に<a class="a-p" href="character67.html">人間の筋肉構造に限りなく近い躯体</a>を手にしたのだが、そうするまでもなく彼自身の努力や鍛錬意欲は周囲から十分に称賛されているようだ。
+        <template #callingme>俺</template>
+        <template #callingyou>～トレーナー</template>
+        <template #gender>男性</template>
+        <template #height>145cm</template>
+        <template #conceptage>22</template>
+        <template #numberoftails>7(6+7)</template>
+        <template #belongingclass>デュアルフォーズ</template>
+        <template #potential>心身の健康を保証する</template>
+        <template #characteristic
+          >筋肉主義者のトレーナー気質。まだ自分の鍛錬に限界があることを恐れている一面も</template
+        >
+        <template #hobby>筋トレ、食事管理</template>
+        <template #skill>コーチング</template>
+        <template #favors>人間の栄養管理について</template>
+        <template #unlikes>努力不足な人</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img67-A.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
+</html>

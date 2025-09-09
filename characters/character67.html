@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「67(ムナ)」新式</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp wide-style="true">
+        <template #title>67(ムナ)-新式</template>
+        体調管理や健康管理に優れており、フィットネスを何よりも好む事から体育系男子の印象を持たれている。<br />
+		つい最近の躯体の新調によりフィットネスのコーチングにも特化したナンバーテールズの中でもとても珍しい個体。<br />
+		<a class="a-p" href="character67-old.html">旧式</a>時から鍛錬熱心で現在のその分厚い人工筋肉から威圧的？な印象を抱かれるようにもなったが、オーバーワークはしない/させない主義なのでご安心を。<br />
+		ただ、一部周囲からミーム扱いもされているらしく…
+        <template #callingme>俺</template>
+        <template #callingyou>～トレーナー</template>
+        <template #gender>男性</template>
+        <template #height>145~190cm</template>
+        <template #conceptage>22?</template>
+        <template #numberoftails>7(6+7)</template>
+        <template #belongingclass>デュアルフォーズ</template>
+        <template #potential>心身の健康を保証する</template>
+        <template #characteristic
+          >筋肉主義者のトレーナー気質。無理なく鍛錬することを醍醐味とする</template
+        >
+        <template #hobby>筋トレ、食事管理</template>
+        <template #skill>コーチング</template>
+        <template #favors>人間の栄養管理について</template>
+        <template #unlikes>努力不足な人</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img67-B.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
+</html>
