@@ -107,14 +107,14 @@ const characterStoryAbout01Component = {
 			</p>
 			<slot name="info"><div class="page2-wide">
 				<h3 class="h3-wide">小説版(Misskey)</h3><p>
-				<a href="https://misskey.io/notes/9u6hpaj8gsti01os">「ある主従契約記録にて」（前日端ショートストーリー）</a><br />
-				<a href="https://misskey.io/notes/9u6j6xmlqint00f2">小説版第０話「プロローグ」</a><br />
-				<a href="https://misskey.io/notes/9ub3q94g114601zw">小説版第１話①「夢からの目覚め」</a><br />
-				<a href="https://misskey.io/notes/9ujd28f36gt500mw">小説版第１話②「２人の夢追い人」</a><br />
-				<a href="https://misskey.io/notes/9zjggaauq0l600d1">小説版第２話①「93(クミ)の野望(ユメ)」</a><br />
-				<a href="https://misskey.io/notes/a1n7et2fnrep02zx">小説版第２話②「九十九神計画」</a><br />
-				<a href="https://misskey.io/notes/a4qme67aneyd0bir">小説版第２話③「再挑戦」</a><br />
-				<a href="https://misskey.io/notes/aaq9s4f9k5vz0auw">小説版第３話①「スリーズvsフォーズ Part.1」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/9u6hpaj8di">「ある主従契約記録にて」（前日端ショートストーリー）</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/9u6j6xmldw">小説版第０話「プロローグ」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/9ub3q94g7i">小説版第１話①「夢からの目覚め」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/9ujd28f38n">小説版第１話②「２人の夢追い人」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/9zjggaaubt">小説版第２話①「93(クミ)の野望(ユメ)」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/a1n7et2fcv">小説版第２話②「九十九神計画」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/a4qme67aj1">小説版第２話③「再挑戦」</a><br />
+				<a href="https://misskey.numbertales-radiann.net/notes/aaq9s4f9e6">小説版第３話①「スリーズvsフォーズ Part.1」</a><br />
 				<a href="https://misskey.io/clips/a68ukgzu0l3l09bx">公式キャラストまとめ(Misskey.ioクリップ)</a></p>
 				</div>
 				<div class="page2">
