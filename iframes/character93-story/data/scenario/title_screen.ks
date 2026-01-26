@@ -43,7 +43,7 @@ TYRANO.kag.stat.charas['Tenim'].jname = '10(ミツル)'
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 # 創作
-ラジアン(柏木主税)　https://misskey.numbertales-radiann.net/@RadianN_kswg[p]
+ラジアン(柏木主税)　https://www.numbertales-radiann.net/[p]
 # 立ち絵・背景
 喜雨 kiu/xiyu　https://kiuxiyu.myportfolio.com/[p]
 # サウンド
@@ -51,7 +51,7 @@ TYRANO.kag.stat.charas['Tenim'].jname = '10(ミツル)'
 # UI素材
 空想曲線　https://kopacurve.blog.fc2.com/[p]
 # 制作
-百花繚乱研究所（©ラジアン, 2021-2025） https://misskey.numbertales-radiann.net/@official[p]
+百花繚乱研究所（©ラジアン, 2021-2025） https://www.numbertales-radiann.net/[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]

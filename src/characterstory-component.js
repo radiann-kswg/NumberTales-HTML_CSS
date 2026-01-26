@@ -16,8 +16,6 @@ const characterStoryAbout04Component = {
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">小説版(Misskey)</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
@@ -45,8 +43,6 @@ const characterStoryAbout03Component = {
 			</p>
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">小説版(Misskey)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
@@ -77,8 +73,6 @@ const characterStoryAbout02Component = {
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">小説版(Misskey)</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
@@ -106,16 +100,6 @@ const characterStoryAbout01Component = {
 				しかしある日、どこからかナンバーテールズの活動事情を聞きつけた少女「乃木 希(のぎ のぞみ)」との主従契約を結んでから、93(クミ)の従事活動を大きく変えていくことになる。
 			</p>
 			<slot name="info"><div class="page2-wide">
-				<h3 class="h3-wide">小説版(Misskey)</h3><p>
-				<a href="https://misskey.numbertales-radiann.net/notes/9u6hpaj8di">「ある主従契約記録にて」（前日端ショートストーリー）</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/9u6j6xmldw">小説版第０話「プロローグ」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/9ub3q94g7i">小説版第１話①「夢からの目覚め」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/9ujd28f38n">小説版第１話②「２人の夢追い人」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/9zjggaaubt">小説版第２話①「93(クミ)の野望(ユメ)」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/a1n7et2fcv">小説版第２話②「九十九神計画」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/a4qme67aj1">小説版第２話③「再挑戦」</a><br />
-				<a href="https://misskey.numbertales-radiann.net/notes/aaq9s4f9e6">小説版第３話①「スリーズvsフォーズ Part.1」</a><br />
-				<a href="https://misskey.io/clips/a68ukgzu0l3l09bx">公式キャラストまとめ(Misskey.ioクリップ)</a></p>
 				</div>
 				<div class="page2">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
@@ -139,8 +123,6 @@ const characterStoryPage = {
 		<div class="page1" style="margin-bottom: 20px;">
 			<slot name="contents"><p><span class="p-bold">Comming Soon...</span></p></slot>
 			<slot name="info">
-				<h3 class="h3-wide">小説版(Misskey)連載中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 				<h3 class="h3-wide">サウンドノベル版</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 				<a class="a-link" href="../character93-story.html">「93(クミ)編」トップに戻る</a>
@@ -165,8 +147,6 @@ const characterStorySoundNovelPage = {
 		<div class="page2">
 			<slot name="info">
 				<h3 class="h3">小説版(当サイト)</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">小説版(Misskey)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 				<a class="a-link" href="/character-stories/character93-story.html">「93(クミ)編」トップに戻る</a>
 			</slot>

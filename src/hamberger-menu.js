@@ -13,14 +13,10 @@ Vue.createApp({})
 			<div class="menu" v-show="ActiveBtn">
 				<ul>
 					<li><a href="/index.html">サイトトップ</a></li>
-					<li><a href="https://misskey.numbertales-radiann.net/@official/pages/creation_guideline">創作ガイドライン(日本語)</a></li>
-					<li><a href="https://misskey.numbertales-radiann.net/@official/pages/creation_guideline_EN">Creations Guideline(English)</a></li>
+					<li><a href="https://www.numbertales-radiann.net/">活動について/Contact Us</a></li>
+					<li><a href="https://database.numbertales-radiann.net/">創作ガイドライン/Creation Guidelines</a></li>
 					<li><a href="/characters.html">キャラクター紹介(2桁)</a></li>
 					<li><a href="/characters-special.html">キャラクター紹介(3桁)</a></li>
-					<li><a href="https://misskey.numbertales-radiann.net/@official">百花繚乱研究所公式Misskey</a></li>
-					<li><a href="https://misskey.numbertales-radiann.net/@APHR_NTs">ナンバーテールズ公式MisskeyBot</a></li>
-					<li><a href="https://misskey.io/@APHR_NTs">ナンバーテールズ公式MisskeyBot(.io版)</a></li>
-					<li><a href="https://misskey.numbertales-radiann.net/@RadianN_kswg">原作者公式Misskeyアカウント</a></li>
 					<li><a href="https://www.pixiv.net/users/44375569">原作者公式pixiv</a></li>
 					<li><a href="https://radiann-kswg.fanbox.cc/">原作者公式pixivFANBOX</a></li>
 					<li><a href="https://radiann-kswg.booth.pm/">原作者公式BOOTH</a></li>
