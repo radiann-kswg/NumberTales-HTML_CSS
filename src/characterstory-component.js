@@ -106,7 +106,8 @@ const characterStoryAbout01Component = {
 				<a href="/character-stories/character93-story/prologue.html">「ある主従契約記録にて」（前日端ショートストーリー）</a><br />
 				<a href="/character-stories/character93-story/episode0.html">小説版第０話</a><br />
 				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br />
-				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a></p>
+				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a><br />
+				<a href="/character-stories/character93-story/episode3.html">小説版第３話</a></p>
 				<h3 class="h3-wide">サウンドノベル版</h3><p>
 				<a href="character93-story/soundnovel.html">サウンドノベル版第１話まで</a></p>
 			</div></slot>
