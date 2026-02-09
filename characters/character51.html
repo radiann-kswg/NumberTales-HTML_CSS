@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「51(イソイチ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>51(イソイチ)</template>
+		枠にとらわれない思考の持ち主で、発想や着眼点についてはとても注目されている。<br />
+		しかし、本人が「“安全装置”を本体設計に組み込むことで“奇跡の個体”を安定最適化した個体」だと豪語している反面、その「奇跡を起こす」と噂される兄姉個体の改良個体としてはとんでもない駄作だと悪評を連ねる主人が一定数存在している。<br />
+		本人は「59(イヅク)」よりマシだと自覚していないようだが……
+        <template #callingme>おれ</template>
+        <template #callingyou>主(あるじ)</template>
+        <template #gender>男性</template>
+        <template #height>154cm</template>
+        <template #weight>44kg</template>
+        <template #conceptage>16</template>
+        <template #numberoftails>5(5+1)</template>
+        <template #belongingclass>デュアルシックスズ</template>
+        <template #potential>閃きをもたらす</template>
+        <template #characteristic
+          >発想力が高くアイディアマンとしても名高い</template
+        >
+        <template #hobby>ジェンガ</template>
+        <template #skill>ツボで弱点を突く</template>
+        <template #favors
+          >ドキュメンタリー、（漠然とした）期待</template
+        >
+        <template #unlikes>枠にとらわれること、長話</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img51.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
+</html>
