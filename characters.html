@@ -21,7 +21,8 @@
 	</header>
 	<main id="app-list-comp">
 		<h1>ナンバーテールズ紹介一覧</h1>
-		<div class="block-scroll">
+		<div data-custom-scroll-root>
+			<custom-scroll>
 			<h2>0</h2>
 			<div class="character-list0">
 				<list-comp wide-style="true">
@@ -638,6 +639,7 @@
 								class="character-list-img"></a></template>
 				</list-comp>
 			</div>
+			</custom-scroll>
 		</div>
 		<a href="/characters-special.html">
 			<h2 class="h2-a-link">ナンバーテールズ(3桁)紹介はこちら</h2>
@@ -654,6 +656,6 @@
 <!--<div id="app" style="display: none;">-->
 <!-- Vue.jsを使いたい部分 -->
 <!--</div>-->
-<script type="module" src="/src/custom-scroll.js"></script>
+<script src="/src/custom-scroll.js"></script>
 
 </html>
