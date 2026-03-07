@@ -4,7 +4,7 @@ const footerCreditComponent = {
 		<p><a class="a-p" href="
 		https://database.numbertales-radiann.net/">創作ガイドライン/Creation Guidelines</a></p><p>
 			スペシャルサンクス：<a class="a-p" href="https://okauni.connpass.com/">岡山Unity勉強会</a>(2021-2022), <a class="a-p" href="https://sanuki-gamen.connpass.com/">讃岐GameN</a>(2022-2024), <a class="a-p" href="https://misskey.io/">Misskey.io</a>(2022-2024),<br /><a href="https://kiuxiyu.myportfolio.com/">喜雨(kiu/xiyu)</a>さん(2023-), ヨシアミ(Yoshiami4735)さん(2024-), 散狐アタストさん(2024-), および制作活動に関わっていただきましたフォロワーのみなさん</p></div>`,
-  // https://qiita.com/ron-Qiita/items/17af311a506d08b7bf14
+  // https://qiita.com/ron-Qiita/items/17af311a506d08b7bf14 (改変済)
   data() {
     return {
       nowYear: 2022,
