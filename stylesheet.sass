@@ -1,62 +1,84 @@
 *
 	padding: 0
 	margin: 0
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+	font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif
+	box-sizing: border-box
 
-$responsive-midiumsize: 896px
-$responsive-smallsize: 480px
+// カラーパレット（RadianNs_WebSite に準拠）
+$primary-navy: #1a2332
+$secondary-navy: #2c3e50
+$light-navy: #34495e
+$accent-blue: #3498db
+$light-blue: #5dade2
+$pure-white: #ffffff
+$light-gray: #f8f9fa
+$medium-gray: #6c757d
+$border-gray: #dee2e6
+$text-dark: #2c3e50
+$shadow-color: rgba(26, 35, 50, 0.1)
 
-header
-	background-color: lightcyan
-	position: fixed
-	top: 0
-	left: 0
+$responsive-midiumsize: 800px
+$responsive-smallsize: 600px
+$opacity: 0.8
+
+@mixin font-sansserif
+	font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif
+
+@mixin responsive-dualblock
 	width: 100%
-	z-index: 10
-	@media screen and (max-width:$responsive-smallsize)
-		position: unset
-		width: 100%
+	max-width: none
+	display: block
 
-ul
-	li
-		list-style: none
-		text-align: left
+@mixin medium-dualblock
+	width: 48%
+	max-width: 750px
+	margin: 10px 10px
+	box-sizing: border-box
+	@media screen and (max-width:$responsive-midiumsize)
+		@include responsive-dualblock
 
 @mixin div-dualblock0
 	margin: 0 auto
 	box-sizing: border-box
+	img.character-img
+		width: 48%
+		box-shadow: 7px 7px 5px slategrey
+		vertical-align: top
+		margin: 20px 0 0 20px
+		box-sizing: border-box
+		border-radius: 12px
+		display: inline-block
+		@media screen and (max-width:$responsive-midiumsize)
+			@include responsive-dualblock
+
 @mixin div-dualblock1
-	width: 45%
+	@include medium-dualblock
+	display: inline-block
 	vertical-align: top
-	margin: 0 20px
-	box-sizing: border-box
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 85%
 
 @mixin div-pageblock0
 	margin: 0 auto
 	box-sizing: border-box
+	max-width: none
+	width: 95%
+
 @mixin div-pageblock1
-	width: 60%
-	vertical-align: top
-	margin: 0 50px
-	box-sizing: border-box
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 85%
+	@include medium-dualblock
+	width: 95%
+	margin: 0 35px
+
 @mixin div-pageblock2
+	@include medium-dualblock
 	width: 30%
-	vertical-align: top
 	margin: 0 20px
-	box-sizing: border-box
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 85%
-@mixin div-pageblock2-wide
-	width: 50%
+	display: inline-block
+
+@mixin div-pageblock2-full
+	width: 100%
 	vertical-align: top
 	margin: 0 10px
 	box-sizing: border-box
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 85%
+	display: block
 
 @mixin div-flexlist0
 	@include div-dualblock0
@@ -68,176 +90,27 @@ ul
 @mixin div-flexlist-contents
 	vertical-align: top
 	box-sizing: border-box
+	max-block-size: min(850px, 85vh)
 	margin: 0 2.5% 0 3.5%
-	@media screen and (max-width:$responsive-smallsize)
-		width: 100%
+	@media screen and (max-width:$responsive-midiumsize)
+		@include medium-dualblock
 
 @mixin div-flexlist1
-	width: 27%
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 100%
 	@include div-flexlist-contents
+	width: 23.5%
+	max-width: 300px
+	@media screen and (max-width:$responsive-midiumsize)
+		width: 40%
+	@media screen and (max-width:$responsive-smallsize)
+		@include responsive-dualblock
+
 @mixin div-flexlist1-small
+	@include div-flexlist-contents
 	width: 19%
 	@media screen and (max-width:$responsive-midiumsize)
 		width: 40%
-	@include div-flexlist-contents
-
-.character0
-	@include div-dualblock0
-	img
-		display: block
-		&.character-img
-			margin-bottom: 20px
-
-.character1
-	@include div-dualblock1
-	display: inline-block
-
-.page0
-	@include div-pageblock0
-	img
-		display: block
-		margin-right: auto
-		margin-left: auto
-.page1
-	@include div-pageblock1
-	display: inline-block
-	iframe
-		display: block
-		width: 100%
-.page2
-	@include div-pageblock2
-	display: inline-block
-.page2-wide
-	@include div-pageblock2-wide
-	display: inline-block
-
-.background0
-	@include div-dualblock0
-	margin: 15px 35px
-	h2
-		vertical-align: top
-		display: block
-		margin: 10px
-		box-sizing: border-box
-.background1
-	@include div-dualblock1
-	display: inline-block
-	margin: 15px 25px auto auto
-
-.character-list0
-	@include div-flexlist0
-.character-list1
-	@include div-flexlist1
-	position: relative
-
-.character-list1-small
-	@include div-flexlist1-small
-	position: relative
-
-.character-list2
-	position: absolute
-	top: -25px
-	left: -15px
-	vertical-align: bottom
-	z-index: 2
-
-.character-list2-credit
-	margin-top: 20px
-	width: 100%
-
-.characterstories-list0
-	width: 85%
-	margin: 0 auto 0 20px
-
-.characterstories-list1
-	width: 100%
-	margin-bottom: 20px
-
-.contents-only
-	@include div-dualblock0
-	margin-bottom: 20px
-
-img
-	&.background-img
-		display: inline-block
-		text-align: center
-		margin: 10px 0
-		width: 80%
-		box-shadow: 6px 6px 4px slategrey
-		vertical-align: top
-		box-sizing: border-box
-		@media screen and (max-width:$responsive-midiumsize)
-			display: block
-			margin: 0 auto
-	&.character-img, &.contents-img
-		display: inline-block
-		text-align: center
-		margin: 0 20px
-		width: 45%
-		box-shadow: 7px 7px 5px slategrey
-		vertical-align: top
-		box-sizing: border-box
-		@media screen and (max-width:$responsive-midiumsize)
-			display: block
-			width: 85%
-			margin: 0 auto
-	&.character-list-img
-		width: 100%
-		object-fit: cover
-		box-shadow: 7px 7px 5px slategrey
-		vertical-align: top
-		margin: 0 0 40px
-		box-sizing: border-box
-		@media screen and (max-width:$responsive-midiumsize)
-			width: 100%
-	&.contents-img
-		@media screen and (max-width:$responsive-midiumsize)
-			display: block
-			margin-bottom: 20px
-
-iframe
-	&.news-iframe
-		display: block
-		margin: 20px auto
-		width: 80%
-		vertical-align: top
-		box-sizing: border-box
-		@media screen and (max-width:$responsive-midiumsize)
-			width: 80%
-	&.contents-iframe
-		display: inline-block
-		text-align: center
-		margin: 0 20px
-		box-shadow: 7px 7px 5px slategrey
-		vertical-align: top
-		box-sizing: border-box
-		@media screen and (max-width:$responsive-midiumsize)
-			display: block
-			width: 85%
-			margin: 0 auto 20px auto
-
-@mixin font-sansserif
-	font-family: Arial, Helvetica, sans-serif
-
-h1
-	@include font-sansserif
-	font-weight: bold
-	background-image: url("img/cnsp/cnsp_img0.png")
-	background-size: cover
-	padding-bottom: 15%
-	margin: 100px 0 5px 0
-	text-align: center
-	font-size: 35px
-	width: 100%
-	@media screen and (max-width:$responsive-midiumsize)
-		font-size: 25px
 	@media screen and (max-width:$responsive-smallsize)
-		margin-top: 40px
-	&.h1-noimg
-		background-image: none
-		padding-bottom: 20px
+		@include responsive-dualblock
 
 @mixin h-boxdesign($bordersize, $bordercolor, $width)
 	border-bottom: $bordersize solid $bordercolor
@@ -246,25 +119,71 @@ h1
 	width: $width
 	box-sizing: border-box
 
-@mixin a-block($blockcolor, $blockcolor-hover, $block-opacity)
-	text-decoration: none
-	font-style: bold
-	font-family: serif
-	color: white
-	background-color: $blockcolor
-	border-radius: 5px
-	padding: 0 5px
+@mixin modern-button($bg-color, $hover-color, $text-color: $pure-white)
 	display: inline-block
-	box-sizing: border-box
+	padding: 12px 24px
+	margin: 8px 4px
+	background: linear-gradient(135deg, $bg-color 0%, lighten($bg-color, 10%) 100%)
+	color: $text-color
+	text-decoration: none
+	border-radius: 25px
+	box-shadow: 0 4px 15px rgba($bg-color, 0.3)
+	transition: all 0.3s ease
+	font-weight: 600
+	font-size: 0.9rem
+	border: none
+	cursor: pointer
+	&:hover
+		transform: translateY(-2px)
+		box-shadow: 0 8px 25px rgba($hover-color, 0.4)
+		background: linear-gradient(135deg, $hover-color 0%, lighten($hover-color, 15%) 100%)
+		text-decoration: none
+	&:active
+		transform: translateY(0)
+		box-shadow: 0 2px 10px rgba($bg-color, 0.4)
+	@media screen and (max-width:$responsive-smallsize)
+		padding: 10px 20px
+		font-size: 0.85rem
+
+@mixin a-block($blockcolor, $blockcolor-hover, $block-opacity)
+	display: inline-block
+	padding: 12px 24px
+	margin: 8px 4px
+	background: linear-gradient(135deg, $blockcolor 0%, lighten($blockcolor, 10%) 100%)
+	color: $pure-white
+	text-decoration: none
+	border-radius: 25px
+	box-shadow: 0 4px 15px rgba($blockcolor, 0.3)
+	transition: all 0.3s ease
+	font-weight: 600
+	font-size: 0.9rem
+	border: none
+	cursor: pointer
 	opacity: $block-opacity
 	&:hover
-		opacity: $block-opacity
-		background-color: $blockcolor-hover
-		color: darkblue
+		transform: translateY(-2px)
+		box-shadow: 0 8px 25px rgba($blockcolor-hover, 0.4)
+		background: linear-gradient(135deg, $blockcolor-hover 0%, lighten($blockcolor-hover, 15%) 100%)
+		text-decoration: none
+		opacity: 1.0
+	&:active
+		transform: translateY(0)
+		box-shadow: 0 2px 10px rgba($blockcolor, 0.4)
 	@media screen and (max-width:$responsive-smallsize)
-		padding: 1px
+		padding: 10px 20px
+		font-size: 0.85rem
 
-$opacity: 0.65
+@mixin card-style
+	background: $pure-white
+	border-radius: 15px
+	box-shadow: 0 8px 25px $shadow-color
+	padding: 20px
+	margin: 20px 5px auto 5px
+	border: 1px solid $border-gray
+	transition: all 0.3s ease
+	&:hover
+		transform: translateY(-5px)
+		box-shadow: 0 15px 40px rgba($primary-navy, 0.15)
 
 @mixin medium-font
 	font-size: 21px
@@ -289,83 +208,211 @@ $opacity: 0.65
 
 @mixin smallestlighter-font
 	font-size: 13px
-	font-wight: lighter
+	font-weight: lighter
 	opacity: 0.75
 	@media screen and (max-width:$responsive-midiumsize)
 		font-size: 11.5px
 	@media screen and (max-width:$responsive-smallsize)
 		font-size: 10px
 
-h2
-	@include h-boxdesign(4px, slategrey , 180px)
-	color: darkcyan
-	margin-left: 30px
-	margin-bottom: 30px
-	@include medium-font
-	&.h2-small
-		@include small-font
-		width: 250px
-		@media screen and (max-width:$responsive-midiumsize)
-			width: 250px
-		@media screen and (max-width:$responsive-smallsize)
-			width: 50%
-	&.h2-a-link, &.h2-a-link-commingsoon
-		width: 450px
-		margin: 30px auto 30px 50px
-		@include a-block(darkcyan, cyan, 1.0)
+body
+	background: linear-gradient(135deg, $pure-white 0%, $light-gray 100%)
+	color: $text-dark
+	line-height: 1.6
+	min-height: 100vh
+
+main
+	width: 95%
+	padding-top: 60px
+	@media screen and (max-width:$responsive-smallsize)
+		padding-top: 20px
+
+header
+	background: rgba($pure-white, 0.95)
+	backdrop-filter: blur(10px)
+	border-bottom: 1px solid $border-gray
+	box-shadow: 0 2px 10px $shadow-color
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1000
+	padding: 10px 0
+	@media screen and (max-width:$responsive-smallsize)
+		position: relative
+		width: 100%
+		padding: 5px 0
+
+img
+	display: block
+	margin: 10px auto
+	width: 85%
+	box-shadow: 6px 6px 4px slategrey
+	vertical-align: top
+	box-sizing: border-box
+	@media screen and (max-width:$responsive-midiumsize)
 		display: block
+		margin: 0 auto
+	&.background-img
+		display: inline-block
+		text-align: center
+		margin: 10px 0
+		width: 80%
+		box-shadow: 6px 6px 4px slategrey
+		vertical-align: top
+		box-sizing: border-box
+		border-radius: 12px
 		@media screen and (max-width:$responsive-midiumsize)
-			width: 75%
-		@media screen and (max-width:$responsive-smallsize)
+			display: block
+			margin: 0 auto
+	&.character-img, &.contents-img
+		display: inline-block
+		text-align: center
+		margin: 0 20px
+		width: 45%
+		box-shadow: 7px 7px 5px slategrey
+		vertical-align: top
+		box-sizing: border-box
+		border-radius: 16px
+		@media screen and (max-width:$responsive-midiumsize)
+			display: block
 			width: 85%
-	&.h2-a-link
-		@include a-block(darkcyan, cyan, 1.0)
-	&.h2-a-link-commingsoon
-		@include a-block(slategray, slategray, $opacity)
-		&:hover
-			opacity: $opacity
-	&.h2-wide
-		@include medium-font
-		width: 320px
+			margin: 0 auto
+	&.character-list-img
+		width: 100%
+		object-fit: cover
+		box-shadow: 7px 7px 5px slategrey
+		vertical-align: top
+		margin: 0
+		box-sizing: border-box
+		border-radius: 12px
 		@media screen and (max-width:$responsive-midiumsize)
-			width: 270px
+			width: 100%
+	&.contents-img
+		@media screen and (max-width:$responsive-midiumsize)
+			display: block
+			margin-bottom: 20px
+
+iframe
+	&.news-iframe
+		display: block
+		margin: 20px auto
+		width: 80%
+		vertical-align: top
+		box-sizing: border-box
+		border-radius: 16px
+		@media screen and (max-width:$responsive-midiumsize)
+			width: 80%
+	&.contents-iframe
+		display: inline-block
+		text-align: center
+		margin: 0 20px
+		box-shadow: 7px 7px 5px slategrey
+		vertical-align: top
+		box-sizing: border-box
+		border-radius: 16px
+		@media screen and (max-width:$responsive-midiumsize)
+			display: block
+			width: 85%
+			margin: 0 auto 20px auto
+
+ul
+	li
+		list-style: none
+		text-align: left
+
+h1
+	@include font-sansserif
+	font-weight: 700
+	background: linear-gradient(135deg, $primary-navy 0%, $accent-blue 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	background-clip: text
+	padding: 60px 20px 40px
+	margin: 0 0 30px 0
+	text-align: center
+	font-size: clamp(1.5rem, 5vw, 3rem)
+	width: 100%
+	position: relative
+	&::after
+		content: ""
+		position: absolute
+		bottom: 15px
+		left: 50%
+		transform: translateX(-50%)
+		width: 100px
+		height: 4px
+		background: linear-gradient(90deg, $accent-blue, $light-blue)
+		border-radius: 2px
+	@media screen and (max-width:$responsive-smallsize)
+		padding-top: 40px
+		font-size: 1.5rem
+	&.h1-noimg
+		padding-bottom: 30px
+
+h2
+	@include font-sansserif
+	color: $primary-navy
+	font-weight: 600
+	font-size: clamp(1.2rem, 3vw, 1.8rem)
+	margin: 30px 15px 20px 15px
+	padding: 15px 20px
+	background: linear-gradient(135deg, $pure-white 0%, $light-gray 100%)
+	border-left: 5px solid $accent-blue
+	border-radius: 8px
+	box-shadow: 0 4px 15px $shadow-color
+	&.h2-small
+		font-size: clamp(1rem, 2.5vw, 1.4rem)
+		padding: 12px 18px
+		max-width: 100%
+	&.h2-a-link, &.h2-a-link-commingsoon
+		@include modern-button($accent-blue, $light-blue)
+		width: auto
+		max-width: 450px
+		text-align: center
+		display: block
+		margin: 30px auto
+		border-left: none
+		@media screen and (max-width:$responsive-midiumsize)
+			max-width: 75%
 		@media screen and (max-width:$responsive-smallsize)
-			width: 220px
+			max-width: 85%
+	&.h2-a-link-commingsoon
+		@include modern-button($medium-gray, lighten($medium-gray, 10%))
+		cursor: not-allowed
+		&:hover
+			transform: none
+			box-shadow: 0 4px 15px rgba($medium-gray, 0.3)
 
 h3
-	@include h-boxdesign(3px, darkcyan , 180px)
-	background-color: white
+	@include h-boxdesign(3px, $accent-blue, 180px)
+	@include small-font
+	background-color: $pure-white
 	font-weight: bold
 	box-shadow: 5px 5px 5px slategrey
 	margin-left: 5px
 	margin-bottom: 20px
-	@include small-font
-	@media screen and (max-width:$responsive-midiumsize)
-		width: 160px
-	@media screen and (max-width:$responsive-smallsize)
-		width: 140px
+	color: $primary-navy
 	&.h3-small
 		box-shadow: none
-		@media screen and (max-width:$responsive-smallsize)
+	&.h3-wide
+		width: 225px
+	@media screen and (max-width:$responsive-midiumsize)
+		width: 180px
+	@media screen and (max-width:$responsive-smallsize)
+		width: 160px
 	&.h3-a-link, &.h3-a-link-commingsoon
 		width: 275px
 		margin: 15px auto 15px 15px
 		display: inline-block
-		@media screen and (max-width:$responsive-midiumsize)
 		@media screen and (max-width:$responsive-smallsize)
 			width: 85%
 	&.h3-a-link
 		@include a-block(darkcyan, cyan, 1.0)
 	&.h3-a-link-commingsoon
-		@include a-block(slategray, slategray, $opacity)
+		@include a-block($medium-gray, lighten($medium-gray, 10%), $opacity)
 		&:hover
 			opacity: $opacity
-	&.h3-wide
-		width: 235px
-		@media screen and (max-width:$responsive-midiumsize)
-			width: 210px
-		@media screen and (max-width:$responsive-smallsize)
-			width: 185px
 
 p
 	@include smallest-font
@@ -385,152 +432,444 @@ span
 		@include smallestlighter-font
 
 a
+	transition: all 0.3s ease
 	&.a-p
-		font-family: unset
-		font-weight: normal
-		color: darkcyan
-		text-decoration: underline
+		color: $accent-blue
+		text-decoration: none
+		border-bottom: 1px dotted $accent-blue
 		&:hover
-			color: darkblue
-	&:hover
-		opacity: $opacity
+			color: $light-blue
+			border-bottom-color: $light-blue
 	&.a-link
+		@include modern-button($accent-blue, $light-blue)
 		@include smallest-font
-		@include a-block(darkcyan, cyan, 1.0)
+		padding: 8px 16px
+		margin: 4px 2px
 	&.a-link-commingsoon
+		@include modern-button($medium-gray, lighten($medium-gray, 10%))
 		@include smallest-font
-		@include a-block(slategray, slategray, $opacity)
+		padding: 8px 16px
+		margin: 4px 2px
+		cursor: not-allowed
 		&:hover
-			color: white
+			transform: none
 	&.a-commingsoon:hover
 		opacity: 1.0
 
+.character0
+	@include div-dualblock0
+	padding: 0 20px 10px
+	img
+		display: block
+		&.character-img
+			margin-bottom: 20px
+	h2
+		vertical-align: top
+		display: block
+		margin: 10px
+		box-sizing: border-box
+
+.character1
+	@include div-dualblock1
+	@include card-style
+	display: inline-block
+	vertical-align: top
+
+.page0
+	@include div-pageblock0
+	img
+		display: block
+		margin-right: auto
+		margin-left: auto
+
+.page1
+	@include div-pageblock1
+	display: inline-block
+	iframe
+		display: block
+		width: 100%
+
+.page2
+	@include div-pageblock2
+
+.page2-full
+	@include div-pageblock2-full
+
+.background0
+	@include div-dualblock0
+	width: 100%
+	margin: 15px 15px
+	h2
+		vertical-align: top
+		display: block
+		margin: 10px
+		box-sizing: border-box
+
+.background1
+	@include div-dualblock1
+	@include card-style
+	margin: 15px 15px auto auto
+	vertical-align: top
+
+.character-list0
+	@include div-flexlist0
+	gap: 15px 0
+	max-width: 1350px
+
+.character-list1
+	@include div-flexlist1
+
+.character-list1-small
+	@include div-flexlist1-small
+
+.character-list1, .character-list1-small
+	@include card-style
+	display: flex
+	flex-direction: column-reverse
+	justify-content: flex-end
+	position: relative
+	overflow: hidden
+	padding: 18px
+	margin-bottom: 15px
+
+.character-list2
+	position: static
+	margin-top: 18px
+	width: 100%
+	text-align: center
+	h3
+		display: inline-block
+		background-color: $pure-white
+		font-weight: normal
+		margin: 0 auto 16px
+		box-shadow: none
+		width: 125px
+		font-size: 15px
+		&.h3-wide
+			width: 145px
+	a
+		margin: 5px 5px
+
+.character-list2-credit
+	margin-top: 20px
+	width: 100%
+
+.characterstories-list0
+	width: 85%
+	margin: 0 auto 0 20px
+
+.characterstories-list1
+	width: 100%
+	margin-bottom: 20px
+
+.contents-only
+	@include div-dualblock0
+	@include card-style
+	margin-bottom: 20px
+
+// index.html の新着情報は大きめに
+h1.h1-noimg + div[data-custom-scroll-root]
+	.character-list0
+		gap: 15px
+		max-width: 1350px
+		padding: 0 20px
+	.character-list1, .character-list1-small
+		width: 45%
+		max-width: 650px
+		margin: 0 auto 20px
+		text-align: left
+		@media screen and (max-width:$responsive-midiumsize)
+			width: 95%
+			margin: 0 auto 15px
+			padding: 20px
+		@media screen and (max-width:$responsive-smallsize)
+			width: 96%
+			padding: 15px
+			margin: 0 auto 10px
+	.character-list2
+		display: inline
+		text-align: center
+		width: 100%
+		h3
+			display: inline-block
+			background-color: $pure-white
+			font-weight: normal
+			margin-left: 15px
+			width: 180px
+			&.h3-wide
+				width: 225px
+		a
+			margin: 5px 5px
+
 footer
 	text-align: center
-	background-color: lightcyan
-	padding: 18px 0
-	margin-top: 30px
+	background: linear-gradient(135deg, $primary-navy 0%, $secondary-navy 100%)
+	color: $pure-white
+	padding: 40px 20px 20px
+	margin-top: 60px
 	width: 100%
-	@include small-font
-	a
-		@include small-font
-		&.a-p
-			@include smallest-font
-		&.a-link
-			@include medium-font
-			width: 135px
-	@media screen and (max-width:$responsive-smallsize)
-		margin-top: 16px
-	p
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100px
+		height: 4px
+		background: linear-gradient(90deg, $accent-blue, $light-blue)
+		border-radius: 2px
+	.license
+		margin-bottom: 10px
 		@include smallest-font
 		a
+			color: $light-blue
+		img
+			display: inline-block
+			width: auto
+			margin: 0 0 0 3px
+			box-shadow: none
+	.credits
+		@include small-font
+		a
+			color: $light-blue
+			&.a-p
+				@include smallest-font
+			&.a-link
+				@include modern-button($accent-blue, $light-blue)
+				@include medium-font
+				margin: 5px
+		@media screen and (max-width:$responsive-smallsize)
+			margin-top: 40px
+			padding: 30px 15px 15px
+		p
 			@include smallest-font
+			opacity: 0.9
+			margin-bottom: 10px
+			a
+				@include smallest-font
+				color: $light-blue
 
 .block-scroll
-	width: 90%
-	margin: 0 auto 15px
-	max-height: 500px
-	border-top: 1px solid slategrey
-	border-left: 1px solid slategrey
-	box-shadow: 5px 5px 5px slategrey
+	max-width: 1350px
+	width: 100%
+	max-height: 750px
+	margin: 0 auto 30px
+	background: $pure-white
+	border: 1px solid $border-gray
+	border-radius: 15px
+	box-shadow: 0 10px 30px $shadow-color
 	overflow: hidden
 	position: relative
 
 .scroll-content
-	max-height: 500px
-	overflow: auto
-	padding-top: 40px
+	max-height: 600px
+	overflow-y: auto
+	padding: 30px
+	&::-webkit-scrollbar
+		width: 8px
+	&::-webkit-scrollbar-track
+		background: $light-gray
+		border-radius: 4px
+	&::-webkit-scrollbar-thumb
+		background: linear-gradient(135deg, $accent-blue, $light-blue)
+		border-radius: 4px
+		&:hover
+			background: linear-gradient(135deg, $light-blue, $accent-blue)
+	h2
+		color: $primary-navy
+		margin: 20px 0
+		padding: 15px 0
+		border-bottom: 2px solid $border-gray
+		text-align: center
+		font-weight: 600
 
-// https://qiita.com/helloworld193/items/9aed3870be1e739c3ad2
-/*ボタン*/
+// https://qiita.com/helloworld193/items/9aed3870be1e739c3ad2 (改変済)
 .hamburger_btn
 	position: fixed
-	/*常に最上部に表示したいので固定*/
-	top: 0
-	right: 0
-	width: 70px
-	height: 72px
+	top: 15px
+	right: 20px
+	width: 56px
+	height: 56px
 	cursor: pointer
-	z-index: 50
+	z-index: 1001
+	background: rgba($pure-white, 0.95)
+	border-radius: 50%
+	box-shadow: 0 4px 15px $shadow-color
+	backdrop-filter: blur(10px)
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all 0.3s ease
+	&:hover
+		transform: scale(1.05)
+		box-shadow: 0 6px 20px rgba($primary-navy, 0.2)
+	@media screen and (max-width:$responsive-smallsize)
+		right: 12px
+		top: 10px
+		width: 50px
+		height: 50px
 
 .hamburger_btn .line
 	position: absolute
-	top: 0
-	left: 20px
-	width: 32px
+	width: 24px
 	height: 2px
-	background: darkcyan
-	text-align: center
+	background: $primary-navy
+	border-radius: 1px
+	transition: all 0.3s ease
 
 .hamburger_btn .line_01
-	top: 16px
-	transition: 0.4s ease
+	top: 19px
 
 .hamburger_btn .line_02
-	top: 26px
-	transition: 0.4s ease
+	top: 27px
 
 .hamburger_btn .line_03
-	top: 36px
-	transition: 0.4s ease
+	top: 35px
 
 .btn_line01
-	transform: translateY(10px) rotate(-45deg)
-	transition: 0.4s ease
+	transform: translateY(8px) rotate(-45deg)
+	transition: 0.3s ease
 
 .btn_line02
-	transition: 0.4s ease
+	transition: 0.3s ease
 	opacity: 0
 
 .btn_line03
-	transform: translateY(-10px) rotate(45deg)
-	transition: 0.4s ease
+	transform: translateY(-8px) rotate(45deg)
+	transition: 0.3s ease
 
-/*サイドバー*/
 .menu-enter-active, .menu-leave-active
-	transition: opacity 0.4s
+	transition: all 0.3s ease
 
 .menu-enter, .menu-leave-to
 	opacity: 0
+	transform: translateX(100%)
 
 .menu-leave, .menu-enter-to
 	opacity: 1
+	transform: translateX(0%)
 
 .menu
-	background-color: rgba(197, 197, 197, 0.671)
-	z-index: 30
-	padding: 2rem 1rem
+	background: rgba($pure-white, 0.95)
+	backdrop-filter: blur(20px)
+	border-left: 1px solid $border-gray
+	box-shadow: -10px 0 30px $shadow-color
+	z-index: 1000
+	padding: 80px 0 2rem
 	position: fixed
-	width: 20rem
-	height: 80rem
+	width: min(300px, 80vw)
+	height: 100vh
 	top: 0
 	right: 0
+	overflow-y: auto
 	li
 		list-style: none
-		line-height: 1
-		padding: 1em
-		@include smallest-font
-		@media screen and (max-width:$responsive-smallsize)
-			list-style: none
-			line-height: 1
-			padding: 0.75em
+		padding: 0
+		margin: 0
+		border-bottom: 1px solid $border-gray
+		&:last-child
+			border-bottom: none
 	a
-		color: black
+		display: block
+		color: $text-dark
 		text-decoration: none
-		font-size: 1.2em
-		font-weight: bold
-		padding: 0
-		@media screen and (max-width:$responsive-smallsize)
-			color: black
-			text-decoration: none
-			font-size: 1em
-			font-weight: bold
-			padding: 0
+		font-size: 1rem
+		font-weight: 500
+		padding: 1.2rem 1.5rem
+		transition: all 0.3s ease
+		border-left: 3px solid transparent
 		&:hover
-			color: darkcyan
-			opacity: 1.0
-			@media screen and (max-width:$responsive-smallsize)
-				color: darkcyan
+			color: $accent-blue
+			background: linear-gradient(135deg, $light-gray 0%, rgba($accent-blue, 0.1) 100%)
+			border-left-color: $accent-blue
+			transform: translateX(5px)
+		@media screen and (max-width:$responsive-smallsize)
+			font-size: 0.9rem
+			padding: 1rem 1.2rem
 	ul
-		margin: 1em
+		margin: 40px 0 0 0
 		padding: 0
+
+// 参照先仕様にある追加クラス群。現時点では未使用でも将来の整合のため保持。
+.contact-section
+	background: linear-gradient(135deg, $light-gray 0%, $pure-white 100%)
+	padding: 60px 20px
+	margin: 0
+
+.contact-container
+	max-width: 800px
+	margin: 0 auto
+
+.contact-title
+	text-align: center
+	color: $primary-navy
+	font-size: clamp(1.8rem, 4vw, 2.5rem)
+	margin-bottom: 20px
+	font-weight: 700
+
+.contact-description
+	text-align: center
+	color: $medium-gray
+	font-size: 1.1rem
+	margin-bottom: 40px
+	line-height: 1.6
+
+.secure-connection
+	&::before
+		content: "SECURE"
+		margin-right: 5px
+		color: $accent-blue
+
+.form-security-notice
+	background: linear-gradient(135deg, rgba($accent-blue, 0.1) 0%, rgba($light-blue, 0.05) 100%)
+	border: 1px solid rgba($accent-blue, 0.3)
+	border-radius: 8px
+	padding: 15px
+	margin: 20px 0
+	font-size: 0.9rem
+	color: $primary-navy
+	position: relative
+	&::before
+		content: "NOTICE"
+		display: inline-block
+		margin-right: 8px
+		font-size: 1.1rem
+	p
+		margin: 5px 0
+		line-height: 1.5
+
+.modal-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background: rgba($primary-navy, 0.85)
+	backdrop-filter: blur(10px)
+	z-index: 2000
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 20px
+
+.modal-content
+	background: $pure-white
+	border-radius: 20px
+	max-width: 700px
+	width: 100%
+	max-height: 85vh
+	overflow: hidden
+	box-shadow: 0 25px 80px rgba($primary-navy, 0.4)
+	border: 1px solid $border-gray
+
+.privacy-link
+	color: $accent-blue !important
+	text-decoration: underline
+	font-weight: 500
+	&:hover
+		color: $primary-navy !important
+		background: rgba($accent-blue, 0.1)
+		padding: 2px 4px
+		border-radius: 4px
+		transition: all 0.2s ease

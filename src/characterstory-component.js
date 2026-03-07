@@ -99,11 +99,10 @@ const characterStoryAbout01Component = {
 				しかしその高望みがかえって主人たちとすれ違い、主人とのミスマッチによるトラブルが多発した挙句、報われぬ結果を招いたと謹慎処置を受け93(クミ)は落胆する。<br />
 				しかしある日、どこからかナンバーテールズの活動事情を聞きつけた少女「乃木 希(のぎ のぞみ)」との主従契約を結んでから、93(クミ)の従事活動を大きく変えていくことになる。
 			</p>
-			<slot name="info"><div class="page2-wide">
-				</div>
-				<div class="page2">
+			<slot name="info">
+				<div class="page2-full">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
-				<a href="/character-stories/character93-story/prologue.html">「ある主従契約記録にて」（前日端ショートストーリー）</a><br />
+				<a href="/character-stories/character93-story/prologue.html">「ある主従契約記録にて」<br />（前日端ショートストーリー）</a><br />
 				<a href="/character-stories/character93-story/episode0.html">小説版第０話</a><br />
 				<a href="/character-stories/character93-story/episode1.html">小説版第１話</a><br />
 				<a href="/character-stories/character93-story/episode2.html">小説版第２話</a><br />
@@ -147,7 +146,7 @@ const characterStorySoundNovelPage = {
 		<iframe v-bind:src="contentUrl" frameborder="0" scrolling="no" width="960" height="640" class="contents-iframe"></iframe></div>
 		<div class="page2">
 			<slot name="info">
-				<h3 class="h3">小説版(当サイト)</h3><p>
+				<h3 class>小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
 				<a class="a-link" href="/character-stories/character93-story.html">「93(クミ)編」トップに戻る</a>
 			</slot>
