@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+    <script>
+      window.Vue ||
+        document.write(
+          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+        );
+    </script>
+    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「86(ハチロ)」</title>
+    <meta
+      name="description"
+      content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="app-menu">
+        <hamberger-menu></hamberger-menu>
+      </div>
+      <script src="/src/hamberger-menu.js"></script>
+    </header>
+    <main id="app-character-page">
+      <character-page-comp>
+        <template #title>86(ハチロ)</template>
+		在庫の整理や補完など、物を定期的に処分することより「使えるものを使うこと」を得意としている。<br />
+		しかし物の管理において少し生真面な部分や収集癖が強めに出る一面がある。<br />
+		一方で人当たりは良いので、ナンバーテールズの中では人も物の両方を大切にする良心が顕著に出やすい。<br />
+		ちなみに、フリーマーケットにおけるレアなキャラクターグッズの物流状況にかなり詳しい。
+        <template #callingme>自分,私(わたし)</template>
+        <template #callingyou>主人</template>
+        <template #gender>女性</template>
+        <template #height>145cm</template>
+        <template #conceptage>14</template>
+        <template #numberoftails>8(8+6)</template>
+        <template #belongingclass>デュアルファイブズ</template>
+        <template #potential>日頃の行いから富と才能を恵む</template>
+        <template #characteristic>人当たりはよいがやや生真面目、収集癖の強い一面も</template>
+        <template #hobby>コレクション収集</template>
+        <template #skill>ブラック案件を見抜く</template>
+        <template #favors>フリーマーケット、<a href="character68.html">68(ロクヤ)</a>の手放したレアアイテム</template>
+        <template #unlikes>断捨離、<a href="character68.html">68(ロクヤ)</a>本人</template>
+        <template #characterimage
+          ><img
+            alt="画像が見つかりませんでした"
+            src="/img/cnsp/cnsp_img86.png"
+            class="character-img"
+        /></template>
+      </character-page-comp>
+    </main>
+    <script src="/src/character-page.js"></script>
+    <footer>
+      <div id="app-credit">
+        <footer-credit></footer-credit>
+      </div>
+      <script src="/src/credit-footer.js"></script>
+    </footer>
+  </body>
+</html>
