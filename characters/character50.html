@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
-    <script>
-      window.Vue ||
-        document.write(
-          '<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
-        );
-    </script>
-    <title>数字の癒し？キャラ化計画「ナンバーテールズ」-「50(ナカバ)」</title>
-    <meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。"/>
-  </head>
 
-  <body>
-    <header>
-      <div id="app-menu">
-        <hamberger-menu></hamberger-menu>
-      </div>
-      <script src="/src/hamberger-menu.js"></script>
-    </header>
-    <main id="app-character-page">
-      <character-page-comp>
-        <template #title>50(ナカバ)</template>
-        他のナンバーテールズと比べどんな状況にも肝が据わっている……が、そのポーカーフェイスの奥には時に経験や慣れにも裏切られ、時に特技も失敗し、時に悪戯にも遭うなど、彼(女)のこの上ないトラウマと焦りがあることは誰もが知る由もない。<br />
-		しかしながら本人も実は満更ではない様子なので、その反応を楽しく弄ばれていることは恐らく自覚してないまである。<br />
-		心の声が大きくて煩く、かなりチョロい。
-        <template #callingme>おれ,ぼく</template>
-        <template #callingyou>(気分による)</template>
-        <template #gender>中性</template>
-        <template #height>140cm</template>
-        <template #conceptage>17?</template>
-        <template #weight>39kg</template>
-        <template #numberoftails>5</template>
-        <template #belongingclass>十倍番(テンズデジッツ)</template>
-        <template #potential>物事を急展開に持ち運ぶ</template>
-        <template #characteristic >どんな状況でも落ち着いている（ように見えるが、本当はめちゃくちゃ焦り症）</template >
-        <template #hobby>猫と戯れる（実際は猫に遊ばれてる）</template>
-        <template #skill>着地</template>
-        <template #favors>コアフォルダ姿でいる時間（実際はめちゃくちゃ転がされている）</template>
-        <template #unlikes>？？？</template>
-        <template #characterimage ><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img50.png" class="character-img"/></template>
-      </character-page-comp>
-    </main>
-    <script src="/src/character-page.js"></script>
-    <footer>
-      <div id="app-credit">
-        <footer-credit></footer-credit>
-      </div>
-      <script src="/src/credit-footer.js"></script>
-    </footer>
-  </body>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/stylesheet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>
+		window.Vue ||
+			document.write(
+				'<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+			);
+	</script>
+	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「50(ナカバ)」</title>
+	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。" />
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-character-page">
+		<character-page-comp>
+			<template #title>50(ナカバ)</template>
+			他のナンバーテールズと比べどんな状況にも肝が据わっている……が、そのポーカーフェイスの奥には時に経験や慣れにも裏切られ、時に特技も失敗し、時に悪戯にも遭うなど、彼(女)のこの上ないトラウマと焦りがあることは誰もが知る由もない。<br />
+			しかしながら本人も実は満更ではない様子なので、その反応を楽しく弄ばれていることは恐らく自覚してないまである。<br />
+			心の声が大きくて煩く、かなりチョロい。
+			<template #callingme>おれ,ぼく</template>
+			<template #callingyou>(気分による)</template>
+			<template #gender>中性</template>
+			<template #height>140cm</template>
+			<template #conceptage>17?</template>
+			<template #weight>39kg</template>
+			<template #numberoftails>5</template>
+			<template #belongingclass>10倍番(テンズデジッツ)</template>
+			<template #potential>物事を急展開に持ち運ぶ</template>
+			<template #characteristic>どんな状況でも落ち着いている（ように見えるが、本当はめちゃくちゃ焦り症）</template>
+			<template #hobby>猫と戯れる（実際は猫に遊ばれてる）</template>
+			<template #skill>着地</template>
+			<template #favors>コアフォルダ姿でいる時間（実際はめちゃくちゃ転がされている）</template>
+			<template #unlikes>？？？</template>
+			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img50.png" class="character-img" /></template>
+		</character-page-comp>
+	</main>
+	<script src="/src/character-page.js"></script>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+		<script src="/src/credit-footer.js"></script>
+	</footer>
+</body>
+
 </html>
