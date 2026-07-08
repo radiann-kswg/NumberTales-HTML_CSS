@@ -13,6 +13,7 @@ Vue.createApp({})
 				<ul>
 					<li><a href="/index.html">サイトトップ</a></li>
 					<li><a href="https://www.numbertales-radiann.net/">活動について/Contact Us</a></li>
+					<li><a href="/request.html">リクエストナンバー受付</a></li>
 					<li><a href="https://database.numbertales-radiann.net/">創作ガイドライン/Creation Guidelines</a></li>
 					<li><a href="/characters.html">キャラクター紹介(2桁)</a></li>
 					<li><a href="/characters-special.html">キャラクター紹介(3桁)</a></li>

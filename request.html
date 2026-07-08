@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="/stylesheet.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>
+		window.Vue ||
+			document.write(
+				'<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>'
+			);
+	</script>
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback&render=explicit" async defer></script>
+	<title>数字の癒し？キャラ化計画「ナンバーテールズ」- リクエストナンバー受付</title>
+	<meta name="description" content="「ナンバーテールズ」がひそかに募集している、キャラクター化してほしい数字のリクエストフォームです。気になる数字とその理由・いわれを教えてください。" />
+	<meta name="”keywords”" content="”ナンバーテールズ,百花繚乱研究所,リクエストナンバー”" />
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main>
+		<h1>リクエストナンバー受付</h1>
+		<div class="contact-section">
+			<div class="contact-container">
+				<!-- 以下は仮の紹介文です。文言の最終確認・修正はUser側でお願いします -->
+				<p class="contact-description">
+					「ナンバーテールズ」は２桁以内の数字のキャラクター化を第1目標としながら、リクエストナンバーもひそかに受け付けています。<br />
+					気になる数字と、その番号を選んだ理由を教えてください。数秘術・名数・数学的特徴・伝承・技術的慣用コード・有名な番号など、番号にまつわる「いわれ」も分かれば任意で記入できます。
+				</p>
+				<div id="app-request-form">
+					<request-number-form></request-number-form>
+				</div>
+				<script src="/src/request-number-form.js"></script>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+		<script src="/src/credit-footer.js"></script>
+	</footer>
+</body>
+
+</html>
