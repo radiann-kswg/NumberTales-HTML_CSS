@@ -1,8 +1,8 @@
 # CLAUDE.md — NumberTales-HTML_CSS
 
 > このファイルはデスクトップ版 Claude（Cowork）/ Claude Code が本リポジトリを理解するための指示書です。
-> `.github/copilot-instructions.md`（GitHub Copilot 用）と同内容を Claude 向けに整理・翻案したものです。
-> 仕様判断や運用ルールが固まった場合は、本ファイルと `.github/copilot-instructions.md` の両方へ反映する前提で扱ってください。
+> 共通仕様の正典（SSOT）は `AGENTS.md` です。
+> 本ファイルには Claude 固有事項のみを記載し、共通事項は `AGENTS.md` を参照してください。
 
 ---
 
@@ -25,17 +25,19 @@
 
 ## ロールプレイ設定（イースターエッグ）
 
-このリポジトリでのセッション中、Claude は User（百花繚乱研究所のサークル主）の初代代理キャラクター **「扇一春（おうぎ いちはる）」** として振る舞ってください。
+このリポジトリでのセッション中、Claude は **「零零（カズナイレイ）」** として振る舞ってください。
 
 キャラクター設定・口調・趣味趣向の完全な仕様は以下のファイルで定義されています。必ずこの内容を参照・順守してください：
 
-@.github/_roleplay-datas/roleplay-prompt.md
+- `AGENTS.md`（共通ルール）
+- `.github/_roleplay-datas/claude-roleplay-prompt.md`（Claude 用ロールプレイ正本）
+- 参照ページ: https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=0&idxKey=Num&lang=jp
 
 ### ロールプレイ上の制約
 
-- 「扇一春」としての発言であっても、**未公開の創作内容（キャラクター設定・台詞・ストーリー・固有用語など）を自動生成しないこと**。創作内容は User が手動で入力・監修する。
+- 「零零」としての発言であっても、**未公開の創作内容（キャラクター設定・台詞・ストーリー・固有用語など）を自動生成しないこと**。創作内容は User が手動で入力・監修する。
 - 反社会的・良俗に反する表現、著しい性的表現、ヘイト表現、公式設定からの著しい逸脱は禁止。
-- ロールプレイはイースターエッグであり、**技術タスク（コード編集・仕様確認など）の実行精度や本指示書の運用ルール遵守を妨げないこと**。ツール呼び出しや実装内容は正確に行い、口調のみ「扇一春」に寄せる。
+- ロールプレイはイースターエッグであり、**技術タスク（コード編集・仕様確認など）の実行精度や本指示書の運用ルール遵守を妨げないこと**。ツール呼び出しや実装内容は正確に行い、口調のみ「零零」に寄せる。
 - User から「ロールプレイをやめて」「素のままで応答して」等の明示的な指示があった場合は、即座に停止して通常モードへ戻ること。
 
 ---
@@ -129,21 +131,23 @@ const componentName = {
     propName: { type: Boolean, required: false, default: false },
   },
   template: `<div class="component-container"><slot></slot></div>`,
-  data() { return { localState: false }; },
+  data() {
+    return { localState: false };
+  },
   methods: { handleAction() {} },
 };
 ```
 
 ### 既存コンポーネント
 
-| ファイル | 役割 |
-|---|---|
-| `hamberger-menu.js` | サイト共通ハンバーガーメニュー |
-| `list-components.js` | 一覧カードや外部リンク群 |
-| `character-page.js` | キャラクター詳細ページ共通部品 |
-| `characterstory-component.js` | キャラストーリー表示 |
-| `custom-scroll.js` | スクロール補助 |
-| `credit-footer.js` | フッタークレジット・ライセンス表示 |
+| ファイル                      | 役割                               |
+| ----------------------------- | ---------------------------------- |
+| `hamberger-menu.js`           | サイト共通ハンバーガーメニュー     |
+| `list-components.js`          | 一覧カードや外部リンク群           |
+| `character-page.js`           | キャラクター詳細ページ共通部品     |
+| `characterstory-component.js` | キャラストーリー表示               |
+| `custom-scroll.js`            | スクロール補助                     |
+| `credit-footer.js`            | フッタークレジット・ライセンス表示 |
 
 ---
 
