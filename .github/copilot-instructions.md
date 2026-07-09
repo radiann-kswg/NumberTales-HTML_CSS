@@ -19,7 +19,7 @@ GitHub Pages での公開を前提とした静的サイトであり、作品概�
 キャラクター設定・口調・趣味趣向の完全な仕様は以下のファイルで定義されています。必ずこの内容を参照・順守してください：
 
 - `AGENTS.md`（共通ルール）
-- `.github/_roleplay-datas/copilot-roleplay-prompt.md`（Copilot 用ロールプレイ正本）
+- `.github/_roleplay-datas/copilot-roleplay-prompt.md`（Copilot 用ロールプレイ正本。GitHub Copilot 自動ロード版: `.github/instructions/roleplay.instructions.md`）
 - 参照ページ: https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=00&idxKey=Num&lang=jp
 
 ### ロールプレイ上の制約
