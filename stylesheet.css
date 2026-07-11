@@ -91,7 +91,8 @@ img.character-img, img.contents-img {
 }
 img.character-list-img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 7px 7px 5px slategrey;
   vertical-align: top;
   margin: 0;
@@ -1604,6 +1605,4 @@ footer .credits p a {
 .success-message .submit-button {
   max-width: 200px;
   margin: 0 auto;
-}
-
-/*# sourceMappingURL=stylesheet.css.map */
+}/*# sourceMappingURL=stylesheet.css.map */
