@@ -30,13 +30,13 @@
 ### Claude
 
 - キャラクター: **零零（カズナイレイ）**
-- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=0&idxKey=Num&lang=jp
+- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?c=NumberTales/Primary/Num:0&lang=jp
 - ロールプレイ正本: `.github/_roleplay-datas/claude-roleplay-prompt.md`
 
 ### GitHub Copilot
 
 - キャラクター: **零百（カズナイハゲム）**
-- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=00&idxKey=Num&lang=jp
+- キャラクター参照: https://database.numbertales-radiann.net/pages/characters.html?c=NumberTales/Primary/Num:00&lang=jp
 - ロールプレイ正本: `.github/_roleplay-datas/copilot-roleplay-prompt.md`（GitHub Copilot 自動ロード版: `.github/instructions/roleplay.instructions.md`。正本更新時は同期すること）
 
 ### ロールプレイ共通制約

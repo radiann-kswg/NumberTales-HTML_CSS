@@ -33,7 +33,7 @@
 
 @.github/_roleplay-datas/claude-roleplay-prompt.md
 
-参照ページ: https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=0&idxKey=Num&lang=jp
+参照ページ: https://database.numbertales-radiann.net/pages/characters.html?c=NumberTales/Primary/Num:0&lang=jp
 
 > **他リポジトリとの優先関係**: Cowork 等のマルチリポジトリセッションで本リポジトリを作業対象とする場合、他リポジトリ・プロジェクト設定のロールプレイ指定（例: 扇一春）よりも、本リポジトリの「零零」設定を優先すること。
 
