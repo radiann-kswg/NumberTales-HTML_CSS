@@ -1,5 +1,5 @@
 const characterStoryAbout04Component = {
-  template: `<div class="character0">
+	template: `<div class="character0">
 		<div class="character1" style="margin-bottom: 20px;">
 			<h3>あらすじ</h3><br />
 			<p><span class="p-bold">――「33(ミサ)は完璧な存在です。<br />
@@ -16,18 +16,16 @@ const characterStoryAbout04Component = {
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
 		</div><slot name="imagelink"></slot>
 		<img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img33.png" class="character-img">
 		<slot></slot></div>`,
 };
 const characterStoryAbout03Component = {
-  components: {
-    "characterstory-about-04-comp": characterStoryAbout04Component,
-  },
-  template: `<div class="character0">
+	components: {
+		"characterstory-about-04-comp": characterStoryAbout04Component,
+	},
+	template: `<div class="character0">
 		<div class="character1" style="margin-bottom: 20px;">
 			<h3>あらすじ</h3><br />
 			<p><span class="p-bold">――「思うようにいかないこと、やりたくてもできないこと、<br />
@@ -44,8 +42,6 @@ const characterStoryAbout03Component = {
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
 		</div>
 		<slot name="imagelink"></slot>
@@ -53,10 +49,10 @@ const characterStoryAbout03Component = {
 		<slot></slot></div>`,
 };
 const characterStoryAbout02Component = {
-  components: {
-    "characterstory-about-03-comp": characterStoryAbout03Component,
-  },
-  template: `<div class="character0">
+	components: {
+		"characterstory-about-03-comp": characterStoryAbout03Component,
+	},
+	template: `<div class="character0">
 		<div class="character1" style="margin-bottom: 20px;">
 			<h3>あらすじ</h3><br />
 			<p><span class="p-bold">――みんなのもとで、わたしもがんばりたかった。<br />
@@ -73,8 +69,6 @@ const characterStoryAbout02Component = {
 			<slot name="info">
 				<h3 class="h3-wide">小説版(当サイト)</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
-				<h3 class="h3-wide">サウンドノベル連載準備中</h3><p>
-				<a class="a-commingsoon">Comming Soon...</a></p>
 			</slot>
 		</div>
 		<slot name="imagelink"></slot>
@@ -82,10 +76,10 @@ const characterStoryAbout02Component = {
 		<slot></slot></div>`,
 };
 const characterStoryAbout01Component = {
-  components: {
-    "characterstory-about-02-comp": characterStoryAbout02Component,
-  },
-  template: `<div class="character0">
+	components: {
+		"characterstory-about-02-comp": characterStoryAbout02Component,
+	},
+	template: `<div class="character0">
 		<div class="character1" style="margin-bottom: 20px;">
 			<h3>あらすじ</h3><br />
 			<p><span class="p-bold">――目指すもの、叶えたいもの、手にしたいもの。<br />
@@ -116,12 +110,15 @@ const characterStoryAbout01Component = {
 		<slot></slot></div>`,
 };
 const characterStoryPage = {
-  components: {
-    "characterstory-about-01-comp": characterStoryAbout01Component,
-  },
-  template: `<div class="page0">
+	components: {
+		"characterstory-about-01-comp": characterStoryAbout01Component,
+	},
+	template: `<div class="page0">
 		<div class="page1" style="margin-bottom: 20px;">
-			<slot name="contents"><p><span class="p-bold">Comming Soon...</span></p></slot>
+			<p v-if="$slots.date" class="story-date"><slot name="date"></slot></p>
+			<div class="story-body">
+				<slot name="contents"><p><span class="p-bold">Comming Soon...</span></p></slot>
+			</div>
 			<slot name="info">
 				<h3 class="h3-wide">サウンドノベル版</h3><p>
 				<a class="a-commingsoon">Comming Soon...</a></p>
@@ -132,16 +129,16 @@ const characterStoryPage = {
 		<slot></slot></div>`,
 };
 const characterStorySoundNovelPage = {
-  components: {
-    "characterstory-page-comp": characterStoryPage,
-  },
-  props: {
-    indexUrl: {
-      type: String,
-      required: true,
-    },
-  },
-  template: `<div class="page0" style="margin-bottom: 20px;">
+	components: {
+		"characterstory-page-comp": characterStoryPage,
+	},
+	props: {
+		indexUrl: {
+			type: String,
+			required: true,
+		},
+	},
+	template: `<div class="page0" style="margin-bottom: 20px;">
 		<div class="page1" style="margin: 0 25px;">
 		<iframe v-bind:src="contentUrl" frameborder="0" scrolling="no" width="960" height="640" class="contents-iframe"></iframe></div>
 		<div class="page2">
@@ -153,20 +150,20 @@ const characterStorySoundNovelPage = {
 		</div>
 		<slot name="imagelink"></slot>
 		<slot></slot></div>`,
-  data() {
-    return {
-      contentUrl: this.indexUrl,
-    };
-  },
+	data() {
+		return {
+			contentUrl: this.indexUrl,
+		};
+	},
 };
 
 Vue.createApp({
-  components: {
-    "characterstory-soundnovelpage-comp": characterStorySoundNovelPage,
-    "characterstory-page-comp": characterStoryPage,
-    "characterstory-about-01-comp": characterStoryAbout01Component,
-    "characterstory-about-02-comp": characterStoryAbout02Component,
-    "characterstory-about-03-comp": characterStoryAbout03Component,
-    "characterstory-about-04-comp": characterStoryAbout04Component,
-  },
+	components: {
+		"characterstory-soundnovelpage-comp": characterStorySoundNovelPage,
+		"characterstory-page-comp": characterStoryPage,
+		"characterstory-about-01-comp": characterStoryAbout01Component,
+		"characterstory-about-02-comp": characterStoryAbout02Component,
+		"characterstory-about-03-comp": characterStoryAbout03Component,
+		"characterstory-about-04-comp": characterStoryAbout04Component,
+	},
 }).mount("#app-characterstory-page");
