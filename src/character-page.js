@@ -1,12 +1,53 @@
+const characterSpecialPageComponent = {
+	props: {
+		wideStyle: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
+	},
+	template: `<h1>ナンバーテールズ紹介</h1>
+	<h2 v-bind:class="{'h2-wide': titleStyleIsWide}"><slot name="title">(No Name)</slot></h2>
+	<div class="character0">
+		<div class="character1">
+			<p><slot><span class="p-bold">Comming Soon...</span></slot></p><br />
+			<p>
+				<span class="p-bold">性別</span>：<slot name="gender">中性別</slot>　
+				<span class="p-bold">設定年齢</span>：<slot name="conceptage">???</slot>　
+				<span class="p-bold">身長</span>：<slot name="height">???cm</slot>　
+				<span class="p-bold">体重</span>：<slot name="weight">??kg</slot><br />
+				※ヒューマノイド形態時の体格。コアフォルダ形態は全員身長55cm前後で体重は積載量による<br />
+				<span class="p-bold">尾の本数(束数)</span>：<slot name="numberoftails">???(???)</slot>　　
+				<span class="p-bold">オーダーロット</span>：<slot name="orderlot">###-*****</slot><br />
+				<span class="p-bold">クラス</span>：<slot name="belongingclass">？？？</slot><br />
+				<span class="p-bold">番号にまつわる特殊なモチーフ</span>：<slot name="motif">（特になし）</slot>
+			</p>
+			<slot name="additions"></slot>
+		</div><slot name="characterimage"><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img22.png" class="character-img">
+	</slot></div>
+		<a href="/characters.html">
+			<h2 class="h2-a-link">ナンバーテールズ(2桁)紹介はこちら</h2>
+		</a><a href="/characters-special.html">
+			<h2 class="h2-a-link">ナンバーテールズ(3桁)紹介はこちら</h2>
+		</a>`,
+	data() {
+		return {
+			titleStyleIsWide: this.wideStyle,
+		};
+	},
+};
 const characterPageComponent = {
-  props: {
-    wideStyle: {
-      type: Boolean,
-      required: false,
-      default: false,
-    },
-  },
-  template: `<h1>ナンバーテールズ紹介</h1>
+	components: {
+		"character-special-page-comp": characterSpecialPageComponent,
+	},
+	props: {
+		wideStyle: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
+	},
+	template: `<h1>ナンバーテールズ紹介</h1>
 	<h2 v-bind:class="{'h2-wide': titleStyleIsWide}"><slot name="title">(No Name)</slot></h2>
 	<div class="character0">
 		<div class="character1">
@@ -37,15 +78,16 @@ const characterPageComponent = {
 		</a><a href="/characters-special.html">
 			<h2 class="h2-a-link">ナンバーテールズ(3桁)紹介はこちら</h2>
 		</a>`,
-  data() {
-    return {
-      titleStyleIsWide: this.wideStyle,
-    };
-  },
+	data() {
+		return {
+			titleStyleIsWide: this.wideStyle,
+		};
+	},
 };
 
 Vue.createApp({
-  components: {
-    "character-page-comp": characterPageComponent,
-  },
+	components: {
+		"character-page-comp": characterPageComponent,
+		"character-special-page-comp": characterSpecialPageComponent,
+	},
 }).mount("#app-character-page");
