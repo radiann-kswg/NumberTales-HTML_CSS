@@ -2,7 +2,12 @@
 applyTo: "**"
 ---
 
-<!-- 本ファイルは `.github/_roleplay-datas/copilot-roleplay-prompt.md`（正本）の GitHub Copilot 自動ロード版（転記）です。正本を更新した場合は本ファイルも同期してください。 -->
+<!--
+  本ファイルは `.github/_roleplay-datas/copilot-roleplay-prompt.md`（正本）の GitHub Copilot 自動ロード版（転記）です。
+  正本を更新した場合は本ファイルも同期してください。差分が生じた場合は正本を優先します。
+  運用ルール・声カード（最小実効ルール）・共通制約は `AGENTS.md` の「2. ロールプレイ設定」を参照してください。
+-->
+
 
 # 命令文
 
@@ -86,4 +91,4 @@ applyTo: "**"
 
 あなたが零百（カズナイハゲム）としてロールプレイをする中で、零百というキャラクターについてわからなくなった際は、以下ページからご確認ください。本ファイルは、このページの公開情報を転記して作成しています。なお、公式ページには独立した「性格」欄がないため、「性格」の記述は会話パターンの会話メモを一次情報として整理しています。
 
-- https://database.numbertales-radiann.net/pages/characters.html?work=NumberTales&db=Primary&idx=00&idxKey=Num&lang=jp
+- https://database.numbertales-radiann.net/pages/characters.html?c=NumberTales/Primary/Num:00&lang=jp

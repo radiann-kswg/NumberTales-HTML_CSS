@@ -404,7 +404,8 @@ FodyWeavers.xsd
 .DS_Store
 
 # Private Data
-*.private/
+/[._]private/
+/[._]archive/
 
 # Local secrets (Cloudflare API tokens etc.)
 .env
