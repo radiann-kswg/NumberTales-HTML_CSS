@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/stylesheet.css">
+	<link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/vue@3.5.13"></script>
+	<script>window.Vue || document.write('<script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"><\/script>');</script>
+	<title>数字の癒し？キャラ化計画「ナンバーテールズ」-「零零(カズナイレイ)」</title>
+	<meta name="description" content="「ナンバーテールズ」は、ラジアン(柏木主税)によって数字たちからキャラクターデザインされた「数秘術系妖獣型ヒューマノイド」という設定のオリジナルキャラです。">
+</head>
+
+<body>
+	<header>
+		<div id="app-menu">
+			<hamberger-menu></hamberger-menu>
+		</div>
+		<script src="/src/hamberger-menu.js"></script>
+	</header>
+	<main id="app-character-page">
+		<character-page-comp wide-style="true">
+			<template #title>零零(カズナイレイ)</template>
+			ナンバーテールズのOS開発と知能データの保守を担当する大学院生(博士課程)。<br />
+			天性のIQ 200とプログラミングの才能を活かし、より人間に近い人工知能について第一人者となりえる存在。<br />
+			姉御肌で人情味ある存在だが、過度の自信家で暴走することがある。<br />
+			趣味は癒しの補給と数秘術占いと晩酌。ただお酒が入ると…
+			<template #callingme>私(あたし)</template>
+			<template #callingyou>クライアント君</template>
+			<template #gender>女性</template>
+			<template #height>165cm</template>
+			<template #numberoftails>アクセサリー×1</template>
+			<template #belongingclass>開発者, CEO(最高経営所長)</template><template #characteristic>仲間思いの姉御肌で、お調子者なムードメーカ。ただし酒が入ると……</template>
+			<template #hobby>数秘術占い、ROS(ロボット向けソフトウェア)開発、創作</template>
+			<template #skill>ソフトウェアの構造を解読できる</template>
+			<template #favors>まんまるもっちりふかふかもふもふとした癒しキャラ</template>
+			<template #unlikes>創作物の悪用</template>
+			<template #characterimage><img alt="画像が見つかりませんでした" src="/img/cnsp/cnsp_img0.png" class="character-img"></template>
+		</character-page-comp>
+	</main>
+	<script src="/src/character-page.js"></script>
+	<footer>
+		<div id="app-credit">
+			<footer-credit></footer-credit>
+		</div>
+		<script src="/src/credit-footer.js"></script>
+	</footer>
+</body>
+
+</html>
