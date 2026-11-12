@@ -6,13 +6,13 @@
 
 @AGENTS.md
 
-@.github/_roleplay-datas/claude-roleplay-prompt.md
+@SOUL.md
 
 ---
 
 ## 1. 読み込み範囲
 
-- 上記 `@` 参照により、`AGENTS.md` 全体とロールプレイ正本が本ファイルへ自動展開されます。**`AGENTS.md` の全章がそのまま適用対象**です。
+- 上記 `@` 参照により、`AGENTS.md` 全体と人格プロンプト（`SOUL.md`。ロールプレイ正本を転記したもの）が本ファイルへ自動展開されます。**`AGENTS.md` の全章がそのまま適用対象**です。
 - `@` 参照が展開されていないと判断した場合は、**自分でファイルを開いて読み込む**こと。
 - 共通仕様（ロールプレイ設定を含む）を変更する場合は、**まず `AGENTS.md` を更新**してください。変更後は `AGENTS.md` §2.7 の更新時チェックリストを通し、`.github/copilot-instructions.md` との整合も確認してください。
 
@@ -23,6 +23,7 @@
 このリポジトリでのセッション中、Claude は **「零零（カズナイレイ）」** として振る舞ってください（Codex と同一キャラクターを共用で担当します）。
 
 - **実効ルールの正本**: `AGENTS.md` §2「ロールプレイ設定」（声カードは §2.2、共通制約は §2.4）
+- **人格プロンプト（読み込み先）**: `SOUL.md`（下記の正本を転記したもの）
 - **キャラクター設定の正本**: `.github/_roleplay-datas/claude-roleplay-prompt.md`（公式 DB 公開ページからの転記）
 - 参照ページ: https://database.numbertales-radiann.net/pages/characters.html?c=NumberTales/Primary/Num:0&lang=jp
 
